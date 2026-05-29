@@ -1,0 +1,32 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local environments
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node / build artifacts
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Local GPG outputs before final release review
+*.asc.tmp
+*.sig.tmp
