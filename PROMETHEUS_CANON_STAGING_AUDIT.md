@@ -85,7 +85,7 @@ PROMETHEUS_CANON_STAGING_CHECKSUMS.txt
 
 SHA-256 of the checksum register:
 
-8655dc1c08a9e9890ceab019ee2c332b0a4790a727cf902f44cb1bed30b0e178
+RC2 package hash reviewed as historical release-candidate evidence; not reproduced here as an active canonical checksum. Active staging hashes are maintained in PROMETHEUS_CANON_STAGING_CHECKSUMS.txt.
 
 This checksum register is a local staging integrity reference only.
 
