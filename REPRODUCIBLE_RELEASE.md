@@ -28,7 +28,7 @@ bash scripts/verify_release.sh
 
 ## Final signing
 
-Only after RC2 QA passed:
+Only after WP v5 locked checksum-refresh QA has passed:
 
 ```bash
 bash scripts/sign_release_gpg.sh

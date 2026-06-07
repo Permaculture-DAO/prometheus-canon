@@ -15,7 +15,7 @@ This candidate is not the final signed public release. It is the strict QA candi
 - Added explicit deprecation and migration policy for stale or superseded documents.
 - Reclassified unresolved hash/signature/timestamp values as `PRE-SIGNING FIELD` values.
 - Regenerated SHA-256 checksums after text freeze candidate generation.
-- Deferred real GPG `.asc` signatures until RC2 QA passed.
+- Deferred real GPG `.asc` signatures until final authorized signing after the WP v5 locked checksum-refresh gate.
 
 ## Notable ontology alignment
 
