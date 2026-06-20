@@ -1,0 +1,16 @@
+name: claims-discipline
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  # REPORT MODE: the canon self-disciplines via its firewall + Claims Register, and
+  # the per-line linter yields structural false positives on the canon's own
+  # "forbidden interpretation" tables. So we report, never fail. A baseline
+  # allowlist (fail only on NEW occurrences) is the later hardening step.
+  overclaim-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: claims-discipline (report only)
+        run: bash ci/claims_discipline_check.sh canonical constitutional docs || true
