@@ -4,6 +4,15 @@ All notable changes to the canonical White Paper. Versioned and hashed
 (canon-amendment & custody discipline). GPG signing deferred until text freeze +
 QA (`NO_GPG_SIGNATURES_YET`).
 
+## [amendment A-002] — UNRELEASED (2026-06-20, pending ratification)
+- `canonical/AMENDMENTS/A-002_consolidated_legal_semantic_firewall.md` — consolidates
+  the 15 master-prompt firewall terms (PRU, RAP, TRBK, HoloFuel, token, governance
+  right, investor exposure, land/cash-flow right, ecological claim, verified
+  indicator, admissible value, research-only, financial instrument, compliant
+  wrapper) into one `term → definition → forbidden interpretation` table. Consolidates
+  existing WP v1.1.2 content (X.1/X.2/X.3, §13.16.2); introduces no new meaning.
+  Incorporate into the source DOCX at next freeze, then re-derive.
+
 ## [v1.1.2-corpus-import] — UNRELEASED (staged 2026-06-20, pending Gate 2 + freeze)
 
 **Change:** the canonical White Paper of record was replaced by the v3.1-complete
