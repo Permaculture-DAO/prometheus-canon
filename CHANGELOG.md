@@ -4,6 +4,18 @@ All notable changes to the canonical White Paper. Versioned and hashed
 (canon-amendment & custody discipline). GPG signing deferred until text freeze +
 QA (`NO_GPG_SIGNATURES_YET`).
 
+## [v1.1.2-genesis] — FREEZE-PREP COMPLETE, PENDING SIGNATURE (2026-06-21)
+Freeze-prep for the first signed Genesis release. Internally reconciled and ready
+for the maintainer to sign (key `8C8CB0D48C7F60DA`).
+- RELEASE_NOTES reconciled to v1.1.2 Full Corpus (was rc.2-strict).
+- `NO_GPG_SIGNATURES_YET.md` removed → `RELEASE_SIGNING_READINESS.md`.
+- `RELEASE_MANIFEST.md` added (artifact SHA256: WP docx `29f91e6d…ca04`, WP md
+  `f3862005…f9540`; bundles happ `3d331955…f831`, webhapp `82a6004d…9ae8`,
+  dna `3ee84acb…a8f8`).
+- Amendments A-001/A-002 included as versioned clauses; body-incorporation → v1.1.3.
+- Disclosure: substantially single-source, single-authority signature.
+- Not yet signed; signing is the maintainer's action.
+
 ## [amendment A-002] — UNRELEASED (2026-06-20, pending ratification)
 - `canonical/AMENDMENTS/A-002_consolidated_legal_semantic_firewall.md` — consolidates
   the 15 master-prompt firewall terms (PRU, RAP, TRBK, HoloFuel, token, governance
