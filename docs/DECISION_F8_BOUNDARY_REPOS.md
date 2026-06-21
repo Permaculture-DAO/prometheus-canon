@@ -40,7 +40,18 @@ population:
 3. No CI or scaffolding is added to these repos until populated (adding it now would
    be the over-engineering the canon warns against).
 
+## Trigger event — UPDATE 2026-06-21
+The **populate** branch of the trigger fired for **`prometheus-bridge`**: a real
+cross-repo deployment need appeared — the public API at
+**`api.heart-intelligence.earth`**. Per the decision, the bridge has been
+**populated** (bounded, read-only HTTP API; displays-never-decides; status +
+canon-derived Claims Register with status; bridge policy + audit trail; CI added).
+- `prometheus-bridge` → **POPULATED** (no longer a placeholder).
+- `prometheus-evaluation-stack` → **still DEFERRED** (no deployment need yet; the
+  evaluation layer remains in `happ`). Same trigger stands.
+
 ## Net-additions ledger
 | Added | Offsetting deletion / justification |
 |---|---|
 | This decision record + in-repo placeholder markers | Justification: closes audit flag F8; prevents drift; no new capability; smallest action that resolves the trigger reading |
+| Bridge populated (API) on trigger | Justification: real deployment need (public API); the canon's "populate" branch, not premature complexity |
