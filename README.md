@@ -16,21 +16,15 @@ Pre-v1.1 materials are treated as historical development artifacts unless explic
 
 Current status:
 
-**Genesis canonical staging — pre-final-freeze, pre-signing**
+**Genesis canonical release line — signed v1.1.2**
 
-This repository is not yet the final signed canonical release.
+The controlling signed release is
+[`v1.1.2-genesis`](https://github.com/Permaculture-DAO/prometheus-canon/releases/tag/v1.1.2-genesis).
+Its signature attests authenticity and integrity; it does not imply empirical,
+legal, market, financial, or multi-steward constitutional validation.
 
-Final `SHA256_SUMS.txt`, individual `.sha256` files, detached `.asc` GPG signatures, and GitHub release assets must be generated only after:
-
-1. final text review;
-2. Markdown completeness confirmation;
-3. repository-wide Markdown alignment;
-4. explicit update or deprecation of stale documents;
-5. textual freeze;
-6. checksum regeneration;
-7. local GPG signing with the authorized release key;
-8. release manifest update;
-9. GitHub release publication.
+Later files or local documents are candidates only until they pass the canonical
+amendment, review, hash, signing, and release procedure.
 
 ## Source of truth
 
@@ -79,20 +73,11 @@ Runtime artifacts do not create PRU value, investor rights, token rights, land r
 
 ## Hash and signature boundary
 
-This repository currently contains staging integrity materials only.
+This repository contains both signed-release material and later staging controls.
 
-Files such as:
-
-- `PROMETHEUS_CANON_STAGING_MANIFEST.md`
-- `PROMETHEUS_CANON_STAGING_AUDIT.md`
-- `PROMETHEUS_CANON_STAGING_CHECKSUMS.txt`
-- `NO_GPG_SIGNATURES_YET.md`
-
-are local Genesis staging controls.
-
-They are not final canonical release signatures.
-
-Final canonical checksums and GPG signatures must be generated after final QA and textual freeze.
+Only files bound to a signed tag or release manifest are part of a signed release.
+Staging manifests, audits, checksums, amendments, and working documents do not
+silently modify `v1.1.2-genesis`.
 
 ## Legacy boundary
 
@@ -117,6 +102,13 @@ Canonical meaning lives here.
 Runtime behavior lives in runtime repositories.
 
 Operational discipline lives in operations and evaluation repositories.
+
+## Public visibility boundary
+
+Public visibility supports inspection, verification, and defensive publication.
+It does not turn architectural specifications into proof, create rights, or
+expand any license beyond the notices included with the relevant material.
+See [`PUBLICATION_BOUNDARY.md`](PUBLICATION_BOUNDARY.md).
 
 Founder publication lives in the Uwohali mirror.
 
