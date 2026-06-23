@@ -26,6 +26,10 @@ legal, market, financial, or multi-steward constitutional validation.
 Later files or local documents are candidates only until they pass the canonical
 amendment, review, hash, signing, and release procedure.
 
+The minimal public verification copy is maintained in
+[`prometheus-canonical-releases`](https://github.com/Permaculture-DAO/prometheus-canonical-releases).
+The complete historical freeze archive remains private.
+
 ## Source of truth
 
 The source-of-truth document for this Genesis line is:
