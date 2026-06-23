@@ -11,6 +11,6 @@ jobs:
   overclaim-report:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: claims-discipline (report only)
         run: bash ci/claims_discipline_check.sh canonical constitutional docs || true
