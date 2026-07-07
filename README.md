@@ -117,3 +117,8 @@ See [`PUBLICATION_BOUNDARY.md`](PUBLICATION_BOUNDARY.md).
 Founder publication lives in the Uwohali mirror.
 
 Legacy material remains outside the active canonical path unless formally reintroduced.
+
+## Sprint 0 deployment baseline
+
+Candidate controls: [Repository topology decision candidate](governance/REPOSITORY_TOPOLOGY_DECISION_CANDIDATE.md). This section is implementation governance only and does not promote release or validation status.
+
