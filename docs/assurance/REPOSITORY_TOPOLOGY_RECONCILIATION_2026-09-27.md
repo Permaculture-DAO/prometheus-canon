@@ -1,7 +1,7 @@
 # PROMETHEUS Repository Topology Reconciliation Gate
 
 Status: assurance candidate; non-canonical until reviewed and adopted.
-Date: 2026-09-27
+Date: 2026-09-27 (updated 2026-10-01)
 
 ## Decision purpose
 
@@ -20,6 +20,10 @@ Collision discovery is POSITIVE. Active Genesis responsibilities exist outside t
 - `prometheus-happ`
 - `prometheus-runtime`
 - `prometheus-canon`
+- `prometheus-canonicals` (signed release archive, `releases/2026-06-21/`)
+- `prometheus-canonical-releases` (public release registry)
+- `prometheus-governance` (decision records, ratification, review and legal packs)
+- `.github` (organization profile; candidate home for one shared PR/issue template set)
 
 Therefore `prometheus-ui` and `prometheus-ops` remain candidate target names only. They MUST NOT be treated as authoritative topology until a migration/retention decision is approved.
 
@@ -58,6 +62,16 @@ Until reconciliation is complete, existing repositories remain authoritative for
 ## Holochain compatibility dependency
 
 Topology reconciliation MUST NOT be coupled silently to a Holochain major/minor-line migration. The current Genesis deployment line remains pinned to Holochain/hc 0.6.1 until a separate compatibility decision authorizes otherwise.
+
+## Cross-references (added 2026-10-01)
+
+- Canon successor candidate `v1.2.0-rc.2` (PR #15), X.14: topology reconciliation is an open workstream.
+  X.15 sets the normative stack and the rule that downstream artefacts never state more than upstream ones.
+- Agent lanes and cross-review for multi-agent work (Claude Code, Codex/ChatGPT): `AGENTS.md` in the
+  Genesis workspace. A topology change is a cross-lane change. It needs a written cross-review and the
+  steward's approval record.
+- The Sprint 0 candidate topology (`prometheus-ui` / `prometheus-ops`, July 2026) is superseded by this gate;
+  the related Sprint 0 PRs are closed by the steward.
 
 ## Claim boundary
 
