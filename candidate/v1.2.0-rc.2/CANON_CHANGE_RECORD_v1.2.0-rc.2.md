@@ -46,6 +46,7 @@ Status codes follow `CANON_CLAUSE_RECONCILIATION_v0.1`.
 | O | AMEND | AI cannot promote inferred relations; model/version provenance |
 | P | AMEND | TRBK confers no Prometheus right; participation creates no entitlement |
 | Q | CLARIFY | Context, public-value, resilience-attribute and human-state variables at default weight zero; controlling expression unchanged |
+| Q (restore) | RESTORE | Pre-pilot rule `U_max_capital = 0` (signed v1.1.2, lines ~49855–49857; also in v1.2.0-convergence). WP 8.0 RC had dropped it; found in Claude's invariant self-check on 2026-10-01 |
 | R | ADD | G-MEP / G-VP tiers; claim ceiling by timepoint; H3/H4/H5 duration rules; surveyed experimental boundary |
 | S | AMEND | Proof of physical origin = adversarial assurance, not unforgeability |
 | T | REPLACE ⚠️ | Token architecture → TRBK external boundary (interim TOD-001) |

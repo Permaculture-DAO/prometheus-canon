@@ -225,6 +225,8 @@ Here V_base is the admissible base value from productive or contractually ground
 
 *Figure 5. The bounded PRU value function and its zero-value conditions.*
 
+**Pre-pilot rule.** Before sufficient pilot evidence exists, the capital-facing uplift effect of U_max is zero: if PilotEvidence = 0, then U_max_capital = 0, and V_PRU_adj may not include regenerative uplift for investor-facing, RAP-facing or other capital-facing use. Literature, simulation, architecture or narrative cannot create site uplift. A PRU dry-run is internal, non-capital analysis only.
+
 **Confidence gate.** For capital purposes, PRU value is held at zero until a governance-versioned Bayesian confidence threshold (target at least 0.85), supported by difference-in-differences estimation against a comparator, is met. A single p-value is one input, never the gate.
 
 # R. Scientific Validation
