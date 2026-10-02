@@ -47,7 +47,7 @@ Status codes follow `CANON_CLAUSE_RECONCILIATION_v0.1`.
 | P | AMEND | TRBK confers no Prometheus right; participation creates no entitlement |
 | Q | CLARIFY | Context, public-value, resilience-attribute and human-state variables at default weight zero; controlling expression unchanged |
 | Q (restore) | RESTORE | Pre-pilot rule `U_max_capital = 0` (signed v1.1.2, lines ~49855–49857; also in v1.2.0-convergence). WP 8.0 RC had dropped it; found in Claude's invariant self-check on 2026-10-01 |
-| R | ADD | G-MEP / G-VP tiers; claim ceiling by timepoint; H3/H4/H5 duration rules; surveyed experimental boundary |
+| R | ADD | G-MEP / G-VP tiers; claim ceiling by timepoint; H3/H4/H5a–H5c duration rules; surveyed experimental boundary; H5 components are non-substitutable |
 | S | AMEND | Proof of physical origin = adversarial assurance, not unforgeability |
 | T | REPLACE ⚠️ | Token architecture → TRBK external boundary (interim TOD-001) |
 | U | ADD | Semantic drift, claim-ID collision, boundary drift, relational overreach, reviewer conflict, model-completeness illusion, staleness |
@@ -79,5 +79,5 @@ Net size: about 6,300 → 8,400 words. Justification for the complexity budget: 
 1. ⚠️ TOD-001 full Eternity ratification + counsel opinion (brief #5); A-002R disposition.
 2. Independent documentary review of the compression from about 275,000 words (v1.1.2) to about 8,400 words.
 3. Independent review of CCD-001 build parity; pinned build environment recorded in CI.
-4. Clause-level import check that no v1.1.2 invariant was lost (civic, safeguarding, HSI, Jacobi anchor and firewall are present; full audit pending).
+4. Clause-level import check that no v1.1.2 invariant was lost (civic, safeguarding, HSI, Jacobi anchor and firewall are present; full audit pending).\n   - 2026-10-02 reconciliation remediation: restored the v7.0.3 H5 non-substitution discipline. H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage must remain separately specified and evidenced.
 5. Textual freeze → manifest → SHA-256 → steward GPG signature → tag → release (steward actions).
