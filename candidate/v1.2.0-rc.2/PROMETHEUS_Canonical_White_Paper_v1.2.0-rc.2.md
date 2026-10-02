@@ -296,7 +296,9 @@ The Claims Register is the control surface between vision and admissibility. No 
 | **C-002** | `prometheus.ohe.minimum_deployable_auditable_unit` | The One Human Ecosystem is the minimum deployable and auditable unit. | Architectural definition | Yes (as definition) | A bounded, place-contextualised social-ecological unit from which evidence may be generated. |
 | **C-003** | `prometheus.pru.analytical_interface_no_rights` | The PRU renders verified performance as capital-readable analysis. | Specified | Yes (with boundary) | The PRU is an analytical interface only; it creates no rights. |
 | **C-004** | `prometheus.rap.portfolio_readability_not_market_admission` | The RAP aggregates PRUs into portfolio structures. | Specified | Limited | A RAP is portfolio-readable before it is market-readable. |
-| **C-005A** | `prometheus.hypothesis.h5a_ecological_complementarity` | Syntropic systems may generate ecological complementarity (H5a). | Hypothesis | No | Ecological complementarity only; not proof of economic or organisational surplus. |\n| **C-005B** | `prometheus.hypothesis.h5b_full_cost_economic_surplus` | Syntropic systems may generate positive full-cost economic surplus (H5b). | Hypothesis | No | Requires full-cost site evidence; ecological metrics are not a substitute. |\n| **C-005C** | `prometheus.hypothesis.h5c_cooperative_organisational_advantage` | Cooperative organisation may generate measurable coordination or organisational advantage (H5c). | Hypothesis | No | Requires separate organisational evidence; neither H5a nor H5b establishes it. |
+| **C-005A** | `prometheus.hypothesis.h5a_ecological_complementarity` | Syntropic systems may generate ecological complementarity (H5a). | Hypothesis | No | Ecological complementarity only; not proof of economic or organisational surplus. |
+| **C-005B** | `prometheus.hypothesis.h5b_full_cost_economic_surplus` | Syntropic systems may generate positive full-cost economic surplus (H5b). | Hypothesis | No | Requires full-cost site evidence; ecological metrics are not a substitute. |
+| **C-005C** | `prometheus.hypothesis.h5c_cooperative_organisational_advantage` | Cooperative organisation may generate measurable coordination or organisational advantage (H5c). | Hypothesis | No | Requires separate organisational evidence; neither H5a nor H5b establishes it. |
 | **C-006** | `prometheus.hypothesis.r1_risk_compression` | Regenerative systems may reduce risk over time. | Hypothesis | Limited | Risk compression is conditional, measured and hazard-adjusted. |
 | **C-007** | `prometheus.hypothesis.t1_time_positive_value` | Time-positive value may emerge under verified regeneration. | Hypothesis | Limited | Conditional on verified maturation and admissibility. |
 | **C-008** | `prometheus.trbk.external_interface_no_prometheus_rights` | TRBK is an external asset or interface governed outside this canon. | Interim boundary (TOD-001); counsel pending | No | Prometheus confers no rights through TRBK; pathways P0 default, P1 design only, P2 NO-GO, P3 RED, P4 prohibited. |
@@ -312,6 +314,8 @@ The Claims Register is the control surface between vision and admissibility. No 
 | **C-018** | `prometheus.review.independence_scope_separation` | Contributors are not independent reviewers of their own scope. | Methodological | Yes | Independence is scope-specific and conflict-declared. |
 
 The candidate `claim_uid` `prometheus.token.access_utility_candidate` (claim UID registry v0.2, 29 September 2026) is **deprecated** and must not be used: it encoded the A-002 classification that ARD-001 declined. Its replacement is `prometheus.trbk.external_interface_no_prometheus_rights`.
+
+The candidate `claim_uid` `prometheus.hypothesis.h5_cooperative_syntropic_surplus` is **deprecated** for this successor candidate and must not be rebound to H5a, H5b or H5c: it compressed distinct ecological, economic and organisational hypotheses into one identity. Downstream artefacts using it are stale until reviewed and mapped, where justified, to one or more of `prometheus.hypothesis.h5a_ecological_complementarity`, `prometheus.hypothesis.h5b_full_cost_economic_surplus` and `prometheus.hypothesis.h5c_cooperative_organisational_advantage`.
 
 ***X. Appendix System***
 
@@ -369,7 +373,9 @@ Reserved to preserve section numbering of the Appendix System.
 | ***H2*** | *Water-cycle function improves* | *Baseline/control; moisture, infiltration* | *Repeated observation* | *No positive association after controls* |
 | ***H3*** | *Input dependency decreases* | *Comparator; input and labour accounting* | *24 months* | *No reduction without productivity loss* |
 | ***H4*** | *Output stability improves* | *Matched zones; stress-event data* | *2–3 seasons* | *No faster recovery or lower damage* |
-| ***H5a*** | *Ecological complementarity exists* | *Paired/matched plots; complementarity and diversity-adjusted ecological/productivity metrics* | *Pre-registered* | *No material ecological complementarity versus comparator within the specified scope* |\n| ***H5b*** | *Full-cost economic surplus exists* | *Full-cost accounting of inputs, labour, operations and outputs* | *Pre-registered* | *No positive full-cost surplus versus comparator after stated controls* |\n| ***H5c*** | *Organisational/cooperative advantage exists* | *Pre-registered coordination, governance and operating measures* | *Pre-registered* | *No material organisational advantage versus comparator or baseline* |
+| ***H5a*** | *Ecological complementarity exists* | *Paired/matched plots; complementarity and diversity-adjusted ecological/productivity metrics* | *Pre-registered* | *No material ecological complementarity versus comparator within the specified scope* |
+| ***H5b*** | *Full-cost economic surplus exists* | *Full-cost accounting of inputs, labour, operations and outputs* | *Pre-registered* | *No positive full-cost surplus versus comparator after stated controls* |
+| ***H5c*** | *Organisational/cooperative advantage exists* | *Pre-registered coordination, governance and operating measures* | *Pre-registered* | *No material organisational advantage versus comparator or baseline* |
 
 ***X.7 Hypothesis–Evidence Mapping***
 
@@ -379,7 +385,9 @@ Reserved to preserve section numbering of the Appendix System.
 | ***H2*** | *Favourable microclimate and moisture trends, mixed; no temperate evidence* | *Pilot-required; rainfall-normalised analysis* |
 | ***H3*** | *Input dependency declines over time; offset by early labour and input cost* | *Pilot-required with full input and labour accounting* |
 | ***H4*** | *Diversity and resilience buffer price, pest and drought shocks* | *Pilot-required across two to three seasons* |
-| ***H5a*** | *External literature may inform ecological-complementarity priors and measurement design; reported LER signals are not site proof* | *Pilot-required; site-specific ecological-complementarity evidence only* |\n| ***H5b*** | *External literature may inform cost-accounting methods but cannot establish Prometheus full-cost surplus* | *Pilot-required with complete site cost and output accounting* |\n| ***H5c*** | *No external organisational result is transferable as Prometheus cooperative advantage* | *Pilot-required with preregistered organisational measures and independent review* |
+| ***H5a*** | *External literature may inform ecological-complementarity priors and measurement design; reported LER signals are not site proof* | *Pilot-required; site-specific ecological-complementarity evidence only* |
+| ***H5b*** | *External literature may inform cost-accounting methods but cannot establish Prometheus full-cost surplus* | *Pilot-required with complete site cost and output accounting* |
+| ***H5c*** | *No external organisational result is transferable as Prometheus cooperative advantage* | *Pilot-required with preregistered organisational measures and independent review* |
 
 ***X.8 What Prometheus Is Not***
 
@@ -457,7 +465,9 @@ Reserved to preserve section numbering of the Appendix System.
 
 - *No TRBK description departs from X.1 until TOD-001 is fully ratified with counsel.*
 
-- *No downstream artefact (runtime, bridge, console, website, deck, campaign) states a stronger claim than this canon; artefacts depending on a changed claim are marked stale until reviewed.*\n\n- *H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage remain distinct; evidence for one is never used as an automatic proxy for another.*
+- *No downstream artefact (runtime, bridge, console, website, deck, campaign) states a stronger claim than this canon; artefacts depending on a changed claim are marked stale until reviewed.*
+
+- *H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage remain distinct; evidence for one is never used as an automatic proxy for another.*
 
 ***X.11 Independent Review Anticipation***
 
@@ -468,7 +478,7 @@ Reserved to preserve section numbering of the Appendix System.
 | ***Fiduciary and allocation*** | *Where are downside risks and the path to investability?* | *Section T; X.5; Claims Register; lowest-gate-controls-claim rule* |
 | ***Securities and crypto-asset*** | *Is any token a disguised security?* | *Section T; X.1–X.2 (TRBK external to the canon; pathway policy; classification reserved to counsel)* |
 
-***What is not yet validated. All site-level performance under H1–H5c is pilot-required and unvalidated. The Sicily Genesis workstream has advanced to Experimental Design v0.1 and field-baseline execution templates, but preregistration is not frozen, G-SIC-01 geometry population is suspended, comparator topology and power/MDE remain open, and laboratory soil chemistry is pending. Temperate water-cycling, long-horizon performance and the cooperative-surplus hypothesis remain untested for the target region and non-admissible for PRU uplift, RAP inclusion or investor claims until the Genesis evidence gate clears. Risk-compression and time-positive dynamics require multi-site and multi-year data; all token, security and PRU representations remain downstream of evidence, methodology, governance and jurisdiction-specific legal review.***
+***What is not yet validated. All site-level performance under H1–H5c is pilot-required and unvalidated. The Sicily Genesis workstream has advanced to Experimental Design v0.1 and field-baseline execution templates, but preregistration is not frozen, G-SIC-01 geometry population is suspended, comparator topology and power/MDE remain open, and laboratory soil chemistry is pending. Temperate water-cycling, long-horizon performance and the H5a–H5c hypotheses remain untested for the target region and non-admissible for PRU uplift, RAP inclusion or investor claims until the Genesis evidence gate clears. Risk-compression and time-positive dynamics require multi-site and multi-year data; all token, security and PRU representations remain downstream of evidence, methodology, governance and jurisdiction-specific legal review.***
 
 ***X.12 Glossary***
 
