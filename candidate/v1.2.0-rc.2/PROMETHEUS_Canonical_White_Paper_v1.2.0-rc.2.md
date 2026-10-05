@@ -258,11 +258,31 @@ The financial architecture is capital-readiness, not capital-promise. It makes r
 
 **Token and instrument boundary (interim — TOD-001, pending full ratification and counsel).** Within Prometheus, TRBK is an external asset or interface governed outside this canon. Prometheus does not issue, reissue, sponsor, guarantee, redeem, custody, exchange, price-support or confer rights through TRBK. Any investment exposure, if ever offered, would require a separate, disclosed, jurisdiction-specifically admitted legal instrument and is not part of this canon. The PRU remains a non-token analytical index. These three objects are never collapsed (X.1). Labels such as utility, access, governance, payment or decentralised do not determine legal classification, which is fact- and jurisdiction-dependent and requires counsel.
 
-**Adaptive risk control.** A tail-risk model maps correlated drought, operator failure and market stress; a systemic-coherence index and an automatic regenerative brake throttle issuance when coherence degrades. This is a governance circuit-breaker, never a marketing claim.
+**Adaptive risk control — PROMETHEUS RAVEL.** RAVEL (Risk Allocation, Vulnerability, Exposure & Loss) is the candidate quantitative risk-intelligence, shadow-underwriting and loss-allocation layer of Prometheus. It extends the existing Ravel risk-signalling discipline without replacing MRV, governance, legal review, PRU or RAP. RAVEL distinguishes (i) loss generation and genuine loss reduction from (ii) loss allocation and risk transfer. Prevention and verified mitigation may change the underlying loss distribution; insurance, reinsurance, guarantees and financial structuring primarily change who bears loss and introduce counterparty, basis, legal, recapture and wrong-way risk. The governing invariants are **loss reduction ≠ loss allocation**, **no risk disappears through representation**, and **no risk-reduction credit without causal evidence**. RAVEL may estimate EL, Expected Shortfall, Probability of Permanent Capital Impairment (PPCI), Regenerative Risk Delta (RRΔ), Risk Transfer Effectiveness (RTE), Ultimate Risk Bearer Concentration (URBC) and related scenario diagnostics only within their evidence and model boundaries. These outputs are evaluation, not certification, are not regulated credit ratings, and create no rights, underwriting approval, premium discount, covenant consequence or capital admission by themselves. The Regenerative Brake is a governance review trigger informed by RAVEL; it is not autonomous financial enforcement.
 
 # U. Risk Architecture
 
 Primary risks include ecological variance; execution and operator capacity; weak verification; single-crop yield drag; long payback horizons; labour intensity; temperate-validity uncertainty; legal classification; token confusion; model risk; runtime failure; no-double-counting failure; absent market demand; liquidity illusion; governance capture; community conflict; reputational exposure; tail dependence; semantic drift across documents and repositories; claim-identity collision; system-boundary version drift; relational overreach; reviewer conflict of interest; model-completeness illusion; and public-copy staleness. Each risk carries an owner, a trigger, a mitigation, a residual-risk note, a review cadence and a link to the Claims Register.
+
+**RAVEL risk-accounting boundary.** Prometheus keeps two ledgers conceptually distinct. The **Loss Generation Ledger** models how hazards, exposure, vulnerability, operations and verified mitigations generate the economic loss distribution. The **Risk Allocation Ledger** models how that loss is absorbed or transferred across sponsor equity, reserves, subordinated and senior capital, guarantees, insurance, reinsurance and other counterparties. A transfer may reduce the retained loss of one party without reducing aggregate system loss. Diversification changes concentration and tail dependence; it is not booked as loss elimination.
+
+For asset or portfolio (j), scenario (omega) and horizon (T), the diagnostic architecture is:
+
+[
+L^0_j(\omega)=\mathcal{L}(H_j,E_j,V_j,F_j)
+]
+
+where (H) denotes hazard, (E) exposure, (V) vulnerability and (F) financial/operational state. A verified regenerative state may modify vulnerability only through a gated, evidence-linked causal parameterisation. Until that evidence gate clears, the capital-facing regenerative risk credit is zero.
+
+The loss allocated to all in-boundary economic bearers is reconciled against mitigated system loss plus transfer frictions:
+
+[
+\sum_b L_b(\omega) \approx L^{mitigated}_{system}(\omega)+Friction(\omega)
+]
+
+so that insurance or legal structuring cannot make a loss disappear from system accounting.
+
+**RAVEL outputs and status.** The preferred output is a multidimensional state vector rather than a single score: (R_t=(EL, ES_{95}, ES_{99}, PPCI, RecoveryTime, RR\Delta, RTE, URBC, Confidence)). Any scalar Ravel Risk Index remains diagnostic only and is not a rating. RRΔ is a research comparison of a regenerative scenario against a matched baseline; VRRC (Verified Regenerative Risk Credit) is **not admitted** and equals zero for capital-facing purposes until evidence, methodology, legal boundary and an independent insurer/underwriter acceptance gate are satisfied. Ultimate-risk-bearer analysis is grouped by economic control as well as legal entity so affiliated entities do not create pseudo-diversification.
 
 # V. Implementation Roadmap
 
@@ -274,9 +294,9 @@ Prometheus scales by gates, not by narrative. The phased path and its gates are:
 | **1** | Genesis G-MEP design: place and relational context record; versioned experimental system boundary; Experimental Design v0.1; baseline plan; comparator topology; SUNRISE-compatible field layer; MRV plan; governance roles | G-SIC-01/02/08 and independent review close; preregistration approved before confirmatory collection/intervention |
 | **2** | Baseline evidence package: soil field methods + laboratory chemistry, water, biodiversity, productivity, operations, provenance and chain of custody | No improvement claim before baseline; real-data integrity gate active |
 | **3** | Operational MRV cycle; evidence lineage with method and data hashes | Lineage and hashes complete |
-| **4** | PRU dry-run: normalised indicators, confidence, admissibility gates, sensitivity | Dry-run labelled non-capital-facing |
+| **4** | PRU dry-run plus RAVEL shadow-underwriting dry-run: normalised indicators, confidence, baseline/comparator loss scenarios, waterfall and ultimate-risk-bearer mapping | Dry-run labelled non-capital-facing; VRRC = 0; no pricing or underwriting approval |
 | **5** | Independent scientific, MRV, legal, runtime and governance review | Claims Register updated; runtime-verification package versioned |
-| **6** | Demand exploration; counterparty category; price-discovery memo | RAP maturity assigned without inflation |
+| **6** | Demand exploration; counterparty category; price-discovery memo; RAP RAVEL portfolio stress/concentration review where data permit | RAP maturity assigned without inflation; no insurance-recognition or risk-discount claim without external gate |
 | **7** | Legal wrapper analysis; rights map; disclosures; tax; custody where needed | No capital-facing claim before admission |
 | **8** | Limited diligence package; investor digest; data-room index | Engaged observation and pilot participation posture |
 
@@ -312,6 +332,14 @@ The Claims Register is the control surface between vision and admissibility. No 
 | **C-016** | `prometheus.site.validation_not_established` | No Sicily site-performance validation is established. | Pilot-required | Yes (as boundary) | Validation awaits baseline, comparator, preregistration, analysis and independent review. |
 | **C-017** | `prometheus.runtime.evaluation_not_certification` | The runtime evaluates and records. | Architecture specified | Yes | Evaluation, not certification. |
 | **C-018** | `prometheus.review.independence_scope_separation` | Contributors are not independent reviewers of their own scope. | Methodological | Yes | Independence is scope-specific and conflict-declared. |
+| **C-019** | `prometheus.ravel.loss_generation_allocation_separation` | Loss generation/reduction and loss allocation/transfer are distinct risk accounts. | Candidate methodology | Limited | Risk transfer changes who bears loss; it does not by itself erase aggregate loss. |
+| **C-020** | `prometheus.ravel.ultimate_risk_bearer_registry` | RAVEL may map the ultimate economic bearer of scenario losses. | Candidate architecture | Limited | Legal entity and economic-control group are both recorded; mapping is not a guarantee of recoverability. |
+| **C-021** | `prometheus.ravel.risk_transfer_effectiveness` | RTE may estimate effective rather than nominal risk transfer. | Research methodology | No | Counterparty, basis, recapture, legal and wrong-way risks remain in the model. |
+| **C-022** | `prometheus.ravel.regenerative_risk_delta` | RRΔ may compare modelled downside risk against a matched baseline. | Research hypothesis / pilot-required | No | A modelled delta is not proof, premium credit or insurer recognition. |
+| **C-023** | `prometheus.ravel.verified_regenerative_risk_credit_not_admitted` | VRRC is not admitted for capital-facing use. | Boundary | Yes (as boundary) | VRRC = 0 until causal evidence, independent review, legal boundary and insurer/underwriter acceptance gates clear. |
+| **C-024** | `prometheus.ravel.brake_review_trigger_non_authoritative` | The Regenerative Brake may trigger review when risk appetite is breached. | Candidate governance control | Limited | RAVEL signals; governance decides. No autonomous financial enforcement. |
+| **C-025** | `prometheus.ravel.state_vector_not_rating` | RAVEL outputs a multidimensional risk state. | Candidate methodology | Limited | The state vector is not a regulated credit/insurance rating and creates no rights. |
+| **C-026** | `prometheus.ravel.no_risk_disappears_through_representation` | Financial representation does not extinguish underlying economic loss. | Methodological invariant | Yes (as boundary) | Every transfer remains traceable to an ultimate economic bearer within the stated system boundary. |
 
 The candidate `claim_uid` `prometheus.token.access_utility_candidate` (claim UID registry v0.2, 29 September 2026) is **deprecated** and must not be used: it encoded the A-002 classification that ARD-001 declined. Its replacement is `prometheus.trbk.external_interface_no_prometheus_rights`.
 
@@ -467,6 +495,12 @@ Reserved to preserve section numbering of the Appendix System.
 
 - *No downstream artefact (runtime, bridge, console, website, deck, campaign) states a stronger claim than this canon; artefacts depending on a changed claim are marked stale until reviewed.*
 
+- *RAVEL preserves the distinction between loss reduction and loss allocation; no transfer is booked as disappearance of system loss.*
+
+- *RAVEL outputs remain non-authoritative, non-rating and non-capital-facing unless the relevant evidence, model, legal and external-underwriting gates close.*
+
+- *VRRC remains zero/not admitted until the explicit external acceptance gate closes; RRΔ remains a research metric until validated.*
+
 - *H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage remain distinct; evidence for one is never used as an automatic proxy for another.*
 
 ***X.11 Independent Review Anticipation***
@@ -492,6 +526,12 @@ Reserved to preserve section numbering of the Appendix System.
 | ***MRV*** | *The verification-first measurement, reporting and verification substrate.* | *Not certification or truth by itself.* |
 | ***PRU*** | *The analytical representation of verified regenerative performance.* | *Not land, yield, token, security or right.* |
 | ***RAP*** | *The portfolio aggregation of PRU-relevant units.* | *Not a security; not liquidity.* |
+| ***RAVEL*** | *Risk Allocation, Vulnerability, Exposure & Loss: the candidate Prometheus risk-intelligence, shadow-underwriting and loss-allocation layer, subordinate to MRV, PRMF/governance, legal review and the non-authority invariant.* | *Not a rating agency, insurer, certification engine, autonomous underwriter or source of rights.* |
+| ***RRΔ*** | *Regenerative Risk Delta: a research comparison between a regenerative scenario and a matched baseline for a specified risk metric.* | *Not evidence of risk reduction by itself; not a premium discount.* |
+| ***VRRC*** | *Verified Regenerative Risk Credit: a future external-underwriting recognition concept; currently not admitted and zero for capital-facing use.* | *Not created by PROMETHEUS, PRU, AI, dashboard or model output alone.* |
+| ***URBR / URBC*** | *Ultimate Risk Bearer Registry / Concentration: trace and concentration diagnostics for who ultimately bears modelled losses, grouped by economic control where relevant.* | *Not a guarantee of solvency, payment or legal enforceability.* |
+| ***RTE*** | *Risk Transfer Effectiveness: scenario-based estimate of effective rather than nominal protection after transfer frictions and counterparty risks.* | *Not the face value of a policy or guarantee.* |
+| ***PPCI*** | *Probability of Permanent Capital Impairment under a declared horizon, impairment threshold and recovery definition.* | *Not volatility and not a promise that principal will be preserved.* |
 | ***TRBK*** | *An external asset or interface governed outside this canon (interim, TOD-001).* | *Not a Prometheus instrument; confers no Prometheus right, status or entitlement.* |
 | ***Operational transaction layer (HoloFuel)*** | *An operational network resource for routine exchange within relevant Holochain contexts.* | *Not evidence, PRU or RAP value, governance authority, investor exposure or a legal wrapper.* |
 | ***Unit maturity (R0–R7)*** | *The ladder from conceptual to legally structured.* | *Not market maturity.* |
