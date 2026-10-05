@@ -57,29 +57,23 @@ No face amount is treated as fully effective without the declared factors.
 
 ## 3. Statistical functions
 
-For discrete scenarios (s):
+For discrete scenarios s:
 
-[
-EL=\sum_s p_sL_s
-]
+EL = Σ_s p_s × L_s *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 Quantile/Expected Shortfall SHALL use probability-weighted loss outcomes and declare the confidence level.
 
-PPCI SHALL be defined by an explicit impairment threshold (\theta), horizon (T), initial capital (C_0) and recovery/terminal-value convention:
+PPCI SHALL be defined by an explicit impairment threshold θ, horizon T, initial capital C_0 and recovery/terminal-value convention:
 
-[
-PPCI_{T,\theta}=P(PV(Recoveries+TerminalValue)<(1-\theta)C_0)
-]
+PPCI_{T,θ} = P( PV(Recoveries + TerminalValue) < (1 − θ) × C_0 ) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
-No default value of (\theta) is canonically universal.
+No default value of θ is canonically universal.
 
 ## 4. Regenerative Risk Delta
 
-For a metric (M):
+For a metric M:
 
-[
-RR\Delta_M=1-\frac{M(regenerative)}{M(baseline)}
-]
+RRΔ_M = 1 − M(regenerative) / M(baseline) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 where the baseline is matched and the metric definitions are identical.
 
@@ -90,21 +84,17 @@ Rules:
 
 ## 5. Risk-transfer effectiveness
 
-For a declared retained-risk metric (M):
+For a declared retained-risk metric M:
 
-[
-RTE_M=1-\frac{M(after\ transfer)}{M(before\ transfer)}
-]
+RTE_M = 1 − M(after transfer) / M(before transfer) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 RTE is receiver/cedent-specific. Aggregate system loss is separately reconciled.
 
 ## 6. Ultimate-risk-bearer concentration
 
-Let (q_g) be the non-negative share of declared tail-risk contribution assigned to economic group (g):
+Let q_g be the non-negative share of declared tail-risk contribution assigned to economic group g:
 
-[
-URBC=\sum_g q_g^2
-]
+URBC = Σ_g q_g² *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 v0.1 MAY use scenario tail-loss shares as a transparent diagnostic proxy. Euler/Shapley allocation is deferred until portfolio methodology is validated.
 
@@ -112,19 +102,15 @@ v0.1 MAY use scenario tail-loss shares as a transparent diagnostic proxy. Euler/
 
 For each scenario:
 
-[
-|\sum_b L_b-(L_{system}^{mitigated}+Friction)| \le \epsilon
-]
+| Σ_b L_b − (L_system_mitigated + Friction) | ≤ ε *(Formula class: controlling for model integrity — a conservation test, not a value expression.)*
 
-where (epsilon) is a declared numerical tolerance.
+where ε is a declared numerical tolerance.
 
 Failure is a **model-integrity error**, not a tolerable business variance.
 
 ## 8. State vector
 
-[
-R_t=(EL,ES_{95},ES_{99},PPCI,RecoveryTime,RR\Delta,RTE,URBC,Confidence)
-]
+R_t = (EL, ES_95, ES_99, PPCI, RecoveryTime, RRΔ, RTE, URBC, Confidence) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 A scalar index MAY be derived for internal triage only. It SHALL NOT be presented as a regulated rating.
 

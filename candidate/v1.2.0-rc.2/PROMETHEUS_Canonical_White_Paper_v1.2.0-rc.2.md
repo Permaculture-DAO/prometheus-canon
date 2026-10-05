@@ -266,23 +266,19 @@ Primary risks include ecological variance; execution and operator capacity; weak
 
 **RAVEL risk-accounting boundary.** Prometheus keeps two ledgers conceptually distinct. The **Loss Generation Ledger** models how hazards, exposure, vulnerability, operations and verified mitigations generate the economic loss distribution. The **Risk Allocation Ledger** models how that loss is absorbed or transferred across sponsor equity, reserves, subordinated and senior capital, guarantees, insurance, reinsurance and other counterparties. A transfer may reduce the retained loss of one party without reducing aggregate system loss. Diversification changes concentration and tail dependence; it is not booked as loss elimination.
 
-For asset or portfolio (j), scenario (omega) and horizon (T), the diagnostic architecture is:
+For asset or portfolio j, scenario ω and horizon T, the diagnostic architecture is:
 
-[
-L^0_j(\omega)=\mathcal{L}(H_j,E_j,V_j,F_j)
-]
+L0_j(ω) = 𝓛(H_j, E_j, V_j, F_j) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
-where (H) denotes hazard, (E) exposure, (V) vulnerability and (F) financial/operational state. A verified regenerative state may modify vulnerability only through a gated, evidence-linked causal parameterisation. Until that evidence gate clears, the capital-facing regenerative risk credit is zero.
+where H denotes hazard, E exposure, V vulnerability and F financial/operational state. A verified regenerative state may modify vulnerability only through a gated, evidence-linked causal parameterisation. Until that evidence gate clears, the capital-facing regenerative risk credit is zero.
 
 The loss allocated to all in-boundary economic bearers is reconciled against mitigated system loss plus transfer frictions:
 
-[
-\sum_b L_b(\omega) \approx L^{mitigated}_{system}(\omega)+Friction(\omega)
-]
+Σ_b L_b(ω) ≈ L_system_mitigated(ω) + Friction(ω) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 so that insurance or legal structuring cannot make a loss disappear from system accounting.
 
-**RAVEL outputs and status.** The preferred output is a multidimensional state vector rather than a single score: (R_t=(EL, ES_{95}, ES_{99}, PPCI, RecoveryTime, RR\Delta, RTE, URBC, Confidence)). Any scalar Ravel Risk Index remains diagnostic only and is not a rating. RRΔ is a research comparison of a regenerative scenario against a matched baseline; VRRC (Verified Regenerative Risk Credit) is **not admitted** and equals zero for capital-facing purposes until evidence, methodology, legal boundary and an independent insurer/underwriter acceptance gate are satisfied. Ultimate-risk-bearer analysis is grouped by economic control as well as legal entity so affiliated entities do not create pseudo-diversification.
+**RAVEL outputs and status.** The preferred output is a multidimensional state vector rather than a single score: R_t = (EL, ES_95, ES_99, PPCI, RecoveryTime, RRΔ, RTE, URBC, Confidence). Any scalar Ravel Risk Index remains diagnostic only and is not a rating. RRΔ is a research comparison of a regenerative scenario against a matched baseline; VRRC (Verified Regenerative Risk Credit) is **not admitted** and equals zero for capital-facing purposes until evidence, methodology, legal boundary and an independent insurer/underwriter acceptance gate are satisfied. Ultimate-risk-bearer analysis is grouped by economic control as well as legal entity so affiliated entities do not create pseudo-diversification.
 
 # V. Implementation Roadmap
 
@@ -332,14 +328,14 @@ The Claims Register is the control surface between vision and admissibility. No 
 | **C-016** | `prometheus.site.validation_not_established` | No Sicily site-performance validation is established. | Pilot-required | Yes (as boundary) | Validation awaits baseline, comparator, preregistration, analysis and independent review. |
 | **C-017** | `prometheus.runtime.evaluation_not_certification` | The runtime evaluates and records. | Architecture specified | Yes | Evaluation, not certification. |
 | **C-018** | `prometheus.review.independence_scope_separation` | Contributors are not independent reviewers of their own scope. | Methodological | Yes | Independence is scope-specific and conflict-declared. |
-| **C-019** | `prometheus.ravel.loss_generation_allocation_separation` | Loss generation/reduction and loss allocation/transfer are distinct risk accounts. | Candidate methodology | Limited | Risk transfer changes who bears loss; it does not by itself erase aggregate loss. |
-| **C-020** | `prometheus.ravel.ultimate_risk_bearer_registry` | RAVEL may map the ultimate economic bearer of scenario losses. | Candidate architecture | Limited | Legal entity and economic-control group are both recorded; mapping is not a guarantee of recoverability. |
-| **C-021** | `prometheus.ravel.risk_transfer_effectiveness` | RTE may estimate effective rather than nominal risk transfer. | Research methodology | No | Counterparty, basis, recapture, legal and wrong-way risks remain in the model. |
-| **C-022** | `prometheus.ravel.regenerative_risk_delta` | RRΔ may compare modelled downside risk against a matched baseline. | Research hypothesis / pilot-required | No | A modelled delta is not proof, premium credit or insurer recognition. |
-| **C-023** | `prometheus.ravel.verified_regenerative_risk_credit_not_admitted` | VRRC is not admitted for capital-facing use. | Boundary | Yes (as boundary) | VRRC = 0 until causal evidence, independent review, legal boundary and insurer/underwriter acceptance gates clear. |
-| **C-024** | `prometheus.ravel.brake_review_trigger_non_authoritative` | The Regenerative Brake may trigger review when risk appetite is breached. | Candidate governance control | Limited | RAVEL signals; governance decides. No autonomous financial enforcement. |
-| **C-025** | `prometheus.ravel.state_vector_not_rating` | RAVEL outputs a multidimensional risk state. | Candidate methodology | Limited | The state vector is not a regulated credit/insurance rating and creates no rights. |
-| **C-026** | `prometheus.ravel.no_risk_disappears_through_representation` | Financial representation does not extinguish underlying economic loss. | Methodological invariant | Yes (as boundary) | Every transfer remains traceable to an ultimate economic bearer within the stated system boundary. |
+| **C-019** | `prometheus.ravel.loss_generation_allocation_separation` | Loss generation/reduction and loss allocation/transfer are distinct risk accounts. | Candidate methodological amendment | Limited | Risk transfer changes who bears loss; it does not by itself erase aggregate loss. |
+| **C-020** | `prometheus.ravel.ultimate_risk_bearer_registry` | RAVEL may map the ultimate economic bearer of scenario losses. | Candidate methodological amendment | Limited | Legal entity and economic-control group are both recorded; mapping is not a guarantee of recoverability. |
+| **C-021** | `prometheus.ravel.risk_transfer_effectiveness` | RTE may estimate effective rather than nominal risk transfer. | Research-only | No | Counterparty, basis, recapture, legal and wrong-way risks remain in the model. |
+| **C-022** | `prometheus.ravel.regenerative_risk_delta` | RRΔ may compare modelled downside risk against a matched baseline. | Hypothesis; pilot-required | No | A modelled delta is not proof, premium credit or insurer recognition. |
+| **C-023** | `prometheus.ravel.verified_regenerative_risk_credit_not_admitted` | VRRC is not admitted for capital-facing use. | Boundary; not admitted | Yes (as boundary) | VRRC = 0 until causal evidence, independent review, legal boundary and insurer/underwriter acceptance gates clear. |
+| **C-024** | `prometheus.ravel.brake_review_trigger_non_authoritative` | The Regenerative Brake may trigger review when risk appetite is breached. | Candidate methodological amendment | Limited | RAVEL signals; governance decides. No autonomous financial enforcement. |
+| **C-025** | `prometheus.ravel.state_vector_not_rating` | RAVEL outputs a multidimensional risk state. | Candidate methodological amendment | Limited | The state vector is not a regulated credit/insurance rating and creates no rights. |
+| **C-026** | `prometheus.ravel.no_risk_disappears_through_representation` | Financial representation does not extinguish underlying economic loss. | Methodological | Yes (as boundary) | Every transfer remains traceable to an ultimate economic bearer within the stated system boundary. |
 
 The candidate `claim_uid` `prometheus.token.access_utility_candidate` (claim UID registry v0.2, 29 September 2026) is **deprecated** and must not be used: it encoded the A-002 classification that ARD-001 declined. Its replacement is `prometheus.trbk.external_interface_no_prometheus_rights`.
 

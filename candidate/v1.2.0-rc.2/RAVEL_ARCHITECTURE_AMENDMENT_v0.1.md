@@ -13,9 +13,7 @@ The deployment problem solved is specific: the current risk architecture can sig
 
 ## Canonical placement
 
-[
-OHE \rightarrow MRV \rightarrow PRU \rightarrow RAVEL \rightarrow RAP \rightarrow legal\ wrapper \rightarrow capital
-]
+OHE → MRV → PRU → RAVEL → RAP → legal wrapper → capital *(placement diagram, conceptual; it does not reorder or bypass the non-bypassable gate sequence)*
 
 Interpretation:
 
@@ -26,7 +24,9 @@ Interpretation:
 - **Law** creates enforceable consequences.
 - **AI/runtime** remain assistive and non-authoritative.
 
-## Constitutional risk invariants
+## Candidate methodological risk invariants
+
+These are candidate methodological invariants of this ordinary amendment. They are not Eternity-level invariants and do not amend any; promotion to the Eternity tier would require the high-threshold multi-stakeholder process defined under "Canon Custody, Self-Falsifiability and Complexity Discipline" in the White Paper.
 
 1. **Loss reduction is not loss allocation.**
 2. **No risk disappears through representation.**
@@ -42,11 +42,9 @@ Interpretation:
 
 Models physical/economic loss before allocation:
 
-[
-L^0_j(\omega)=\mathcal{L}(H_j,E_j,V_j,F_j)
-]
+L0_j(ω) = 𝓛(H_j, E_j, V_j, F_j) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
-where (H)=hazard, (E)=exposure, (V)=vulnerability and (F)=financial/operational state.
+where H = hazard, E = exposure, V = vulnerability and F = financial/operational state.
 
 Verified regenerative evidence may modify vulnerability only after a declared causal model, comparator, uncertainty range and gate.
 
@@ -66,9 +64,7 @@ Applies the loss waterfall across economic bearers, including:
 
 For a fully declared system boundary:
 
-[
-\sum_b L_b(\omega) \approx L^{mitigated}_{system}(\omega)+Friction(\omega)
-]
+Σ_b L_b(ω) ≈ L_system_mitigated(ω) + Friction(ω) *(Formula class: diagnostic — subordinate to the single controlling PRU expression in Section T.)*
 
 Transfers between in-boundary parties reconcile rather than disappear.
 
@@ -92,9 +88,7 @@ Preferred output is a **RAVEL State Vector**, not one scalar rating.
 
 Current rule:
 
-[
-VRRC=0
-]
+VRRC = 0 *(policy-imposed boundary value, not a measured or estimated quantity)*
 
 for every capital-, credit-, insurance- or market-facing use until all of the following close:
 
