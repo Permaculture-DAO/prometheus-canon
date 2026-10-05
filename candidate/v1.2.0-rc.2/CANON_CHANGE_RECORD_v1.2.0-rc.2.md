@@ -84,3 +84,22 @@ Net size: about 6,300 → 8,400 words. Justification for the complexity budget: 
 4. Clause-level import check that no v1.1.2 invariant was lost (civic, safeguarding, HSI, Jacobi anchor and firewall are present; full audit pending).
    - 2026-10-02 reconciliation remediation: imported the internal v7.0.3 H5 non-substitution discipline as a candidate amendment. H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage must remain separately specified and evidenced. Independent review required.
 5. Textual freeze → manifest → SHA-256 → steward GPG signature → tag → release (steward actions).
+
+## 6. RAVEL v2 candidate amendment — 2026-10-05
+
+This branch adds a **candidate ordinary methodological amendment** that evolves the existing Ravel risk-signalling discipline into PROMETHEUS RAVEL (Risk Allocation, Vulnerability, Exposure & Loss).
+
+Files:
+- `RAVEL_ARCHITECTURE_AMENDMENT_v0.1.md`
+- `RAVEL_FORMAL_SPEC_v0.1.md`
+
+White Paper sections T, U, V, W, X.10 and X.12 are amended to:
+- distinguish loss generation/reduction from loss allocation/transfer;
+- add the no-risk-disappears-through-representation invariant;
+- define shadow-underwriting metrics EL, ES, PPCI, RRΔ, RTE, URBR/URBC;
+- preserve the Regenerative Brake as a review trigger, not autonomous enforcement;
+- hold VRRC at zero/not-admitted for capital-facing purposes until causal evidence, independent review, legal admission and external insurer/underwriter acceptance close;
+- add claim UIDs C-019–C-026.
+
+**Authority boundary:** this amendment does not modify the signed `v1.1.2-genesis` release, does not close R1/T1, does not create an insurance-recognition pathway and does not admit any capital-facing risk discount. Independent actuarial/scientific/legal review remains open.
+
