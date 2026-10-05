@@ -84,3 +84,32 @@ Net size: about 6,300 → 8,400 words. Justification for the complexity budget: 
 4. Clause-level import check that no v1.1.2 invariant was lost (civic, safeguarding, HSI, Jacobi anchor and firewall are present; full audit pending).
    - 2026-10-02 reconciliation remediation: imported the internal v7.0.3 H5 non-substitution discipline as a candidate amendment. H5a ecological complementarity, H5b full-cost economic surplus and H5c organisational/cooperative advantage must remain separately specified and evidenced. Independent review required.
 5. Textual freeze → manifest → SHA-256 → steward GPG signature → tag → release (steward actions).
+
+## 6. RAVEL v2 candidate amendment — 2026-10-05
+
+This branch adds a **candidate ordinary methodological amendment** that evolves the existing Ravel risk-signalling discipline into PROMETHEUS RAVEL (Risk Allocation, Vulnerability, Exposure & Loss).
+
+Files:
+- `RAVEL_ARCHITECTURE_AMENDMENT_v0.1.md`
+- `RAVEL_FORMAL_SPEC_v0.1.md`
+
+White Paper sections T, U, V, W, X.10 and X.12 are amended to:
+- distinguish loss generation/reduction from loss allocation/transfer;
+- add the no-risk-disappears-through-representation invariant;
+- define shadow-underwriting metrics EL, ES, PPCI, RRΔ, RTE, URBR/URBC;
+- preserve the Regenerative Brake as a review trigger, not autonomous enforcement;
+- hold VRRC at zero/not-admitted for capital-facing purposes until causal evidence, independent review, legal admission and external insurer/underwriter acceptance close;
+- add claim UIDs C-019–C-026.
+
+**Authority boundary:** this amendment does not modify the signed `v1.1.2-genesis` release, does not close R1/T1, does not create an insurance-recognition pathway and does not admit any capital-facing risk discount. Independent actuarial/scientific/legal review remains open.
+
+
+### 6.1 Review corrections — Claude canon-lane review, 2026-10-05
+
+- **Brake semantics change, recorded explicitly.** The superseded sentence was: tail-risk model plus systemic-coherence index, with "an automatic regenerative brake" that throttles issuance when coherence degrades. The candidate replaces it with a review trigger: RAVEL signals, governance decides; no autonomous financial enforcement (C-024). This narrows authority and is therefore a tightening, not a relaxation, but it is a semantic change and is recorded as one.
+- **Roadmap rows 4 and 6 amended** to add RAVEL shadow-underwriting dry-run and RAP portfolio stress/concentration review, each with VRRC = 0 and no pricing, underwriting-approval, insurance-recognition or risk-discount claim.
+- **Formula notation.** LaTeX bracket blocks (which did not render in the markdown → docx pipeline) were converted to the White Paper's plain-text formula convention. Every RAVEL formula is labelled *diagnostic and subordinate to the single controlling PRU expression in Section T*; the conservation test is labelled controlling for model integrity only (not a value expression); VRRC = 0 is labelled a policy-imposed boundary value.
+- **Invariant tier.** "Constitutional risk invariants" in the architecture amendment were renamed *candidate methodological risk invariants*. They are not Eternity-level and amend no Eternity invariant.
+- **Claim-status vocabulary.** C-019–C-026 statuses normalised to the existing register vocabulary (Candidate methodological amendment; Research-only; Hypothesis; pilot-required; Boundary; not admitted; Methodological). No claim was strengthened.
+- **Complexity-budget justification.** Net addition: two candidate documents (architecture amendment, formal spec) plus eight claim rows. Justification: RAVEL makes explicit a risk-allocation discipline (loss generation vs loss allocation, ultimate risk bearer) that the canon previously implied only through a single "adaptive risk control" sentence; the brake sentence it replaces is removed, not kept alongside. The formal spec is a candidate for folding into `prometheus-canonicals` once schemas are lifted after textual freeze, at which point the duplicate prose should be retired.
+- **Context source.** The "PROMETHEUS Master Prompt — Finanza Biomimetica / RAVEL / LLM v1.0" is recorded as context input only (layer 7), filed under `_CONTEXT_INBOX/2026-10-05_ravel_b/`. Where it conflicts with signed decisions (notably any description of TRBK as an access/utility instrument, against ARD-001/TOD-001), the signed decisions govern; nothing from it is canonical by virtue of this amendment.
