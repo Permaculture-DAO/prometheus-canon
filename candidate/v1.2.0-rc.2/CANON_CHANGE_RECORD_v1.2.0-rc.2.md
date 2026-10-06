@@ -103,6 +103,17 @@ White Paper sections T, U, V, W, X.10 and X.12 are amended to:
 
 **Authority boundary:** this amendment does not modify the signed `v1.1.2-genesis` release, does not close R1/T1, does not create an insurance-recognition pathway and does not admit any capital-facing risk discount. Independent actuarial/scientific/legal review remains open.
 
+### 6.2 Gate/evidence/Risk Record methodological proposal — 2026-10-06
+
+Steward temporarily assigns Claude's candidate-methodology lane to Codex until
+October 10. RAVEL_FORMAL_SPEC §13 proposes explicit lifecycle/expiry semantics
+and a minimal shadow Risk Record. This is not a change to Eternity invariants,
+source hierarchy, signed canon, TRBK firewall, zero-weight disciplines or any
+admission gate. Architecture inputs remain context. No automated governance.
+Cross-review pending Claude's return; Codex self-review is not a second authoring
+process or independent assurance. No new WP or claim UID; two existing files
+amended, no addition to the immutable signed canonicals archive.
+
 
 ### 6.1 Review corrections — Claude canon-lane review, 2026-10-05
 
