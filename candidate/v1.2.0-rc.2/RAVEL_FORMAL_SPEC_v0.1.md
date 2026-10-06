@@ -153,3 +153,68 @@ Minimum:
 - RRΔ undefined on invalid baseline;
 - VRRC always zero/not-admitted in v0.1;
 - brake output labelled review-required, never autonomous.
+
+## 13. Candidate gate, evidence and Risk Record method (2026-10-06)
+
+Status: ordinary methodological PROPOSAL, not Eternity amendment, ratification,
+independent assurance or production admission. Prepared by Codex under the
+steward's temporary assignment of Claude's lane. Signed v1.1.2-genesis and the
+authority hierarchy remain unchanged. Architecture intake is context, not authority.
+
+### Gate vocabulary and decision boundary
+
+UNSPECIFIED: no versioned specification; SPECIFIED: defined use/prerequisites and
+acceptance test identified; READY_FOR_TEST: references prepared for evaluation;
+PASSED: an explicitly recorded scoped decision asserts the test passed;
+FAILED: recorded test failure; SUSPENDED: prior pass withheld for review;
+EXPIRED: the stated validity interval has ended. None means financial admission.
+
+Candidate edges: UNSPECIFIED -> SPECIFIED -> READY_FOR_TEST -> PASSED/FAILED;
+PASSED -> SUSPENDED/EXPIRED; FAILED/SUSPENDED/EXPIRED -> READY_FOR_TEST for a new
+evaluation. Direct reactivation or skipped stages is prohibited. A new decision
+supersedes but never deletes history. Identity checks, decision custody and
+reviewer qualifications belong to the defined-use policy, not an input boolean.
+
+Evaluate against explicit timezone-aware as_of, specification reference,
+decision reference, evidence-content hashes, prerequisite UIDs and expires_at.
+as_of >= expires_at means expired; a future-issued decision is unusable.
+Every material prerequisite must be passed, in scope and unexpired. Missing,
+invalid, suspended or expired upstream references block downstream use; cycles,
+duplicate UIDs and unknown dependencies are invalid input. Traffic-light labels
+are not equivalent to these states. A deterministic shadow evaluator reports
+candidate eligibility only; it does not authenticate a decision, promote a claim,
+establish causal truth or issue legal/financial permission.
+
+### Evidence lifecycle
+
+RAW -> IDENTIFIED -> PROVENANCE_BOUND -> QA_QC_CHECKED -> REVIEWABLE ->
+VERIFIED_INDICATOR_CANDIDATE -> ADMISSIBLE or REJECTED. Rejection may occur from
+any nonterminal stage with a reason. Each advance requires scoped proof
+references; ADMISSIBLE additionally requires a decision reference. No skipped
+steps or terminal reactivation. Corrected evidence has a new identity with a
+supersession reference; originals, adverse findings and dissent remain retained.
+Proof references are not proof authentication. PRU/RAVEL/RAP/legal eligibility
+are independent defined-use gate evaluations, never inherited evidence states.
+UNKNOWN remains distinct from observed zero and from rejection.
+
+### Minimal Risk Record envelope
+
+A synthetic shadow Risk Record identifies risk_uid, subject_uid, hazard,
+exposure, vulnerability, financial_state, model_version, evidence_refs,
+ultimate_bearers, assumptions and missing_data_statement. It distinguishes
+loss generation/reduction from loss allocation and identifies ultimate bearers
+without asserting contract enforceability. Quantitative metrics reference the
+existing RAVEL model, not a newly invented formula or rating.
+Mode remains shadow_underwriting; authority is evaluation_not_certification;
+VRRC=0/not_admitted, and underwriting approval/capital admission are false.
+Absent source/calibration/decision data are explicit; intake fields cannot
+create validity or completeness. No new claim_uid or AAA/BBB rating introduced.
+
+### Implementation, custody and falsification
+
+The first runtime increment is internal, pure and candidate-only; no automatic
+production workflow, governance action, source promotion or new authority layer.
+Derive machine-readable rules from this proposal, reference its source/commit and
+test every permitted and forbidden edge, expiry, hash mutation, unknown/cyclic
+dependencies, revoked review references and deterministic reordering.
+Independent assurance and the steward's release/signing gates remain open.
