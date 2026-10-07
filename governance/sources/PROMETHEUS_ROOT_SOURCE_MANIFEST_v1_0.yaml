@@ -1,0 +1,42 @@
+root_manifest_id: PRM-ROOT-SOURCES-001
+version: '1.0'
+effective_date: '2026-10-07'
+canon_package:
+  file: PROMETHEUS_Canonical_White_Paper_Full_Corpus.docx
+  sha256: 6f0140a9821e2546cf70665409845c7e77ccc9bd6a89a824bfb77f8319e362f8
+architecture_meta_layer:
+  file: PROMETHEUS_ARCHITECTURE_META_PROMPT_v1_0.md
+  sha256: 0205cd9edd47a2ec93ffcd074166c31dae55f07d02662731f8e1aba051e4a6da
+global_architecture:
+  source_id: PRM-ARCH-DET-002
+  file: PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md
+  sha256: 83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7
+method_stack:
+- source_id: PRM-RISK-AETERNA-001
+  file: PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0.md
+  sha256: 4ab9288f3a64daf60d75407f02eea10b85c68abcc413033d1aa381840d3a6b83
+- source_id: PRM-RISK-RAVEL-OP-002
+  file: PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md
+  sha256: 7df1d6b60bab0ab262d4c29047540ddefdfa514440b1b59dfb5a0763b10d98cb
+applications:
+- source_id: PRM-CIV-APP-006
+  version: '6.2'
+  file: PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md
+  sha256: 3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece
+machine_readable:
+  registry: PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml
+  authority_lattice: PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml
+compute_contract:
+  D: deterministic
+  P: probabilistic
+  H: heuristic
+  Q: quantum_or_quantum_inspired_research
+  boundary: P/H/Q cannot affect a material gate until deterministic verification passes.
+source_lifecycle:
+- PROPOSED
+- ACTIVE
+- SUPERSEDED
+- HISTORICAL
+- RETIRED
+restore_rule: Verify hashes, resolve authority, then restore implementation. Never
+  treat a restored runtime as Canon.
