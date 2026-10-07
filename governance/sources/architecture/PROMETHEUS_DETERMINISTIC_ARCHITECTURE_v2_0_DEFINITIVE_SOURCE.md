@@ -897,7 +897,8 @@ Authority remains domain-bounded:
 - evidence reviewer → evidence review;
 - legal counsel → jurisdictional legal opinion;
 - insurer/underwriter → coverage decision;
-- governance body → governance decision;- investment/credit committee → capital decision;
+- governance body → governance decision;
+- investment/credit committee → capital decision;
 - constitutional process → Canon amendment.
 
 No AI, model, Q solver, Holochain entry or runtime accumulates these roles.

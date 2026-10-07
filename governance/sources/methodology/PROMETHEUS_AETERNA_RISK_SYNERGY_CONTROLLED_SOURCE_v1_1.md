@@ -916,7 +916,8 @@ Every material model must carry its own risks:
 - proxy risk;
 - human override;
 - automation bias;
-- code defect;- version mismatch.
+- code defect;
+- version mismatch.
 
 Every expensive model shall be benchmarked against a simpler baseline.
 

@@ -898,6 +898,7 @@ RF-H1 to RF-H6 are instantiated as versioned Hypothesis / Claim objects with:
 - retirement trigger.
 
 No single-site result may promote the architecture to “empirically supported regenerative finance”.
+
 ---
 
 # 12. Dual Solvency
