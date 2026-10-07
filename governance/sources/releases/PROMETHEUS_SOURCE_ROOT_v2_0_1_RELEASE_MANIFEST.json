@@ -126,11 +126,11 @@
     },
     {
       "path": "scripts/validate_source_root.py",
-      "sha256": "13140672bc1f9bb3fe986e421962cf493c661215682cf1d9908e86826826bd3c"
+      "sha256": "479b9685fb7fb7202c9799ecfaa843c1a0c3ced5619c1f259a376d670583ded8"
     },
     {
       "path": "tests/test_source_root.py",
-      "sha256": "134624dc7248eefa89eef31e40663d3c498b832658040f4571717bfce0b81e8e"
+      "sha256": "829afcf7af66e0e67009382ab9dd59fb6b92d4253bbd2c4e2dd888f874b29c89"
     }
   ],
   "notes": [

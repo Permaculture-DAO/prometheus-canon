@@ -116,6 +116,8 @@ def validate(repo: Path, verify_signature: bool = True, gpg: str = "gpg") -> dic
     require(release["deployment_authority"] is False and release["authority_adopted"] is False,
             "candidate cannot grant adoption/deployment")
     require(release["release_id"] == "PROMETHEUS-SOURCE-ROOT-v2.0.1-candidate", "wrong candidate release")
+    require(release["production_admission"] == "HOLD" and
+            release["scope"] == "CANDIDATE_DESIGN_INTEGRITY_ONLY", "release admission/scope escalation")
     files = {}
     for entry in release["files"]:
         name, expected = entry["path"], entry["sha256"]
@@ -200,7 +202,10 @@ def validate(repo: Path, verify_signature: bool = True, gpg: str = "gpg") -> dic
             require(record["selection_role"] not in roles, f"duplicate ACTIVE role: {record['selection_role']}")
             roles[record["selection_role"]] = key
             text = safe_path(repo, record["path"]).read_text(encoding="utf-8")
-            if text.startswith("---\n"):
+            if record["selection_role"] == "signed_canon":
+                # Exact signed-release bytes bind this historical prose format.
+                require(record["sha256"] == CANON_SHA, "signed prose identity mismatch")
+            elif text.startswith("---\n"):
                 front = yaml.load(text.split("---", 2)[1], Loader=UniqueLoader)
                 require(front["source_id"] == record["source_id"] and str(front["release"]).removeprefix("v") == record["version"],
                         f"source header drift: {key}")
@@ -208,6 +213,12 @@ def validate(repo: Path, verify_signature: bool = True, gpg: str = "gpg") -> dic
                         f"source authority flag: {key}")
                 if "primary_method_dependency" in front:
                     require(front["primary_method_dependency"] in record["upstream"], "RAVEL dependency drift")
+            else:
+                identity = re.search(r"(?m)^\*\*Source ID:\*\* `?([A-Z0-9_-]+)`?\s*$", text)
+                version = re.search(r"(?m)^\*\*Release:\*\* v([0-9.]+)\s*$", text)
+                require(identity is not None and version is not None and
+                        identity.group(1) == record["source_id"] and version.group(1) == record["version"],
+                        f"missing/mismatched prose source identity: {key}")
             if record["selection_role"] == "aeterna_method":
                 require(f"**Release:** v{record['version']}" in text and f"- `version`: `{record['version']}`" in text,
                         "AETERNA registration drift")
@@ -225,6 +236,11 @@ def validate(repo: Path, verify_signature: bool = True, gpg: str = "gpg") -> dic
             require(CANON_KEY in record["upstream"], f"missing Canon dependency: {key}")
         if record["status"] == "ACTIVE" and record["selection_role"] in ("aeterna_method", "ravel_operational", "civilization_application"):
             require(roles["global_architecture"] in record["upstream"], f"missing architecture dependency: {key}")
+        required_roles = {"ravel_operational": ["aeterna_method"],
+                          "civilization_application": ["aeterna_method", "ravel_operational"]}
+        if record["status"] == "ACTIVE":
+            for role in required_roles.get(record["selection_role"], []):
+                require(roles[role] in record["upstream"], f"missing required method dependency: {key} -> {role}")
         for previous in record.get("supersedes", []):
             require(previous in records and records[previous]["status"] == "SUPERSEDED" and
                     records[previous].get("superseded_by") == key, f"supersession inconsistency: {previous}")
@@ -233,6 +249,27 @@ def validate(repo: Path, verify_signature: bool = True, gpg: str = "gpg") -> dic
                     f"orphan superseded record: {key}")
     acyclic({k: v["upstream"] for k, v in records.items()}, "dependency")
     acyclic({k: v.get("supersedes", []) for k, v in records.items()}, "supersession")
+    ledger_path = BASE + "releases/PROMETHEUS_SOURCE_ROOT_v2_0_1_CHANGE_LEDGER.json"
+    require(ledger_path in files, "missing hashed change ledger")
+    ledger = parse_json(safe_path(repo, ledger_path).read_text(encoding="utf-8"))
+    require(ledger["scope"] == "CANDIDATE_ONLY" and ledger["authority_adopted"] is False and
+            ledger["deployment_performed"] is False, "ledger authority escalation")
+    require(ledger["import_head"] == release["import_head"] == "97e4662e47d10d9966c4bc2b0e01c86a6e9c96a5" and
+            ledger["restoration_commit"] == release["restoration_commit"] == "0f569cc775b506c297ccd9b67ca9ac5debe0ab69",
+            "ledger restoration provenance mismatch")
+    patched = set()
+    for patch in ledger["patches"]:
+        new, old = patch["record_key"], patch["old_record_key"]
+        require(new in records and old in records and new not in patched, "duplicate/unresolved ledger patch")
+        require(records[new]["status"] == "ACTIVE" and records[old]["status"] == "SUPERSEDED" and
+                records[new]["source_id"] == records[old]["source_id"] and
+                old in records[new].get("supersedes", []) and records[old].get("superseded_by") == new,
+                "ledger supersession mismatch")
+        require(patch["new_sha256"] == records[new]["sha256"] and patch["old_sha256"] == records[old]["sha256"],
+                "ledger hash mismatch")
+        patched.add(new)
+    require(patched == {key for key, record in records.items() if record["status"] == "ACTIVE" and
+                       record.get("supersedes")}, "ledger patch coverage mismatch")
     if verify_signature:
         def git(*args):
             return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()

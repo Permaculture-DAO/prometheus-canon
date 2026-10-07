@@ -203,6 +203,85 @@ class RootTests(unittest.TestCase):
             with self.subTest(text=text), self.assertRaises(v.InvalidRoot):
                 v.parse_json(text)
 
+    def test_ravel_cannot_reference_aeterna_document(self):
+        name, registry = self.registry()
+        aeterna, ravel = registry["sources"][3], registry["sources"][5]
+        ravel.update(path=aeterna["path"], name=aeterna["name"], sha256=aeterna["sha256"])
+        for record in registry["sources"]:
+            if ravel["record_key"] in record["upstream_hashes"]:
+                record["upstream_hashes"][ravel["record_key"]] = ravel["sha256"]
+        self.write(name, registry)
+        root = self.load(v.ROOT)
+        for record in root["active_records"]:
+            if record["record_key"] == ravel["record_key"]:
+                record["sha256"] = ravel["sha256"]
+        self.write(v.ROOT, root)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "prose source identity"):
+            v.validate(self.root, verify_signature=False)
+
+    def test_missing_prose_identity_rejected(self):
+        name, registry = self.registry()
+        aeterna = registry["sources"][3]
+        path = self.root / aeterna["path"]
+        path.write_text(path.read_text(encoding="utf-8").replace("**Source ID:** PRM-RISK-AETERNA-001", "Identity missing"), encoding="utf-8")
+        aeterna["sha256"] = v.sha(path.read_bytes())
+        for record in registry["sources"]:
+            if aeterna["record_key"] in record["upstream_hashes"]:
+                record["upstream_hashes"][aeterna["record_key"]] = aeterna["sha256"]
+        self.write(name, registry)
+        root = self.load(v.ROOT)
+        for record in root["active_records"]:
+            if record["record_key"] == aeterna["record_key"]:
+                record["sha256"] = aeterna["sha256"]
+        self.write(v.ROOT, root)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "prose source identity"):
+            v.validate(self.root, verify_signature=False)
+
+    def test_release_cannot_declare_admission_passed(self):
+        release = self.load(v.RELEASE)
+        release["production_admission"] = "PASSED"
+        self.write(v.RELEASE, release)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "release admission/scope"):
+            v.validate(self.root, verify_signature=False)
+
+    def test_release_scope_cannot_claim_production(self):
+        release = self.load(v.RELEASE)
+        release["scope"] = "PRODUCTION"
+        self.write(v.RELEASE, release)
+        self.reseal()
+        self.invalid()
+
+    def test_application_cannot_omit_methods(self):
+        name, registry = self.registry()
+        civ = registry["sources"][-1]
+        civ["upstream"] = [key for key in civ["upstream"] if not key.startswith("PRM-RISK-")]
+        civ["upstream_hashes"] = {key: sha for key, sha in civ["upstream_hashes"].items() if key in civ["upstream"]}
+        self.write(name, registry)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "required method dependency"):
+            v.validate(self.root, verify_signature=False)
+
+    def test_change_ledger_hash_must_match_registry(self):
+        name = v.BASE + "releases/PROMETHEUS_SOURCE_ROOT_v2_0_1_CHANGE_LEDGER.json"
+        ledger = self.load(name)
+        ledger["patches"][0]["new_sha256"] = "a" * 64
+        self.write(name, ledger)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "ledger hash"):
+            v.validate(self.root, verify_signature=False)
+
+    def test_change_ledger_patch_coverage_required(self):
+        name = v.BASE + "releases/PROMETHEUS_SOURCE_ROOT_v2_0_1_CHANGE_LEDGER.json"
+        ledger = self.load(name)
+        ledger["patches"].pop()
+        self.write(name, ledger)
+        self.reseal()
+        with self.assertRaisesRegex(v.InvalidRoot, "ledger patch coverage"):
+            v.validate(self.root, verify_signature=False)
+
 
 class ComputeTests(unittest.TestCase):
     def setUp(self):
