@@ -16,7 +16,7 @@ The rule is:
 3. `PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.yaml` — machine-readable root.
 4. `PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml` — source lifecycle registry.
 5. `PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml` — typed authority lattice.
-6. `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0.md` — risk methodology.
+6. `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md` — risk methodology (metadata-migrated to PRM-ARCH-DET-002).
 7. `PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md` — RAVEL operational risk source.
 8. `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md` — Civilization application.
 
@@ -38,6 +38,8 @@ The rule is:
   → v6.2.
 
 # 5. Mark HISTORICAL / REFERENCE
+
+- `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0*.md` → AETERNA v1.1.
 
 - `PROMETHEUS_ARCHITECTURE_vNEXT_META_EXECUTION_DOSSIER_v1_0*.md`.
 - `meta-prompt costituzionale di progettazione dell’intera Architettura PROMETHEUS*.txt`.
