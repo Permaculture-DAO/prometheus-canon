@@ -8,7 +8,7 @@ authority_class: CONTROLLED_OPERATIONAL_METHODOLOGY_SOURCE
 canonical: false
 subordinate_to_canon: true
 global_architecture_dependency: PRM-ARCH-DET-002
-primary_method_dependency: PRM-RISK-AETERNA-001
+primary_method_dependency: PRM-RISK-AETERNA-001@1.1
 supersedes:
   - PROMETHEUS-SRC-RAVEL-UNDERWRITING-001
 default_status: SHADOW_ANALYTICAL_NON_AUTHORITATIVE
@@ -19,7 +19,7 @@ default_status: SHADOW_ANALYTICAL_NON_AUTHORITATIVE
 
 **Source ID:** `PRM-RISK-RAVEL-OP-002`  
 **Global architecture dependency:** `PRM-ARCH-DET-002`  
-**Primary methodological dependency:** `PRM-RISK-AETERNA-001 — AETERNA Risk Synergy`  
+**Primary methodological dependency:** `PRM-RISK-AETERNA-001@1.1 — AETERNA Risk Synergy`  
 **Supersedes:** the prior `PROMETHEUS-SRC-RAVEL-UNDERWRITING-001` as current operational RAVEL source.  
 **Predecessor SHA-256:** `47d2352c01fd947b08fe8b9b8c643cc5ae55deb6f09a8d3f8d9914642e381aa6`  
 **Status:** `SHADOW / ANALYTICAL / NON-AUTHORITATIVE`.
