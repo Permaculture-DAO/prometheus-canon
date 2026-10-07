@@ -10,7 +10,7 @@
     },
     {
       "name": "PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md",
-      "sha256": "7df1d6b60bab0ab262d4c29047540ddefdfa514440b1b59dfb5a0763b10d98cb"
+      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
     },
     {
       "name": "PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md",
@@ -22,19 +22,23 @@
     },
     {
       "name": "PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml",
-      "sha256": "7cf4ad25a56a54077c1333af62614a8078c6665f65597078a00b6488e5ee39e1"
+      "sha256": "29c06c68e82e1288587ee88a0ab8be75402cf1e1b16d54ba43dc24acd36377ab"
     },
     {
       "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.yaml",
-      "sha256": "02b6c831dc382a8a5587ae01abd67152410d65abadcaa1554a455aa0c9ddc8a9"
+      "sha256": "0fa53ee32df946c6094741ffcb50a6f74ac78df9c65a79cbc775bfa106913f1f"
     },
     {
       "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.md",
-      "sha256": "fd8927b953335a7609b64c875931f194776654cd0563b50039b0aabc004e05dd"
+      "sha256": "1d90d1e9da08c7636c85df7dc9c3da80549a0f9dee47afb2c6b91f777bb16727"
     },
     {
       "name": "PROMETHEUS_SOURCE_MIGRATION_AND_DEDUPLICATION_PLAN_v1_0.md",
-      "sha256": "01e57df8e08028b193c5e557533a6f15eb61792ca744c1a635fec386b13b19c0"
+      "sha256": "96c2a7a244b5f062d9d53d9cc283b219c51b1767b30162499ecec5d9a66047ff"
+    },
+    {
+      "name": "PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md",
+      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
     },
     {
       "name": "PROMETHEUS_SOURCE_RECORD.schema.json",
@@ -50,7 +54,7 @@
     },
     {
       "name": "PROMETHEUS_SOURCE_ROOT_v2_0_SHA256SUMS.txt",
-      "sha256": "ea00b17e78f2670a034c0134f61ea014166bc9a0b3b2ee8157a0c81519267002"
+      "sha256": "06375bb7ebc09a5b514386b6d434be45f8abd5d62040c8f360f790cec8f53fb7"
     }
   ],
   "schema_ids": [
@@ -63,5 +67,17 @@
     "P/H/Q outputs require deterministic verification before material gate effects.",
     "ControlledSourceRelease is a provenance/integrity schema, not scientific/legal/capital authority.",
     "Creating this package does not prove repository/runtime deployment."
+  ],
+  "method_stack": [
+    {
+      "source_id": "PRM-RISK-AETERNA-001",
+      "version": "1.1",
+      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+    },
+    {
+      "source_id": "PRM-RISK-RAVEL-OP-002",
+      "version": "1.1",
+      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+    }
   ]
 }
