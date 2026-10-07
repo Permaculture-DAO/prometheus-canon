@@ -14,7 +14,7 @@
 | Canon maintenance discipline | `PROMETHEUS_MASTER_PROMPT_v3_0_DEFINITIVE.md` | Canon audit/maintenance prompt |
 | Architecture generation | `PROMETHEUS_ARCHITECTURE_META_PROMPT_v1_0.md` | Controlling architecture meta-layer |
 | Global architecture | `PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md` | `PRM-ARCH-DET-002` |
-| Risk methodology | `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0.md` | AETERNA |
+| Risk methodology | `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md` | AETERNA |
 | Risk operations | `PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md` | RAVEL operational source |
 | Civilization application | `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md` | Controlled application source |
 | Machine registry | `PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml` | Active/historical source states |
@@ -70,7 +70,7 @@ prometheus-canon/governance/sources/
   architecture/
     PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md
   methodology/
-    PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0.md
+    PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md
     PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md
   applications/
     PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md
