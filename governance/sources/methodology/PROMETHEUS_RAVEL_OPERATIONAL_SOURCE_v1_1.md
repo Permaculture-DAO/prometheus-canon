@@ -1,7 +1,7 @@
 ---
 source_id: PRM-RISK-RAVEL-OP-002
 source_registry_key: PRM-RISK-RAVEL-OP-002@1.1
-source_name: PROMETHEUS RAVEL Operational Risk Intelligence Source
+source_name: PROMETHEUS Ravel Operational Risk Intelligence Source
 release: v1.1
 release_date: 2026-10-07
 authority_class: CONTROLLED_OPERATIONAL_METHODOLOGY_SOURCE
@@ -14,23 +14,23 @@ supersedes:
 default_status: SHADOW_ANALYTICAL_NON_AUTHORITATIVE
 ---
 
-# PROMETHEUS — RAVEL OPERATIONAL RISK INTELLIGENCE
+# PROMETHEUS — Ravel Operational Risk Intelligence
 ## Controlled Operational Source v1.1
 
 **Source ID:** `PRM-RISK-RAVEL-OP-002`  
 **Global architecture dependency:** `PRM-ARCH-DET-002`  
-**Primary methodological dependency:** `PRM-RISK-AETERNA-001@1.1 — AETERNA Risk Synergy`  
-**Supersedes:** the prior `PROMETHEUS-SRC-RAVEL-UNDERWRITING-001` as current operational RAVEL source.  
+**Primary methodological dependency:** `PRM-RISK-AETERNA-001@1.1 — Aeterna Risk Synergy`  
+**Supersedes:** the prior `PROMETHEUS-SRC-RAVEL-UNDERWRITING-001` as current operational Ravel source.  
 **Predecessor SHA-256:** `47d2352c01fd947b08fe8b9b8c643cc5ae55deb6f09a8d3f8d9914642e381aa6`  
 **Status:** `SHADOW / ANALYTICAL / NON-AUTHORITATIVE`.
 
 # 1. Purpose
 
-AETERNA defines the controlled actuarial, insurance, reinsurance, capital-protection and model-risk methodology.
+Aeterna defines the controlled actuarial, insurance, reinsurance, capital-protection and model-risk methodology.
 
-RAVEL operationalises approved methods into versioned Risk Objects, ledgers, stress tests and decision-support outputs.
+Ravel operationalises approved methods into versioned Risk Objects, ledgers, stress tests and decision-support outputs.
 
-RAVEL is therefore **not a competing methodology** and not a separate constitutional layer.
+Ravel is therefore **not a competing methodology** and not a separate constitutional layer.
 
 # 2. Core operational chain
 
@@ -89,7 +89,7 @@ method_hash
 
 # 5. Compute modes
 
-RAVEL may consume:
+Ravel may consume:
 
 - D outputs from deterministic code;
 - P outputs from approved probabilistic models;
@@ -128,9 +128,9 @@ Where justified:
 
 # 8. Authority boundary
 
-RAVEL may analyse and recommend.
+Ravel may analyse and recommend.
 
-RAVEL may not:
+Ravel may not:
 
 - certify;
 - approve capital;
@@ -157,6 +157,6 @@ Admission to `VALIDATED_FOR_DEFINED_USE` requires:
 
 # 10. Final invariant
 
-> **AETERNA defines how risk should be analysed. RAVEL makes that analysis operational. Deterministic verification controls whether an output may influence a decision. Human/legal authority controls whether the decision may be acted upon.**
+> **Aeterna defines how risk should be analysed. Ravel makes that analysis operational. Deterministic verification controls whether an output may influence a decision. Human/legal authority controls whether the decision may be acted upon.**
 
 **END — PRM-RISK-RAVEL-OP-002 v1.1**

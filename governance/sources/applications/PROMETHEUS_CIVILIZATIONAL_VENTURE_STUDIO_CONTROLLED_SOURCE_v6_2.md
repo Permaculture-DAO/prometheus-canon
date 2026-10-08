@@ -29,7 +29,7 @@ predecessor_sha256: 5029847e0947163dc9cdc634a7145413fc79d4d6623a82c3c97030a22e3a
 ---
 
 # PROMETHEUS CIVILIZATIONAL VENTURE STUDIO
-## CONTROLLED SOURCE v6.1
+## CONTROLLED SOURCE v6.2
 ### Deterministic Application Architecture for Venture, Land-Regeneration, Evidence, Risk, Rights & Capital Decisions
 
 **Source ID:** `PRM-CIV-APP-006`  
@@ -42,7 +42,7 @@ predecessor_sha256: 5029847e0947163dc9cdc634a7145413fc79d4d6623a82c3c97030a22e3a
 **Primary architecture dependency:** `PRM-ARCH-DET-002 — PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md`  
 **Predecessor:** `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_1.md`  
 **Predecessor SHA-256:** `658363dee484731a56244dcae87b254f40be9425ddac24a6fb7a41e032a19290`  
-**Release SHA-256:** see companion file `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_1.sha256` generated after final serialization.
+**Release SHA-256:** see companion file `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.sha256` generated after final serialization.
 
 ---
 
@@ -80,7 +80,7 @@ This source controls application-level design and implementation planning for:
 - venture-admission logic;
 - application-level partner architecture;
 - territorial stewardship and anti-extraction controls;
-- application of AETERNA/RAVEL to land/project underwriting;
+- application of Aeterna/Ravel to land/project underwriting;
 - Land Value Attribution Ledger design;
 - RFVL application as a policy profile;
 - Dual Solvency as a candidate covenant/test;
@@ -161,11 +161,11 @@ and blocked from ordinary application implementation.
 
 ## 0.6 Supersession policy
 
-This v6.1 release:
+This v6.2 release:
 
-- **supersedes v6.0 as the controlling source-grade Civilization application specification**;
-- preserves the substantive architecture and decisions of v6.0 except where this source-registration layer clarifies authority, scope, precedence, permitted use or prohibited interpretation;
-- supersedes earlier Civilization application/design decisions only where they are explicitly inconsistent with v6.1;
+- **supersedes v6.1 as the controlling source-grade Civilization application specification**;
+- preserves the substantive architecture and decisions of v6.1 except where the v6.2 architecture/dependency migration clarifies authority, scope, precedence, compute discipline or source lifecycle;
+- supersedes earlier Civilization application/design decisions only where they are explicitly inconsistent with v6.2;
 - does **not** erase historical evidence, source provenance, adverse findings, dissent, unresolved conflicts, legal cautions, HOLD/NO-GO decisions or prior assumptions;
 - does **not** supersede the PROMETHEUS Canon, Deterministic Architecture, valid law, executed agreements, independent professional opinions, observed evidence or verified runtime state.
 
@@ -241,9 +241,9 @@ When this source is retrieved, a PROMETHEUS-compatible AI system must:
 | PROMETHEUS Canon / Canonical White Paper / Full Corpus | constitutional invariants and semantic boundaries | superior |
 | PROMETHEUS Architecture Meta-Prompt / Genesis Compiler | architecture-generation discipline | superior |
 | `PRM-ARCH-DET-002` Deterministic Architecture | controlling global implementation architecture | superior |
-| AETERNA / RAVEL controlled methodology, where registered | risk, actuarial, insurance and capital-protection methodology | methodological; superior within method scope |
+| Aeterna / Ravel controlled methodology, where registered | risk, actuarial, insurance and capital-protection methodology | methodological; superior within method scope |
 | Civilizational Venture Studio Decision Dossier v5.0 | predecessor decision evidence/design history | historical / subordinate |
-| Civilizational v6.0 | immediate predecessor | superseded by v6.1 |
+| Civilizational v6.1 | immediate predecessor | superseded by v6.2 |
 | Site-specific evidence, law, contracts, valuations and professional opinions | factual/legal/application inputs | controlling within their valid scope |
 
 ## 0.11 Machine-readable Source Registry record
@@ -291,7 +291,7 @@ hash_policy: EXTERNAL_SHA256_SIDECAR
 Because embedding a file's final cryptographic hash inside the same serialized file would alter that hash, this release uses the standard external-checksum pattern:
 
 - predecessor content hash is recorded inside this source;
-- the final v6.1 SHA-256 is generated **after** serialization;
+- the final v6.2 SHA-256 is generated **after** serialization;
 - the final checksum is stored in the companion `.sha256` file;
 - any future modification requires a new release/hash rather than silent overwrite.
 
@@ -322,7 +322,7 @@ The v6.1 upgrade is deliberately narrow and source-governance focused.
 - all substantive v6.0 application architecture;
 - Land Regeneration application logic;
 - hard-gate treatment;
-- RAVEL/Quant requirements;
+- Ravel/Quant requirements;
 - Land Value Attribution Ledger;
 - RFVL policy-profile treatment;
 - Dual Solvency status;
@@ -348,7 +348,7 @@ Changes:
 - global architecture dependency migrated from `PRM-ARCH-DET-001` to `PRM-ARCH-DET-002`;
 - D/P/H/Q computational contract inherited;
 - every P/H/Q result affecting Civilization gates must cross the deterministic verification boundary;
-- RAVEL operational dependency now resolves through `PRM-RISK-RAVEL-OP-002`, methodologically subordinate to AETERNA;
+- Ravel operational dependency now resolves through `PRM-RISK-RAVEL-OP-002`, methodologically subordinate to Aeterna;
 - source lifecycle follows the Root Source Manifest;
 - v6.1 becomes `SUPERSEDED / HISTORICAL PREDECESSOR`.
 
@@ -379,7 +379,7 @@ The deterministic core remains:
 
 with cross-cutting control planes for:
 
-**Canon & Governance · Claims · AETERNA/RAVEL · Deterministic Quant · AI/LLM · Cybersecurity · Reproducibility & Audit.**
+**Canon & Governance · Claims · Aeterna/Ravel · Deterministic Quant · AI/LLM · Cybersecurity · Reproducibility & Audit.**
 
 Civilization contributes:
 
@@ -488,7 +488,7 @@ The base case does not require speculative token appreciation, unverified enviro
 
 ## F. Risk Transparency
 
-Material risks and Ultimate Risk Bearers can be represented through RAVEL.
+Material risks and Ultimate Risk Bearers can be represented through Ravel.
 
 ## G. Legal Feasibility
 
@@ -604,7 +604,7 @@ PROMETHEUS supplies:
 - MRV workflow;
 - Claims Register;
 - RFVL policy evaluation;
-- AETERNA/RAVEL methodology;
+- Aeterna/Ravel methodology;
 - deterministic Quant Kernel;
 - Gate Engine;
 - audit/replay.
@@ -733,7 +733,7 @@ Requires:
 
 `G0-G2 PASSED`
 
-plus preliminary RAVEL/Quant analysis.
+plus preliminary Ravel/Quant analysis.
 
 ### Land Investment Committee approval
 
@@ -746,8 +746,8 @@ plus:
 - downside DCF;
 - liquidity runway;
 - title/water/legal review;
-- RAVEL Loss Generation Ledger;
-- RAVEL Risk Allocation Ledger;
+- Ravel Loss Generation Ledger;
+- Ravel Risk Allocation Ledger;
 - Ultimate Risk Bearer Map;
 - unmodelled-risk register;
 - independent conflicts review.
@@ -796,7 +796,7 @@ A score of 100 cannot transform `UNKNOWN` into `PASS`.
 
 ---
 
-# 9. Deterministic RAVEL Application to the First Land SPV
+# 9. Deterministic Ravel Application to the First Land SPV
 
 Until a specific site is selected and site evidence is loaded, numerical risk remains:
 
@@ -1056,7 +1056,7 @@ mapped deterministically to:
 - Claims Register;
 - Gate Engine;
 - Assurance Export;
-- RAVEL/Quant decision support.
+- Ravel/Quant decision support.
 
 Sector expansion occurs through **Application Profiles**, not new platforms.
 
@@ -1095,7 +1095,7 @@ No new profile enters BUILD until:
 | Dual Solvency | TEST | Candidate covenant |
 | Regenerative Finance State Vector | TEST | Non-compensatory diagnostic |
 | Underwriting 78/100 threshold | DOWNGRADE TO TRIAGE | Cannot override hard gates |
-| AETERNA/RAVEL | CONDITIONAL GO | Shadow risk intelligence |
+| Aeterna/Ravel | CONDITIONAL GO | Shadow risk intelligence |
 | Quant Engine | GO | Mandatory for material calculations |
 | Independent valuation | REQUIRED | Outside sponsor/Prometheus control |
 | RAP / portfolio capital | DEFER | Multi-site evidence first |
@@ -1149,7 +1149,7 @@ Add profile-aware views:
 - Evidence;
 - Claims;
 - Rights;
-- RAVEL;
+- Ravel;
 - Quant;
 - Gates;
 - Land IC;
@@ -1192,7 +1192,7 @@ Add:
 3. Build site-specific Source, Evidence, Risk, Gate and Decision objects.
 4. Run title/water/access pre-screen.
 5. Produce downside DCF with zero carbon/TRBK/regenerative premium.
-6. Produce preliminary RAVEL two-ledger analysis.
+6. Produce preliminary Ravel two-ledger analysis.
 7. Test comparator/baseline feasibility.
 8. Conduct buyer/payer/steward interviews.
 9. Obtain independent valuation methodology proposal.
@@ -1230,8 +1230,8 @@ No first Land SPV closing without:
 11. at least 24-month post-closing liquidity target or a documented alternative approved by IC;
 12. maintenance/resilience reserve;
 13. insurance analysis;
-14. RAVEL Loss Generation Ledger;
-15. RAVEL Risk Allocation Ledger;
+14. Ravel Loss Generation Ledger;
+15. Ravel Risk Allocation Ledger;
 16. Ultimate Risk Bearer Map;
 17. residual and unmodelled risk;
 18. community / anti-displacement controls;
@@ -1254,7 +1254,7 @@ Simplify or retire the Civilization layer if two or more persist after defined r
 - evidence burden materially destroys operating economics;
 - independent reviewers cannot reconstruct decisions;
 - land outcomes are no better understood than under a simpler diligence process;
-- RAVEL does not improve risk visibility;
+- Ravel does not improve risk visibility;
 - the system systematically overstates regenerative contribution;
 - community/territorial protections fail in practice;
 - token narratives repeatedly contaminate evidence or investment claims;
@@ -1274,7 +1274,7 @@ The correct outcome may be simplification.
 
 **CONDITIONAL GO** — Explore a bounded commercial partnership with Food Forest Abundance or another operational entity after entity, reputational, contractual and conflict due diligence.
 
-**HOLD** — First Land SPV closing until site-specific G0-G5, RAVEL/Quant, rights, liquidity, insurance and Land IC requirements pass.
+**HOLD** — First Land SPV closing until site-specific G0-G5, Ravel/Quant, rights, liquidity, insurance and Land IC requirements pass.
 
 **HOLD** — RAP/fund/portfolio-level structures until multiple sites and dependence evidence exist.
 
@@ -1304,7 +1304,7 @@ For land regeneration:
 > These are four different claims.  
 > PROMETHEUS must never collapse them into one.**
 
-**END OF CONTROLLED APPLICATION CONTENT — inherited and source-governed in v6.1**
+**END OF CONTROLLED APPLICATION CONTENT — substantive application content inherited through v6.1 and source-governed in v6.2**
 
 ---
 
@@ -1318,11 +1318,11 @@ This source is fit for inclusion in the PROMETHEUS source corpus when:
 - it is not promoted to Canon;
 - `PRM-ARCH-DET-002` remains its controlling architecture dependency;
 - future application ADRs cite this source version;
-- substantive changes create a new version rather than silently editing v6.1;
+- substantive changes create a new version rather than silently editing v6.2;
 - empirical, legal, valuation and market claims continue to cite their own competent sources.
 
 **Recommended corpus filename:**  
-`PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_1.md`
+`PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md`
 
 **Recommended Source Registry status:**  
 `ACTIVE — CONTROLLED APPLICATION SOURCE`

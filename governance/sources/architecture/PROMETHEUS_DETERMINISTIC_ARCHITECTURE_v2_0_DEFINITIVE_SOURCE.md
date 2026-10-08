@@ -53,7 +53,7 @@ v2.0 adds six decisive capabilities:
 5. a **Controlled Source Release Protocol** for GitHub, WSL/local mirrors, Holochain provenance and offline archive;
 6. an explicit **supersession / deduplication regime** so the corpus can preserve provenance without treating historical duplicates as active authority.
 
-The v1.0 primitives remain valid: Source Registry, Evidence Spine, MRV, PRU, RAP, AETERNA/RAVEL, Deterministic Quant Kernel, Legal Rights Gate, Stage-Gated Capital, Claims Register and Human Authority.
+The v1.0 primitives remain valid: Source Registry, Evidence Spine, MRV, PRU, RAP, Aeterna/Ravel, Deterministic Quant Kernel, Legal Rights Gate, Stage-Gated Capital, Claims Register and Human Authority.
 
 ---
 
@@ -126,8 +126,8 @@ Priority:
 Controls how a specialised method is applied.
 
 Examples:
-- AETERNA: actuarial / insurance / reinsurance / capital protection;
-- RAVEL operational specification: risk-object execution;
+- Aeterna: actuarial / insurance / reinsurance / capital protection;
+- Ravel operational specification: risk-object execution;
 - MRV/scientific methods: measurement and inference.
 
 ### I — Implementation-state authority
@@ -155,7 +155,7 @@ Examples:
 - a deployed runtime is authoritative for **what code is running**, but not for **what is scientifically true**;
 - a valid contract is authoritative for **legal obligations**, but not for **ecological causality**;
 - Civilization is authoritative for its application workflow, but not for PROMETHEUS global architecture;
-- AETERNA governs actuarial methodology, but does not approve capital.
+- Aeterna governs actuarial methodology, but does not approve capital.
 
 Every source record therefore carries:
 
@@ -260,8 +260,8 @@ PROMETHEUS is:
 
 - Canon & Governance;
 - Claims & Disclosure;
-- AETERNA Methodology;
-- RAVEL Operational Risk Intelligence;
+- Aeterna Methodology;
+- Ravel Operational Risk Intelligence;
 - Deterministic Quant;
 - Probabilistic Modelling;
 - Heuristic / Multi-Agent Intelligence;
@@ -482,11 +482,11 @@ No dashboard wording outranks the Claims Register.
 
 ---
 
-# 9. AETERNA → RAVEL METHOD STACK
+# 9. Aeterna → Ravel METHOD STACK
 
-## 9.1 AETERNA
+## 9.1 Aeterna
 
-AETERNA is the controlled methodological source for:
+Aeterna is the controlled methodological source for:
 
 - actuarial modelling;
 - insurance/reinsurance;
@@ -496,11 +496,11 @@ AETERNA is the controlled methodological source for:
 - model risk;
 - stress/reverse stress.
 
-AETERNA supplies **methodology, not authority**.
+Aeterna supplies **methodology, not authority**.
 
-## 9.2 RAVEL
+## 9.2 Ravel
 
-RAVEL is the operational risk-intelligence plane implementing approved risk methods.
+Ravel is the operational risk-intelligence plane implementing approved risk methods.
 
 Core chain:
 
@@ -523,7 +523,7 @@ Core chain:
 → Unmodelled Risk  
 → Ultimate Risk Bearer.**
 
-RAVEL remains:
+Ravel remains:
 
 `SHADOW / ANALYTICAL / NON-AUTHORITATIVE`
 
@@ -626,7 +626,7 @@ They may not:
 
 - override Canon;
 - override global architecture;
-- alter AETERNA method without a methodology change;
+- alter Aeterna method without a methodology change;
 - create rights by software;
 - approve capital by score/AI.
 
@@ -795,7 +795,7 @@ Owns deterministic execution:
 - gate engine;
 - claims-policy engine;
 - PRU dry-run;
-- RAVEL engine;
+- Ravel engine;
 - quant engine;
 - D/P/H/Q boundary validator;
 - release manifest;
@@ -971,7 +971,7 @@ Preserved from v1.0:
 - state machines;
 - compiler pipeline;
 - formal test harness;
-- RAVEL two-ledger architecture;
+- Ravel two-ledger architecture;
 - stage-gated capital;
 - AI boundaries;
 - repository mapping;
@@ -1003,7 +1003,7 @@ v2.0 may be treated as the global architecture source only when:
 - its SHA-256 is registered;
 - source registry contains no competing active global architecture source;
 - application sources point to `PRM-ARCH-DET-002`;
-- AETERNA/RAVEL scope is reconciled;
+- Aeterna/Ravel scope is reconciled;
 - repository changes remain separate from document adoption;
 - no production deployment is inferred from source creation alone.
 
@@ -1015,8 +1015,8 @@ v2.0 may be treated as the global architecture source only when:
 > Canon supplies constitutional boundaries.  
 > The meta-layer supplies architecture-generation discipline.  
 > v2.0 supplies the global system contract.  
-> AETERNA supplies risk methodology.  
-> RAVEL operationalises risk.  
+> Aeterna supplies risk methodology.  
+> Ravel operationalises risk.  
 > Application sources specialise the core.  
 > D computation verifies.  
 > P computation quantifies uncertainty.  

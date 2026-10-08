@@ -14,8 +14,8 @@
 | Canon maintenance discipline | `PROMETHEUS_MASTER_PROMPT_v3_0_DEFINITIVE.md` | Canon audit/maintenance prompt |
 | Architecture generation | `PROMETHEUS_ARCHITECTURE_META_PROMPT_v1_0.md` | Controlling architecture meta-layer |
 | Global architecture | `PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md` | `PRM-ARCH-DET-002` |
-| Risk methodology | `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md` | AETERNA |
-| Risk operations | `PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md` | RAVEL operational source |
+| Risk methodology | `PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md` | Aeterna |
+| Risk operations | `PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md` | Ravel operational source |
 | Civilization application | `PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md` | Controlled application source |
 | Machine registry | `PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml` | Active/historical source states |
 | Authority lattice | `PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml` | Typed precedence |
@@ -49,7 +49,7 @@ Use typed authority:
 The following are no longer default controlling sources:
 
 - `PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v1_0_DEFINITIVE` → superseded by v2.0;
-- `PROMETHEUS_SOURCE_REGENERATIVE_UNDERWRITING_RAVEL_v1_0` → superseded operationally by RAVEL v1.1;
+- `PROMETHEUS_SOURCE_REGENERATIVE_UNDERWRITING_RAVEL_v1_0` → superseded operationally by Ravel v1.1;
 - Civilization v6.1 → superseded by v6.2 metadata migration;
 - vNEXT execution dossier → historical decision record;
 - duplicate imported copies `(1)`, `(2)`, `(3)` → archive, not active retrieval authority;
