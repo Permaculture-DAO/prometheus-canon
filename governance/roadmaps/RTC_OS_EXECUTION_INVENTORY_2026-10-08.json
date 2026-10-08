@@ -1,0 +1,614 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-10-08",
+  "status": "GLOBAL_HOLD_CANDIDATES_VERIFIED_NOT_ADOPTED",
+  "scope": "Eleven primary repositories, known active worktrees, selected controlled source bytes; not a crawl of all drives, remote branches, websites or cloud mirrors.",
+  "protected_backups": "2026-05-30 archive: not read as payload, extracted, changed or executed.",
+  "primaries": [
+    {
+      "repo": "prometheus-bridge",
+      "branch": "fix/public-claims-trbk1-note-20261002",
+      "head": "b8ae76dda72d739af07aca9f63f77205f35b7fea",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-canon",
+      "branch": "docs/canon-v1.2.0-rc.2-successor",
+      "head": "f6f8ae21e559bae2861e514f1bc80ace1d85d922",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-canonicals",
+      "branch": "main",
+      "head": "0e4856144670453726ed34ba459636de381eb25d",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-console",
+      "branch": "feat/client-project-workspace-20261001",
+      "head": "52b43984dbdd6dc6a50b16447fe42b7b09eba5ec",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-evaluation-stack",
+      "branch": "main",
+      "head": "15b84323aeca732a5639e321244b4c4855bfa196",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-governance",
+      "branch": "docs/governance-v1.2.0-rc.2-alignment",
+      "head": "1151d0299a4f4cbb2136c3001598d6b689546a00",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-happ",
+      "branch": "main",
+      "head": "c0415c107d421c46f94811088506fc87c2248f6e",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-mock-backend",
+      "branch": "main",
+      "head": "fd235098fd5843bdb50c38a6cfecb25892a683af",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-ops-docs",
+      "branch": "ops/multi-host-resilience-20261001",
+      "head": "5df233bce7f524a688437a57f9358c368e334dc5",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-pilot-handoff-pack",
+      "branch": "main",
+      "head": "e8e2ae826de84da0046e5b0b71ce25facff2a0ca",
+      "dirty": false
+    },
+    {
+      "repo": "prometheus-runtime",
+      "branch": "feat/p0-3-semantic-conformance-20260929",
+      "head": "53f799023a3eef971c1bdfd665c042e118fbe57a",
+      "dirty": false
+    }
+  ],
+  "candidate_targets": [
+    {
+      "name": "runtime",
+      "status": "PASS",
+      "files_scanned": 119,
+      "unallowlisted_hits": 0,
+      "protected_hits": 8,
+      "errors": []
+    },
+    {
+      "name": "console",
+      "status": "PASS",
+      "files_scanned": 48,
+      "unallowlisted_hits": 0,
+      "protected_hits": 4,
+      "errors": []
+    },
+    {
+      "name": "ops",
+      "status": "PASS",
+      "files_scanned": 72,
+      "unallowlisted_hits": 0,
+      "protected_hits": 43,
+      "errors": []
+    },
+    {
+      "name": "canon-execution",
+      "status": "PASS",
+      "files_scanned": 58,
+      "unallowlisted_hits": 0,
+      "protected_hits": 48,
+      "errors": []
+    },
+    {
+      "name": "bridge",
+      "status": "PASS",
+      "files_scanned": 15,
+      "unallowlisted_hits": 0,
+      "protected_hits": 0,
+      "errors": []
+    },
+    {
+      "name": "happ-display",
+      "status": "PASS",
+      "files_scanned": 80,
+      "unallowlisted_hits": 0,
+      "protected_hits": 0,
+      "errors": []
+    }
+  ],
+  "other_observed_worktrees": [
+    {
+      "name": "governance-a002r-20261005",
+      "branch": "docs/a002r-service-acceptance-20261005",
+      "head": "7759111f9a97ed5902a9e767a17f60799f98bace",
+      "dirty": false,
+      "audit": {
+        "name": "governance-a002r-20261005",
+        "files": 38,
+        "hits": 1,
+        "errors": [],
+        "paths": [
+          {
+            "path": "ratification/A-002R_trbk_amendment_draft.md",
+            "hits": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "happ-integrity-audit",
+      "branch": "fix/integrity-real-gate-audit-20261002",
+      "head": "51a90dc859eb46abe3246d4fb6ab82c14fb65414",
+      "dirty": false,
+      "audit": {
+        "name": "happ-integrity-audit",
+        "files": 77,
+        "hits": 0,
+        "errors": [],
+        "paths": []
+      }
+    },
+    {
+      "name": "ops-systemd-audit",
+      "branch": "docs/systemd-runtime-reconciliation-20261002",
+      "head": "aea73e2a1c84217c88eb71dce9884bb6468e4792",
+      "dirty": true,
+      "audit": {
+        "name": "ops-systemd-audit",
+        "files": 61,
+        "hits": 0,
+        "errors": [],
+        "paths": []
+      }
+    },
+    {
+      "name": "ravel-bridge-20261005",
+      "branch": "fix/ravel-local-audit-20261005-bridge",
+      "head": "0b5ebbe00fd682cfc43d343274083d64eb845ddc",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-bridge-20261005",
+        "files": 14,
+        "hits": 10,
+        "errors": [],
+        "paths": [
+          {
+            "path": "README.md",
+            "hits": 2
+          },
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 1
+          },
+          {
+            "path": "data/ravel.json",
+            "hits": 2
+          },
+          {
+            "path": "scripts/rollback-drill.mjs",
+            "hits": 1
+          },
+          {
+            "path": "scripts/smoke.mjs",
+            "hits": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "ravel-canon-20261005",
+      "branch": "docs/gate-evidence-methodology-20261006",
+      "head": "0857425c14179d4f063953f74dc7fcc5b47dc1c8",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-canon-20261005",
+        "files": 55,
+        "hits": 34,
+        "errors": [],
+        "paths": [
+          {
+            "path": "candidate/v1.2.0-rc.2/CANON_CHANGE_RECORD_v1.2.0-rc.2.md",
+            "hits": 7
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/PROMETHEUS_Canonical_White_Paper_v1.2.0-rc.2.md",
+            "hits": 15
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_ARCHITECTURE_AMENDMENT_v0.1.md",
+            "hits": 9
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_FORMAL_SPEC_v0.1.md",
+            "hits": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "ravel-console-20261005",
+      "branch": "fix/ravel-local-audit-20261005-console",
+      "head": "b40e8b376196b43e2c0179cfd86b3d1d6045910b",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-console-20261005",
+        "files": 41,
+        "hits": 7,
+        "errors": [],
+        "paths": [
+          {
+            "path": "index.html",
+            "hits": 1
+          },
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 2
+          },
+          {
+            "path": "src/console.js",
+            "hits": 3
+          },
+          {
+            "path": "src/status.test.js",
+            "hits": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ravel-happ-20261005",
+      "branch": "test/local-storage-probe-20261006",
+      "head": "efde3c19be03102e20aececf29abe7fcaf68a34b",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-happ-20261005",
+        "files": 79,
+        "hits": 7,
+        "errors": [],
+        "paths": [
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 2
+          },
+          {
+            "path": "zome_integrity/src/entry_types.rs",
+            "hits": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "ravel-ops-docs-20261005",
+      "branch": "docs/reconcile-gates-20261006",
+      "head": "17bc365058bf9b41039facf5c885354b7d001624",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-ops-docs-20261005",
+        "files": 67,
+        "hits": 37,
+        "errors": [],
+        "paths": [
+          {
+            "path": "\u0052AVEL_CROSS_REPO_RECONCILIATION_2026-10-05.md",
+            "hits": 25
+          },
+          {
+            "path": "\u0052AVEL_MODEL_GOVERNANCE_v0.1.md",
+            "hits": 5
+          },
+          {
+            "path": "\u0052AVEL_OPERATIONAL_RUNBOOK_v0.1.md",
+            "hits": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "ravel-runtime-20261005",
+      "branch": "feat/candidate-controls-20261006",
+      "head": "cc95cf8790ac371c7dabafb13324177c29407ec8",
+      "dirty": false,
+      "audit": {
+        "name": "ravel-runtime-20261005",
+        "files": 107,
+        "hits": 14,
+        "errors": [],
+        "paths": [
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 2
+          },
+          {
+            "path": "config/ravel_profile.json",
+            "hits": 3
+          },
+          {
+            "path": "docs/\u0052AVEL_RUNTIME_BOUNDARY.md",
+            "hits": 3
+          },
+          {
+            "path": "scripts/validate_runtime.py",
+            "hits": 3
+          },
+          {
+            "path": "services/api/app/main.py",
+            "hits": 2
+          },
+          {
+            "path": "services/api/app/ravel.py",
+            "hits": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "runtime-h5-audit",
+      "branch": "fix/h5-tombstone-20261002",
+      "head": "72f80813b4189d0e4d93a5b140b5a0d2361b090a",
+      "dirty": false,
+      "audit": {
+        "name": "runtime-h5-audit",
+        "files": 95,
+        "hits": 0,
+        "errors": [],
+        "paths": []
+      }
+    },
+    {
+      "name": "source-root-canon-20261007",
+      "branch": "docs/source-root-v2-20261007",
+      "head": "eba63beeb08c4c00ece6311846d3cd32476f5b1e",
+      "dirty": false,
+      "audit": {
+        "name": "source-root-canon-20261007",
+        "files": 86,
+        "hits": 311,
+        "errors": [],
+        "paths": [
+          {
+            "path": "candidate/v1.2.0-rc.2/CANON_CHANGE_RECORD_v1.2.0-rc.2.md",
+            "hits": 7
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/PROMETHEUS_Canonical_White_Paper_v1.2.0-rc.2.md",
+            "hits": 15
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_ARCHITECTURE_AMENDMENT_v0.1.md",
+            "hits": 9
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_FORMAL_SPEC_v0.1.md",
+            "hits": 1
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml",
+            "hits": 2
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.md",
+            "hits": 3
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.yaml",
+            "hits": 2
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0_1.md",
+            "hits": 3
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0_1.yaml",
+            "hits": 2
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_SOURCE_MIGRATION_AND_DEDUPLICATION_PLAN_v1_0.md",
+            "hits": 3
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml",
+            "hits": 9
+          },
+          {
+            "path": "governance/sources/PROMETHEUS_SOURCE_REGISTRY_v1_0_1.yaml",
+            "hits": 24
+          },
+          {
+            "path": "governance/sources/applications/PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md",
+            "hits": 26
+          },
+          {
+            "path": "governance/sources/applications/PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2_1.md",
+            "hits": 26
+          },
+          {
+            "path": "governance/sources/architecture/PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md",
+            "hits": 22
+          },
+          {
+            "path": "governance/sources/methodology/PROMETHEUS_\u0041ETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md",
+            "hits": 52
+          },
+          {
+            "path": "governance/sources/methodology/PROMETHEUS_\u0041ETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1_1.md",
+            "hits": 52
+          },
+          {
+            "path": "governance/sources/methodology/PROMETHEUS_\u0052AVEL_OPERATIONAL_SOURCE_v1_1.md",
+            "hits": 20
+          },
+          {
+            "path": "governance/sources/methodology/PROMETHEUS_\u0052AVEL_OPERATIONAL_SOURCE_v1_1_1.md",
+            "hits": 21
+          },
+          {
+            "path": "governance/sources/releases/PROMETHEUS_SOURCE_ROOT_v2_0_1_CHANGE_LEDGER.json",
+            "hits": 5
+          },
+          {
+            "path": "governance/sources/releases/PROMETHEUS_SOURCE_ROOT_v2_0_RELEASE_MANIFEST.json",
+            "hits": 2
+          },
+          {
+            "path": "scripts/validate_source_root.py",
+            "hits": 4
+          },
+          {
+            "path": "tests/test_source_root.py",
+            "hits": 1
+          }
+        ]
+      }
+    }
+  ],
+  "additional_worktrees": [
+    {
+      "name": "canon-ravel-review",
+      "head": "60875df23e3bcbaccc46b8428e03076fb72d5e73",
+      "branch": "docs/ravel-canon-review-20261005",
+      "audit": {
+        "name": "canon-ravel-review",
+        "files": 55,
+        "hits": 32,
+        "errors": [],
+        "paths": [
+          {
+            "path": "candidate/v1.2.0-rc.2/CANON_CHANGE_RECORD_v1.2.0-rc.2.md",
+            "hits": 7
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/PROMETHEUS_Canonical_White_Paper_v1.2.0-rc.2.md",
+            "hits": 15
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_ARCHITECTURE_AMENDMENT_v0.1.md",
+            "hits": 9
+          },
+          {
+            "path": "candidate/v1.2.0-rc.2/\u0052AVEL_FORMAL_SPEC_v0.1.md",
+            "hits": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "happ-claude-findings",
+      "head": "7fb8464e6a510e51343bb2da28e9117c661cb611",
+      "branch": "fix/ravel-claude-findings-20261005-happ",
+      "audit": {
+        "name": "happ-claude-findings",
+        "files": 79,
+        "hits": 8,
+        "errors": [],
+        "paths": [
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 3
+          },
+          {
+            "path": "zome_integrity/src/entry_types.rs",
+            "hits": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "happ-real-control-v1",
+      "head": "6e84928d94e3e68a5922549c8f103f712ebacff6",
+      "branch": "detached",
+      "audit": {
+        "name": "happ-real-control-v1",
+        "files": 79,
+        "hits": 0,
+        "errors": [],
+        "paths": []
+      }
+    },
+    {
+      "name": "runtime-claude-findings",
+      "head": "79cc3d4c7fa7d2d5418fbf1f58e636aa84ad489f",
+      "branch": "fix/ravel-claude-findings-20261005-runtime",
+      "audit": {
+        "name": "runtime-claude-findings",
+        "files": 101,
+        "hits": 13,
+        "errors": [],
+        "paths": [
+          {
+            "path": ".github/workflows/ravel-ci.yml",
+            "hits": 2
+          },
+          {
+            "path": "config/ravel_profile.json",
+            "hits": 3
+          },
+          {
+            "path": "docs/\u0052AVEL_RUNTIME_BOUNDARY.md",
+            "hits": 2
+          },
+          {
+            "path": "scripts/validate_runtime.py",
+            "hits": 3
+          },
+          {
+            "path": "services/api/app/main.py",
+            "hits": 2
+          },
+          {
+            "path": "services/api/app/ravel.py",
+            "hits": 1
+          }
+        ]
+      }
+    }
+  ],
+  "source21": {
+    "head": "c5ee7bef26dc0059be99ef3ecbf685ee8abb606c",
+    "sha256": "c868662c12b9f0e9c8ee1af938c277042a087adb415f9f70dd6d4480e2c2712f",
+    "modified": false,
+    "adopted": false
+  },
+  "signed_canon": {
+    "tag": "v1.1.2-genesis",
+    "fingerprint": "D20DFF6CBE331B3A4109DF848C8CB0D48C7F60DA",
+    "verification": "Good signature; local configured trust, not independent assurance",
+    "changed": false
+  },
+  "global_gaps": [
+    "source-root-controlled-display-versions-await-owner-procedure",
+    "source21-source-root-pins-and-declined-token-conflicts-await-owner-resolution",
+    "websites-WordPress-Google-Drive-CRM-and-binary-documents-not-published-or-globally-scanned",
+    "required-review-CODEOWNER-source-adoption-signing-production-capital-gates",
+    "off-host-restore-and-public-runtime-monitor-header-regression-open"
+  ],
+  "local_verification": {
+    "runtime_api_tests": 316,
+    "console_node_tests": 48,
+    "happ_integrity_tests": 27,
+    "ops_linux_tests": 37,
+    "ops_storage_windows_tests": 3,
+    "bridge_smoke": "PASS",
+    "guards": [
+      "s0",
+      "runtime",
+      "contracts",
+      "s4",
+      "s5",
+      "s6",
+      "node-syntax"
+    ],
+    "ui": "Real browser local quantified synthetic import: integrity matched, HOLD/NR/all authority flags false. Temporary server stopped.",
+    "warnings": [
+      "Starlette anyio deprecation",
+      "Rust workspace/profile warnings",
+      "ops full resilience suite requires Linux fcntl; Windows storage-only regression passed"
+    ]
+  },
+  "proof_boundary": "zero new unallowlisted display occurrences in six candidate trees != globally migrated or adopted; all allowlists proposed and scoped."
+}
