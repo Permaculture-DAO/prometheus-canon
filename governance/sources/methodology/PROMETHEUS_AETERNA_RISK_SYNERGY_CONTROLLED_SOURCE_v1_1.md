@@ -1,13 +1,13 @@
-# PROMETHEUS — AETERNA RISK SYNERGY
+# PROMETHEUS — Aeterna Risk Synergy
 ## Controlled Methodological Source for Actuarial, Reinsurance, Investment-Risk & Capital-Protection Intelligence
 
 **Source ID:** PRM-RISK-AETERNA-001  
 **Release:** v1.1  
 **Date:** 7 October 2026  
 **Status:** CONTROLLED METHODOLOGICAL SOURCE / DESIGN SPECIFICATION  
-**Authority:** subordinate to the PROMETHEUS Canon, the controlling Architecture Meta-Layer and `PRM-ARCH-DET-002`; intended to govern risk-calculation methodology used by RAVEL and related decision-support components.  
+**Authority:** subordinate to the PROMETHEUS Canon, the controlling Architecture Meta-Layer and `PRM-ARCH-DET-002`; intended to govern risk-calculation methodology used by Ravel and related decision-support components.  
 **Not authoritative for:** scientific truth, insurance coverage, legal opinions, regulatory approval, credit approval, investment approval, official ratings, certification, or capital deployment.  
-**Primary downstream users:** RAVEL Risk Intelligence, deterministic Quant Engine, RAP portfolio analytics, Capital Protection Optimiser, Genesis Pilot shadow underwriting, Investment/Credit Committee support, Claims Register and audit dossiers.  
+**Primary downstream users:** Ravel Risk Intelligence, deterministic Quant Engine, RAP portfolio analytics, Capital Protection Optimiser, Genesis Pilot shadow underwriting, Investment/Credit Committee support, Claims Register and audit dossiers.  
 **Core invariant:** **UNKNOWN ≠ ZERO. LOSS REDUCTION ≠ LOSS ALLOCATION. RISK TRANSFER ≠ RISK ELIMINATION.**
 
 ---
@@ -20,7 +20,7 @@ This source is intended to occupy the following position:
 → **PROMETHEUS CANON + ETERNITY-LEVEL INVARIANTS**  
 → **PROMETHEUS ARCHITECTURE META-LAYER / GENESIS COMPILER**  
 → **PRM-ARCH-DET-002 — DETERMINISTIC ARCHITECTURE v2.0**  
-→ **AETERNA RISK SYNERGY — CONTROLLED METHODOLOGICAL SOURCE**  
+→ **Aeterna Risk Synergy — CONTROLLED METHODOLOGICAL SOURCE**  
 → **PRM-RISK-RAVEL-OP-002 / QUANT / MRV IMPLEMENTATION SPECIFICATIONS**  
 → **ARCHITECTURE DECISION RECORDS & PILOT PROTOCOLS**  
 → **RUNTIME / HAPP / BRIDGE / CONSOLE / OPS IMPLEMENTATION**  
@@ -36,15 +36,15 @@ Loading this file into the PROMETHEUS source corpus **does not amend the Canon**
 
 # 0.1 v1.1 SOURCE-STACK MIGRATION
 
-This release is a **metadata and dependency migration**, not a substantive rewrite of AETERNA's actuarial methodology.
+This release is a **metadata and dependency migration**, not a substantive rewrite of Aeterna's actuarial methodology.
 
 It:
 
-- binds AETERNA to `PRM-ARCH-DET-002`;
-- makes `PRM-RISK-RAVEL-OP-002` the current operational RAVEL consumer;
+- binds Aeterna to `PRM-ARCH-DET-002`;
+- makes `PRM-RISK-RAVEL-OP-002` the current operational Ravel consumer;
 - inherits the D/P/H/Q computational contract;
 - requires every probabilistic, heuristic or quantum/quantum-inspired result that may affect a material gate to pass the deterministic verification boundary;
-- marks AETERNA v1.0 as a historical predecessor.
+- marks Aeterna v1.0 as a historical predecessor.
 
 No empirical, actuarial, insurance, legal or capital claim is upgraded by this migration.
 
@@ -54,7 +54,7 @@ No empirical, actuarial, insurance, legal or capital claim is upgraded by this m
 
 # 1. PURPOSE
 
-AETERNA RISK SYNERGY defines the methodological discipline through which PROMETHEUS may analyse investment and project risk using public actuarial, insurance, reinsurance, catastrophe-modelling, credit-risk, project-finance, capital-modelling and enterprise-risk-management principles.
+Aeterna RISK SYNERGY defines the methodological discipline through which PROMETHEUS may analyse investment and project risk using public actuarial, insurance, reinsurance, catastrophe-modelling, credit-risk, project-finance, capital-modelling and enterprise-risk-management principles.
 
 Its purpose is not to prove that regenerative investments are safe.
 
@@ -85,31 +85,31 @@ The target is:
 
 ---
 
-# 2. RELATIONSHIP TO RAVEL
+# 2. RELATIONSHIP TO Ravel
 
-AETERNA is **not a competing risk engine**.
+Aeterna is **not a competing risk engine**.
 
-AETERNA is the controlled methodological source.  
-RAVEL is the operational risk-intelligence plane that applies the source.
+Aeterna is the controlled methodological source.  
+Ravel is the operational risk-intelligence plane that applies the source.
 
 The formal chain is:
 
 **Evidence Spine / MRV**  
 → **PRU Analytics**  
-→ **AETERNA methods applied through RAVEL**  
-→ **RAVEL risk records, loss distributions, stress tests and allocation ledgers**  
+→ **Aeterna methods applied through Ravel**  
+→ **Ravel risk records, loss distributions, stress tests and allocation ledgers**  
 → **RAP portfolio aggregation**  
 → **Capital Protection Architecture**  
 → **Legal Wrapper**  
 → **Capital Allocation Decision**.
 
-RAVEL may observe hazard, exposure and vulnerability variables from early physical and operational layers, but its formal capital-facing checkpoint remains after PRU analysis and before RAP/capital allocation.
+Ravel may observe hazard, exposure and vulnerability variables from early physical and operational layers, but its formal capital-facing checkpoint remains after PRU analysis and before RAP/capital allocation.
 
 Until separately validated for a specific use:
 
-> **RAVEL = SHADOW / ANALYTICAL / NON-AUTHORITATIVE.**
+> **Ravel = SHADOW / ANALYTICAL / NON-AUTHORITATIVE.**
 
-AETERNA therefore supplies methods, not authority.
+Aeterna therefore supplies methods, not authority.
 
 ---
 
@@ -154,7 +154,7 @@ The following relations must remain explicit:
 
 ---
 
-# 4. AETERNA RISK ONTOLOGY
+# 4. Aeterna RISK ONTOLOGY
 
 Every material risk must be represented through the following chain:
 
@@ -283,7 +283,7 @@ The confidence of a conclusion cannot exceed the confidence of the weakest criti
 
 # 8. PUBLIC REINSURANCE / INSURANCE REFERENCE FRAME
 
-AETERNA uses public disclosures from leading insurers and reinsurers as methodological anchors. It does **not** claim access to proprietary models, pricing engines, exposure databases, underwriting manuals or confidential loss data.
+Aeterna uses public disclosures from leading insurers and reinsurers as methodological anchors. It does **not** claim access to proprietary models, pricing engines, exposure databases, underwriting manuals or confidential loss data.
 
 The public-source synthesis supports the following methodological principles:
 
@@ -347,7 +347,7 @@ Forbidden inference: impute a proprietary Berkshire pricing algorithm from quali
 
 # 9. RISK UNIVERSE
 
-Every AETERNA analysis shall perform a materiality screen across at least:
+Every Aeterna analysis shall perform a materiality screen across at least:
 
 ## Financial
 - market;
@@ -507,11 +507,11 @@ ES_\alpha(L)=E[L \mid L \ge VaR_\alpha(L)]
 
 or its mathematically appropriate equivalent for non-continuous distributions.
 
-AETERNA prefers Expected Shortfall for tail interpretation where the model supports it, while retaining VaR where needed for regulatory or comparative contexts.
+Aeterna prefers Expected Shortfall for tail interpretation where the model supports it, while retaining VaR where needed for regulatory or comparative contexts.
 
 ## 10.5 Unexpected Loss
 
-AETERNA may define diagnostic unexpected loss as the tail or dispersion amount above expected loss, but the precise definition must be stated for each model.
+Aeterna may define diagnostic unexpected loss as the tail or dispersion amount above expected loss, but the precise definition must be stated for each model.
 
 ## 10.6 Cash-Flow-at-Risk
 
@@ -577,7 +577,7 @@ Always disclose parameter uncertainty.
 
 # 13. DEPENDENCE & AGGREGATION
 
-AETERNA prohibits naïve summation of diversification benefits.
+Aeterna prohibits naïve summation of diversification benefits.
 
 Assess as appropriate:
 
@@ -682,7 +682,7 @@ Rule:
 
 # 17. TECHNICAL PRICING DECOMPOSITION
 
-AETERNA may use the following general decomposition as an analytical framework, without attributing it as the proprietary formula of any named insurer:
+Aeterna may use the following general decomposition as an analytical framework, without attributing it as the proprietary formula of any named insurer:
 
 \[
 Technical\ Cost
@@ -875,7 +875,7 @@ Mandatory candidate shocks, screened for relevance:
 
 # 22. REVERSE STRESS TEST & FAILURE FRONTIER
 
-AETERNA must ask:
+Aeterna must ask:
 
 > **What is the smallest combination of adverse conditions that causes the project or investment to fail its defined viability condition?**
 
@@ -964,7 +964,7 @@ A regenerative intervention may reduce one risk while increasing another.
 
 # 25. VIABILITY ENVELOPE
 
-AETERNA may support a shadow **PROMETHEUS Viability Envelope** as a diagnostic only.
+Aeterna may support a shadow **PROMETHEUS Viability Envelope** as a diagnostic only.
 
 Candidate variables:
 
@@ -1035,7 +1035,7 @@ More analysis is not automatically better analysis.
 
 # 28. MULTI-AGENT RISK COUNCIL
 
-The AETERNA methodology may be orchestrated through specialist AI functions, but no AI agent acquires domain authority.
+The Aeterna methodology may be orchestrated through specialist AI functions, but no AI agent acquires domain authority.
 
 Recommended roles:
 
@@ -1146,7 +1146,7 @@ Each attack is classified:
 
 # 31. DECISION GATES
 
-AETERNA supports decision recommendations only when the decision authority is human or legally competent.
+Aeterna supports decision recommendations only when the decision authority is human or legally competent.
 
 Available recommendations:
 
@@ -1168,7 +1168,7 @@ The lowest unresolved material gate controls the permitted recommendation.
 
 # 32. MANDATORY OUTPUT OBJECTS
 
-Any full AETERNA/RAVEL analysis should be capable of producing:
+Any full Aeterna/Ravel analysis should be capable of producing:
 
 1. Decision Question;
 2. Unit of Risk;
@@ -1308,7 +1308,7 @@ The target chain is:
 
 # 36. RAP / PORTFOLIO INTEGRATION
 
-At RAP level, AETERNA requires explicit treatment of:
+At RAP level, Aeterna requires explicit treatment of:
 
 - site concentration;
 - operator concentration;
@@ -1336,7 +1336,7 @@ Maintain:
 ≠ observation  
 ≠ verified indicator  
 ≠ PRU  
-≠ RAVEL risk estimate  
+≠ Ravel risk estimate  
 ≠ RAP  
 ≠ token  
 ≠ security  
@@ -1368,7 +1368,7 @@ If PROMETHEUS, an affiliate, an operator, a broker or a service provider earns m
 
 # 39. SELF-FALSIFIABILITY
 
-AETERNA itself must be retired, simplified or materially revised if independent testing shows that it:
+Aeterna itself must be retired, simplified or materially revised if independent testing shows that it:
 
 - does not improve risk identification versus a lightweight baseline;
 - produces false precision;
@@ -1404,8 +1404,8 @@ Default:
 
 The following should enter the Claims Register only as **DESIGN SPECIFICATION / HYPOTHESIS**, not validated performance claims:
 
-**AR-001** — AETERNA can provide a common methodological source for actuarial, insurance and investment-risk analysis within PROMETHEUS.  
-**AR-002** — RAVEL can operationalise AETERNA methods while remaining non-authoritative.  
+**AR-001** — Aeterna can provide a common methodological source for actuarial, insurance and investment-risk analysis within PROMETHEUS.  
+**AR-002** — Ravel can operationalise Aeterna methods while remaining non-authoritative.  
 **AR-003** — Some regenerative interventions may causally reduce specific loss probabilities, severities or recovery times.  
 **AR-004** — Separating Loss Generation from Risk Allocation can expose risk transfers that would otherwise appear as risk reduction.  
 **AR-005** — Stage-gated capital may reduce permanent capital impairment by limiting irreversible exposure before evidence gates close.  
@@ -1418,12 +1418,12 @@ No claim above is empirically validated merely by adoption of this source.
 
 # 42. ACCEPTANCE TEST
 
-AETERNA is fit for controlled PROMETHEUS use only if:
+Aeterna is fit for controlled PROMETHEUS use only if:
 
 - Canon precedence is explicit;
 - Architecture Meta-Prompt precedence is explicit;
-- it does not duplicate RAVEL as a separate architecture layer;
-- RAVEL remains shadow/non-authoritative until admitted;
+- it does not duplicate Ravel as a separate architecture layer;
+- Ravel remains shadow/non-authoritative until admitted;
 - unknown cannot become zero;
 - Loss Generation and Risk Allocation are distinct;
 - Ultimate Risk Bearer is mandatory;
@@ -1451,7 +1451,7 @@ When this source is retrieved:
 4. prefer source-bound calculations;
 5. emit `NR` where inputs are not defensible;
 6. preserve dissent and model limitations;
-7. use RAVEL as the operational risk plane;
+7. use Ravel as the operational risk plane;
 8. preserve the Canon's evidence-before-value sequence;
 9. never allow a later financial layer to repair missing earlier evidence;
 10. never call a regenerative system low-risk merely because it is regenerative;
@@ -1515,9 +1515,9 @@ This source must be interpreted under, and reconciled with:
 5. `PROMETHEUS_ARCHITECTURE_META_PROMPT_v1_0.md`;
 6. `PROMETHEUS_ARCHITECTURE_vNEXT_META_EXECUTION_DOSSIER_v1_0.md`;
 7. future ratified Architecture Decision Records;
-8. Evidence Spine, MRV, Genesis Pilot and RAVEL implementation specifications.
+8. Evidence Spine, MRV, Genesis Pilot and Ravel implementation specifications.
 
-If a later Canon release changes a governing invariant, AETERNA must be re-reviewed before further authoritative methodological use.
+If a later Canon release changes a governing invariant, Aeterna must be re-reviewed before further authoritative methodological use.
 
 ---
 
@@ -1525,7 +1525,7 @@ If a later Canon release changes a governing invariant, AETERNA must be re-revie
 
 > **PROMETHEUS shall not ask whether an investment is "safe" in the abstract. It shall identify the specific mechanisms capable of producing loss; measure frequency, severity, dependence and recovery where evidence permits; prevent or mitigate loss where causally justified; transfer only the residual risks for which transfer is efficient and enforceable; expose the cost and fragility of that transfer; identify the Ultimate Risk Bearer; preserve unmodelled uncertainty; and release capital only as evidence retires uncertainty.**
 
-**Life may create resilience. Evidence must demonstrate it. Causal inference must test it. RAVEL must translate it into explicit risk. Underwriting must price what remains. Capital protection must absorb or transfer what cannot be prevented. Law must create enforceable rights. AI may coordinate the analysis but may never become the authority.**
+**Life may create resilience. Evidence must demonstrate it. Causal inference must test it. Ravel must translate it into explicit risk. Underwriting must price what remains. Capital protection must absorb or transfer what cannot be prevented. Law must create enforceable rights. AI may coordinate the analysis but may never become the authority.**
 
 ---
 
@@ -1534,7 +1534,7 @@ If a later Canon release changes a governing invariant, AETERNA must be re-revie
 **Recommended registry classification after upload:**
 
 - `source_id`: `PRM-RISK-AETERNA-001`
-- `title`: `PROMETHEUS — AETERNA RISK SYNERGY`
+- `title`: `PROMETHEUS — Aeterna Risk Synergy`
 - `version`: `1.0`
 - `domain`: `risk / actuarial / reinsurance / capital protection`
 - `authority_class`: `CONTROLLED_METHODOLOGICAL_SOURCE`
@@ -1544,10 +1544,10 @@ If a later Canon release changes a governing invariant, AETERNA must be re-revie
 - `legal_authority`: `false`
 - `capital_authority`: `false`
 - `ai_authority`: `false`
-- `primary_engine`: `RAVEL`
+- `primary_engine`: `Ravel`
 - `default_external_status`: `SHADOW / ANALYTICAL`
 - `review_required`: `actuarial + reinsurance + financial-risk + legal-boundary + model-validation`
-- `conflict_policy`: `Canon > Architecture Meta-Prompt > AETERNA`
+- `conflict_policy`: `Canon > Architecture Meta-Prompt > Aeterna`
 - `unknown_policy`: `UNKNOWN != ZERO`
 - `rating_policy`: `NR by default where evidence is insufficient`
 
