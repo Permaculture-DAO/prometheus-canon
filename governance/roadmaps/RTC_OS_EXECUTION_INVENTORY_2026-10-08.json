@@ -610,5 +610,17 @@
       "ops full resilience suite requires Linux fcntl; Windows storage-only regression passed"
     ]
   },
+  "workflow_checkpoint": {
+    "runtime_candidate_head": "fecfbf8e207f60c64d2950a9740da03e1c619d7e",
+    "source_root_candidate_head": "eba63beeb08c4c00ece6311846d3cd32476f5b1e",
+    "source_root_candidate_ci": "SUCCESS",
+    "source_root_candidate_tests": 33,
+    "source_root_authority_adopted": false,
+    "concurrent_canon22_head": "49c9485241b45d8749e0960742d2abdb202ae947",
+    "concurrent_canon22_branch_modified": false,
+    "concurrent_canon22_source_custody": "HOLD_VERSIONED_DERIVED_RECONCILIATION_REQUIRED",
+    "merges": [],
+    "deployed_revision": null
+  },
   "proof_boundary": "zero new unallowlisted display occurrences in six candidate trees != globally migrated or adopted; all allowlists proposed and scoped."
 }

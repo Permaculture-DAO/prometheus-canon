@@ -52,7 +52,7 @@ Use the existing runtime controls/PRU and baseline Ravel arithmetic; no duplicat
 
 ## Final workflow reconciliation
 
-Runtime final candidate: 88ce94847201e6a3afdc37eb6eeb645371833eca. Its intake rejects alpha values requiring four-decimal rounding or sharing an output key; supported distinct values preserve both results independently of request order. Historical 316-test receipts describe the prior head, not the final head.
+Runtime application correction: 88ce94847201e6a3afdc37eb6eeb645371833eca; final candidate including security CI: fecfbf8e207f60c64d2950a9740da03e1c619d7e. Its intake rejects alpha values requiring four-decimal rounding or sharing an output key; supported distinct values preserve both results independently of request order. Historical 316-test receipts describe the prior head, not the final head. The last CI-only delta reuses the Canon's checksum-pinned redacted scanner, was separately statically cross-reviewed internally with no blocker, and passes exact-head secret, API, Ravel, S0 and Node checks. It is a checked-out-files scan, not whole-history/deployed security assurance; no application-source change in that delta.
 
 Source-Root canon #18 has now been normally pushed at eba63beeb08c4c00ece6311846d3cd32476f5b1e. Full Windows validator verifies 31 sealed files, eight typed records and the existing signed Canon; 33 synthetic regressions pass. Exact-head candidate-integrity CI, secret scan and overclaim-report are SUCCESS (2026-10-08 14:04 UTC; overclaim-report remains report-only). Original source package and old checksum files are preserved; selected design metadata is explicitly not competent source adoption.
 
