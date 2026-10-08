@@ -6,15 +6,15 @@
   "files": [
     {
       "name": "PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md",
-      "sha256": "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+      "sha256": "bbc6423b38f5a3b70d7b2e486fae1b51ddc1cbba654ce48c756cea5e8d56d138"
     },
     {
       "name": "PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md",
-      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+      "sha256": "3fdb7e1727e464fca484edab75f05b70fdf782c1787328f735e6b6250848a423"
     },
     {
       "name": "PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md",
-      "sha256": "3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece"
+      "sha256": "1096fdb0688c659af48cf8afa64b2a2b4e33fb6774762b0cd40831d50a80a355"
     },
     {
       "name": "PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml",
@@ -22,7 +22,7 @@
     },
     {
       "name": "PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml",
-      "sha256": "29c06c68e82e1288587ee88a0ab8be75402cf1e1b16d54ba43dc24acd36377ab"
+      "sha256": "8e72b98dbaa127f6f8d11e064aceb1012cf0ba98d47bf7aedbe8706a88bb6d0e"
     },
     {
       "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.yaml",
@@ -30,7 +30,7 @@
     },
     {
       "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.md",
-      "sha256": "1d90d1e9da08c7636c85df7dc9c3da80549a0f9dee47afb2c6b91f777bb16727"
+      "sha256": "669b4ed3f6939afe0ab7c5e14ba1a6684fc0d3220281af204f571838a340b479"
     },
     {
       "name": "PROMETHEUS_SOURCE_MIGRATION_AND_DEDUPLICATION_PLAN_v1_0.md",
@@ -38,7 +38,7 @@
     },
     {
       "name": "PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md",
-      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+      "sha256": "6c4cfffe4e8834794366ac24dbe6ae87add2fd1c822e187994e1211a1b8ecbcf"
     },
     {
       "name": "PROMETHEUS_SOURCE_RECORD.schema.json",
@@ -54,7 +54,7 @@
     },
     {
       "name": "PROMETHEUS_SOURCE_ROOT_v2_0_SHA256SUMS.txt",
-      "sha256": "06375bb7ebc09a5b514386b6d434be45f8abd5d62040c8f360f790cec8f53fb7"
+      "sha256": "d3e4a00de625b95c95844a7b3fa7264631238d247b5952d7afedb27a8b2fc8ce"
     }
   ],
   "schema_ids": [
@@ -72,12 +72,12 @@
     {
       "source_id": "PRM-RISK-AETERNA-001",
       "version": "1.1",
-      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+      "sha256": "6c4cfffe4e8834794366ac24dbe6ae87add2fd1c822e187994e1211a1b8ecbcf"
     },
     {
       "source_id": "PRM-RISK-RAVEL-OP-002",
       "version": "1.1",
-      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+      "sha256": "3fdb7e1727e464fca484edab75f05b70fdf782c1787328f735e6b6250848a423"
     }
   ]
 }
