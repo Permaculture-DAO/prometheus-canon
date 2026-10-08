@@ -1,0 +1,218 @@
+schema_version: "1.0.1"
+effective_date: "2026-10-08"
+active_selection_scope: "CANDIDATE_DESIGN_ONLY"
+supersession_scope: "CANDIDATE_GRAPH_ONLY_NOT_GOVERNANCE_ADOPTION"
+key_policy: "stable source_id + mandatory version; exact record_key=source_id@version"
+sources:
+  -
+    source_id: "PRM-CANON-SIGNED"
+    version: "v1.1.2-genesis"
+    record_key: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    name: "h-earth-prometheus-white-paper.md"
+    path: "canonical/h-earth-prometheus-white-paper.md"
+    status: "ACTIVE"
+    authority_class: "CANON_SOURCE"
+    selection_role: "signed_canon"
+    adoption_state: "RATIFIED_SIGNED_CANON"
+    canonical: true
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+    scope:
+      - "governing_prose_canon"
+    upstream: []
+    upstream_hashes: {}
+  -
+    source_id: "PRM-ARCH-DET-002"
+    version: "2.0"
+    record_key: "PRM-ARCH-DET-002@2.0"
+    name: "PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md"
+    path: "governance/sources/architecture/PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md"
+    status: "ACTIVE"
+    authority_class: "CONTROLLED_GLOBAL_ARCHITECTURE_SOURCE"
+    selection_role: "global_architecture"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+    scope:
+      - "global_architecture_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+    supersedes: []
+  -
+    source_id: "PRM-RISK-AETERNA-001"
+    version: "1.1"
+    record_key: "PRM-RISK-AETERNA-001@1.1"
+    name: "PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md"
+    path: "governance/sources/methodology/PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md"
+    status: "SUPERSEDED"
+    authority_class: "CONTROLLED_METHODOLOGICAL_SOURCE"
+    selection_role: "aeterna_method"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+    scope:
+      - "aeterna_method_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+    supersedes: []
+    superseded_by: "PRM-RISK-AETERNA-001@1.1.1"
+  -
+    source_id: "PRM-RISK-AETERNA-001"
+    version: "1.1.1"
+    record_key: "PRM-RISK-AETERNA-001@1.1.1"
+    name: "PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1_1.md"
+    path: "governance/sources/methodology/PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1_1.md"
+    status: "ACTIVE"
+    authority_class: "CONTROLLED_METHODOLOGICAL_SOURCE"
+    selection_role: "aeterna_method"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487"
+    scope:
+      - "aeterna_method_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+    supersedes:
+      - "PRM-RISK-AETERNA-001@1.1"
+  -
+    source_id: "PRM-RISK-RAVEL-OP-002"
+    version: "1.1"
+    record_key: "PRM-RISK-RAVEL-OP-002@1.1"
+    name: "PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md"
+    path: "governance/sources/methodology/PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md"
+    status: "SUPERSEDED"
+    authority_class: "CONTROLLED_OPERATIONAL_METHODOLOGY_SOURCE"
+    selection_role: "ravel_operational"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+    scope:
+      - "ravel_operational_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+      - "PRM-RISK-AETERNA-001@1.1"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+      PRM-RISK-AETERNA-001@1.1: "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+    supersedes: []
+    superseded_by: "PRM-RISK-RAVEL-OP-002@1.1.1"
+  -
+    source_id: "PRM-RISK-RAVEL-OP-002"
+    version: "1.1.1"
+    record_key: "PRM-RISK-RAVEL-OP-002@1.1.1"
+    name: "PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1_1.md"
+    path: "governance/sources/methodology/PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1_1.md"
+    status: "ACTIVE"
+    authority_class: "CONTROLLED_OPERATIONAL_METHODOLOGY_SOURCE"
+    selection_role: "ravel_operational"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e"
+    scope:
+      - "ravel_operational_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+      - "PRM-RISK-AETERNA-001@1.1.1"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+      PRM-RISK-AETERNA-001@1.1.1: "da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487"
+    supersedes:
+      - "PRM-RISK-RAVEL-OP-002@1.1"
+  -
+    source_id: "PRM-CIV-APP-006"
+    version: "6.2"
+    record_key: "PRM-CIV-APP-006@6.2"
+    name: "PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md"
+    path: "governance/sources/applications/PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md"
+    status: "SUPERSEDED"
+    authority_class: "CONTROLLED_APPLICATION_SPECIFICATION"
+    selection_role: "civilization_application"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece"
+    scope:
+      - "civilization_application_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+      - "PRM-RISK-AETERNA-001@1.1"
+      - "PRM-RISK-RAVEL-OP-002@1.1"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+      PRM-RISK-AETERNA-001@1.1: "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+      PRM-RISK-RAVEL-OP-002@1.1: "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+    supersedes: []
+    superseded_by: "PRM-CIV-APP-006@6.2.1"
+  -
+    source_id: "PRM-CIV-APP-006"
+    version: "6.2.1"
+    record_key: "PRM-CIV-APP-006@6.2.1"
+    name: "PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2_1.md"
+    path: "governance/sources/applications/PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2_1.md"
+    status: "ACTIVE"
+    authority_class: "CONTROLLED_APPLICATION_SPECIFICATION"
+    selection_role: "civilization_application"
+    adoption_state: "DESIGN_CANDIDATE"
+    canonical: false
+    governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    authorises_capital: false
+    sha256: "412f5357047fafd71039c9788c579142a7f8a233945a2729da8b9ca012c77594"
+    scope:
+      - "civilization_application_design_only"
+    upstream:
+      - "PRM-CANON-SIGNED@v1.1.2-genesis"
+      - "PRM-ARCH-DET-002@2.0"
+      - "PRM-RISK-AETERNA-001@1.1.1"
+      - "PRM-RISK-RAVEL-OP-002@1.1.1"
+    upstream_hashes:
+      PRM-CANON-SIGNED@v1.1.2-genesis: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+      PRM-ARCH-DET-002@2.0: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+      PRM-RISK-AETERNA-001@1.1.1: "da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487"
+      PRM-RISK-RAVEL-OP-002@1.1.1: "de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e"
+    supersedes:
+      - "PRM-CIV-APP-006@6.2"
+historical_inventory_reference: "governance/sources/PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml"
+historical_inventory_is_resolvable: false
+default_retrieval_policy:
+  prefer_status:
+    - "ACTIVE"
+  exclude_by_default:
+    - "PROPOSED"
+    - "SUPERSEDED"
+    - "HISTORICAL"
+    - "RETIRED"
+    - "ACTIVE_SUPPORTING"
+    - "HISTORICAL_EVIDENCE_SNAPSHOT"
+  unknown_status: "REJECT"
+  historical_for:
+    - "explicit_pinned_provenance"
+    - "diff"
+    - "audit"

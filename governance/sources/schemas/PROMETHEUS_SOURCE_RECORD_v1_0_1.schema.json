@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:prometheus:schema:source-record:1.0.1",
+  "title": "PROMETHEUS Source Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "version",
+    "authority_class",
+    "status",
+    "sha256",
+    "scope",
+    "record_key",
+    "name",
+    "path",
+    "selection_role",
+    "adoption_state",
+    "canonical",
+    "governing_authority",
+    "authorises_capital",
+    "upstream",
+    "upstream_hashes"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z0-9_-]+$"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "PROPOSED",
+        "ACTIVE",
+        "ACTIVE_SUPPORTING",
+        "SUPERSEDED",
+        "HISTORICAL",
+        "HISTORICAL_EVIDENCE_SNAPSHOT",
+        "RETIRED"
+      ]
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "upstream": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "permitted_use": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prohibited_interpretation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "record_key": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_-]+@[0-9A-Za-z.-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_role": {
+      "enum": [
+        "signed_canon",
+        "global_architecture",
+        "aeterna_method",
+        "ravel_operational",
+        "civilization_application"
+      ]
+    },
+    "adoption_state": {
+      "enum": [
+        "RATIFIED_SIGNED_CANON",
+        "DESIGN_CANDIDATE"
+      ]
+    },
+    "canonical": {
+      "type": "boolean"
+    },
+    "governing_authority": {
+      "const": "PRM-CANON-SIGNED@v1.1.2-genesis"
+    },
+    "authorises_capital": {
+      "const": false
+    },
+    "upstream_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "superseded_by": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Candidate design-registry record, not authority admission. Historical inventory lacking bytes/metadata stays outside this schema and outside default resolution."
+}

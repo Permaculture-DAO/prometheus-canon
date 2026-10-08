@@ -1,0 +1,32 @@
+{
+  "version": "1.0.1",
+  "scope": "CANDIDATE_ONLY",
+  "import_head": "97e4662e47d10d9966c4bc2b0e01c86a6e9c96a5",
+  "restoration_commit": "0f569cc775b506c297ccd9b67ca9ac5debe0ab69",
+  "restoration_evidence": "Original v2.0 SHA256SUMS 12/12 and checksum file 06375bb7ebc09a5b514386b6d434be45f8abd5d62040c8f360f790cec8f53fb7 match after restore; wrong imported head preserved in Git history.",
+  "patches": [
+    {
+      "record_key": "PRM-RISK-AETERNA-001@1.1.1",
+      "old_record_key": "PRM-RISK-AETERNA-001@1.1",
+      "old_sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3",
+      "new_sha256": "da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487",
+      "change": "Metadata registration version and explicit proposed authority scope."
+    },
+    {
+      "record_key": "PRM-RISK-RAVEL-OP-002@1.1.1",
+      "old_record_key": "PRM-RISK-RAVEL-OP-002@1.1",
+      "old_sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5",
+      "new_sha256": "de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e",
+      "change": "Pins AETERNA 1.1.1 and candidate selection scope."
+    },
+    {
+      "record_key": "PRM-CIV-APP-006@6.2.1",
+      "old_record_key": "PRM-CIV-APP-006@6.2",
+      "old_sha256": "3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece",
+      "new_sha256": "412f5357047fafd71039c9788c579142a7f8a233945a2729da8b9ca012c77594",
+      "change": "Release/registration/checksum/predecessor/current-architecture metadata; history and application content retained."
+    }
+  ],
+  "deployment_performed": false,
+  "authority_adopted": false
+}

@@ -1,0 +1,60 @@
+schema_version: '1.0'
+effective_date: '2026-10-07'
+global_architecture: PRM-ARCH-DET-002
+dimensions:
+  F_FACTUAL:
+    purpose: What was observed or physically occurred
+    precedence:
+    - direct_observation
+    - competent_measurement
+    - independent_verification
+    - derived_model
+    - assumption
+  N_NORMATIVE:
+    purpose: PROMETHEUS constitutional invariants
+    precedence:
+    - canon
+    - ratified_constitutional_decision
+    - global_architecture
+    - application
+  L_LEGAL:
+    purpose: Legal rights and obligations
+    precedence:
+    - applicable_law_or_competent_authority
+    - executed_legal_instrument
+    - qualified_legal_opinion
+    - architecture_label
+  A_ARCHITECTURE:
+    purpose: Global system design
+    precedence:
+    - canon_constraints
+    - architecture_meta_layer
+    - PRM-ARCH-DET-002
+    - ADR
+    - implementation_spec
+  M_METHOD:
+    purpose: Specialised methodological authority
+    authorities:
+      actuarial_risk: PRM-RISK-AETERNA-001
+      operational_risk: PRM-RISK-RAVEL-OP-002
+      MRV_science: registered_scientific_methods
+  I_IMPLEMENTATION:
+    purpose: What is actually deployed
+    precedence:
+    - verified_repo_runtime_state
+    - implementation_record
+    - narrative
+  X_APPLICATION:
+    purpose: Domain application rules
+    precedence:
+    - PRM-ARCH-DET-002
+    - active_application_source
+    - application_ADR
+    - implementation
+invariants:
+- UNKNOWN != ZERO
+- LOSS_REDUCTION != LOSS_ALLOCATION
+- TRANSFERRED_RISK != ELIMINATED_RISK
+- AI_IS_NON_AUTHORITATIVE
+- TRANSPORT_DOES_NOT_CREATE_AUTHORITY
+- LEGAL_RIGHTS_REQUIRE_VALID_LEGAL_INSTRUMENT

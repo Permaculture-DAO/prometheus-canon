@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:prometheus:schema:compute-provenance:1.0",
+  "title": "PROMETHEUS Compute Provenance",
+  "type": "object",
+  "required": [
+    "compute_id",
+    "mode",
+    "model_or_algorithm_id",
+    "version",
+    "input_hashes",
+    "output_hash",
+    "verification_state"
+  ],
+  "properties": {
+    "compute_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "D",
+        "P",
+        "H",
+        "Q"
+      ]
+    },
+    "model_or_algorithm_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "parameter_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "code_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtime_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed_if_applicable": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "backend": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backend_calibration_snapshot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "shots": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "output_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "verification_state": {
+      "enum": [
+        "UNVERIFIED",
+        "D_VERIFIED",
+        "REJECTED",
+        "HUMAN_REVIEW_REQUIRED"
+      ]
+    },
+    "gate_effect_allowed": {
+      "type": "boolean"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "P",
+              "H",
+              "Q"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "gate_effect_allowed": {
+            "const": false
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}
