@@ -275,7 +275,7 @@ No report, investor material, sales page, LLM response or API consumer may use c
 
 ---
 
-# 6. AETERNA/RAVEL RISK CONTROL PLANE (DISPLAY: AETERNA -> Aeterna, RAVEL -> Ravel)
+# 6. Aeterna / Ravel — Risk Control Plane
 
 ## 6.1 Method roles
 
@@ -364,7 +364,7 @@ Retail sovereign finance is **a public-debt instrument sold by a valid sovereign
 
 ## 8.4 Capital readiness objects and hard blockers
 
-CapitalReadinessDossier contains: completed rights/title/water review; approved intervention and steward contract; baseline and evidence status; audited/reviewable cost model; five-case economics where the parent application requires it; downside runway; Ravel risk and recovery scenarios; two-ledger risk allocation; independent valuation and attribution range; conflicts; partner contracts; actual payer/of​ftake evidence; legal and tax memo; insurance/contingency; community/exit plan; Claims Register; dissent; committee recommendation with date and expiry.
+CapitalReadinessDossier contains: completed rights/title/water review; approved intervention and steward contract; baseline and evidence status; audited/reviewable cost model; five-case economics where the parent application requires it; downside runway; Ravel risk and recovery scenarios; two-ledger risk allocation; independent valuation and attribution range; conflicts; partner contracts; actual payer/offtake evidence; legal and tax memo; insurance/contingency; community/exit plan; Claims Register; dissent; committee recommendation with date and expiry.
 
 At land closing, **Civilization v6.2 controls**: preserve existing Land IC G0–G5 plus independent legal, financial, insurance and human approval prerequisites. An algorithmic score cannot override HOLD. Any release of capital must occur outside PROMETHEUS under authorised persons and contracts.
 
