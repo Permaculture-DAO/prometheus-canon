@@ -23,7 +23,7 @@ Primary checkout branches were preserved (eleven clean at intake). Additional kn
 
 ## Evidence
 
-- Runtime: 316 API tests, all existing source/runtime/contract/S0/S4/S5/S6 guards PASS; bridge Node syntax PASS.
+- Runtime: 323 API tests (final run, including seven alpha-identity regressions); all existing source/runtime/contract/S0/S4/S5/S6 guards PASS; bridge Node syntax PASS.
 - Console: 15 status-handler tests + 33 other Node tests, release QA and candidate build PASS. Browser exercised local quantified synthetic import; displayed HOLD, NR, all authority flags false. Temporary server closed; no deployment.
 - hApp: rustfmt targeted files PASS, 27 integrity tests PASS using existing WSL cache/offline lockfile.
 - Bridge: status check and smoke PASS.
@@ -32,7 +32,7 @@ Primary checkout branches were preserved (eleven clean at intake). Additional kn
 - Quantified wire numbers are declared decimal strings, not a scientific calibration or independent pricing result.
 - CI and human approvals on final pushed commits are separate evidence; do not infer them from local tests. Later Issue #19 checkpoint records their actual status.
 
-Astra's initial and intermediate internal reviews found real bugs and drove regressions; quota exhausted before final re-review. Sol performs a final internal delta review where available. Neither AI is independent domain assurance or a GitHub required approval.
+Astra's initial and intermediate internal reviews found real bugs and drove regressions; quota exhausted before final re-review. Sol completed the final internal delta review: one P2 alpha-key rounding/collision was found, corrected, and re-reviewed without a new blocker. Parent ran all 323 API tests; the final delta reviewer inspected source/diff, not that test run. Sol also exercised 48 console, 7 naming-audit and 3 storage tests, five naming trees and the sixteen new checksum entries; it did not rerun the whole Rust/runtime build. Neither AI is independent domain assurance or a GitHub required approval.
 
 ## Material gates held
 
@@ -49,3 +49,13 @@ Source adoption remains unconditional HOLD in this synthetic implementation. E/P
 No persisted-schema/API/entry-type migration was introduced. Revert candidate composition/viewer/display commits through normal review; retain old source releases/tags and identifiers. Do not run Phase 8, force-push, admin-bypass, rewrite historical checksums or silently publish.
 
 Use the existing runtime controls/PRU and baseline Ravel arithmetic; no duplicate service. The narrow RTC quantitative request explicitly refuses the broader existing API's unsupported fields. This milestone is sufficient for shadow engineering; it is not a completed territorial capital system.
+
+## Final workflow reconciliation
+
+Runtime final candidate: 88ce94847201e6a3afdc37eb6eeb645371833eca. Its intake rejects alpha values requiring four-decimal rounding or sharing an output key; supported distinct values preserve both results independently of request order. Historical 316-test receipts describe the prior head, not the final head.
+
+Source-Root canon #18 has now been normally pushed at eba63beeb08c4c00ece6311846d3cd32476f5b1e. Full Windows validator verifies 31 sealed files, eight typed records and the existing signed Canon; 33 synthetic regressions pass. Exact-head candidate-integrity CI, secret scan and overclaim-report are SUCCESS (2026-10-08 14:04 UTC; overclaim-report remains report-only). Original source package and old checksum files are preserved; selected design metadata is explicitly not competent source adoption.
+
+Concurrent canon #22 at 49c9485241b45d8749e0960742d2abdb202ae947 was discovered in Issue #19. Its diff rewrites controlled source bytes and historical sidecars under the same version keys (including Architecture 2.0 and methods 1.1), and the dossier contains a bounded-utility TRBK assertion. Do not fold it silently into #18/#21 or treat its old green secret/overclaim jobs as source-custody validation. Source-owner reconciliation must carry any accepted display edits forward in versioned derived candidates with predecessor hashes, retain original pins and align ARD-001/TOD-001. Its branch and local archive mirrors were not modified by this session.
+
+All changed branches are candidates. Exact remote heads, CI URLs, draft/review states, no-change repos and blockers are recorded in the Issue #19 checkpoint. No merge SHA or deployed revision is created by this engineering milestone. No autonomous canonical, token, scientific, rights, insurance or capital admission.

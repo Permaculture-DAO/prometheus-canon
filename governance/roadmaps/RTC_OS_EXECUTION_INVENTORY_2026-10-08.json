@@ -588,7 +588,7 @@
     "off-host-restore-and-public-runtime-monitor-header-regression-open"
   ],
   "local_verification": {
-    "runtime_api_tests": 316,
+    "runtime_api_tests": 323,
     "console_node_tests": 48,
     "happ_integrity_tests": 27,
     "ops_linux_tests": 37,
