@@ -124,6 +124,66 @@ References to controlled machine source IDs retain the historically registered s
 
 ---
 
+## 1.5 Four nested scales: Universal Ethics → Global Principles → Bioregional Strategies → Local Solutions
+
+**Source of concept:** the user-provided concentric-circle diagram reads, from outer to inner level, “Ethics are Universal”, “Principles are Global”, “Strategies are Bioregional” and “Solutions are Local”. RTC-OS integrates this as an **operational scoping discipline**, not as empirical proof of universal moral consensus, a new constitutional hierarchy, or a claim to political jurisdiction over local people.
+
+| Scope | RTC-OS interpretation | Mandatory control | Proposed record |
+|---|---|---|---|
+| **E — Universal ethics** | Design commitments to dignity, non-extraction, voluntary informed participation, fairness, ecological integrity, risk allocation and intergenerational stewardship | Coercion, displacement, concealed harms, capture, and unreviewed rights conflicts cannot be offset by commercial benefits; Canon and applicable law continue to govern | EthicalBoundaryAssessment |
+| **P — Global principles** | Portable procedures: evidence before value, source provenance, falsifiability, uncertainty disclosure, no-double-counting, risk-owner mapping, reproducibility and distributed human authority | A portable method is not a portable empirical result. Claims and gates may not outrun evidence, scientific review, rights or law | PrincipleComplianceRecord |
+| **B — Bioregional strategies** | Place-sensitive strategy shaped by watershed, soils, climate, ecology, food systems, cultural history, institutions, disturbance, operating capability and stewardship | Relevant reference-class evidence, comparator, rights, hazards and local legitimacy must be examined; untested transfer is EXPLORATORY, not proven | BioregionalStrategyProfile |
+| **L — Local solutions** | Site-specific species, planting, water design, contracting, labour, budgets, operations, maintenance and adaptive monitoring | Actual site permission, baseline, legal water/title, steward accountability, independent review where material, Aeterna/Ravel risk and valid financial/legal wrappers | LocalSolutionPlan |
+
+**Reading rule:** ethics delimit acceptable goals; principles delimit valid decision and evidence procedures; bioregional strategies determine which context-appropriate pathways are worth testing; local solutions execute testable interventions. Locally observed outcomes and dissent feed **upwards** to improve strategy and methods, but do not automatically rewrite the Canon or convert a project result into a universal claim.
+
+### 1.5.1 Non-compensating four-scale decision vector
+
+Record separate E, P, B, L states for each material decision:
+
+- E_state: ethical/rights compatibility — PASSED, HOLD, REJECT, UNKNOWN.
+- P_state: methodological and claims integrity — PASSED, HOLD, REJECT, UNKNOWN.
+- B_state: bioregional contextual applicability — PASSED, EXPLORATORY, HOLD, UNKNOWN.
+- L_state: permitted and feasible local implementation — PASSED, HOLD, REJECT, UNKNOWN.
+
+This vector is **not a composite investment score**. A productive local intervention cannot compensate for coercion, a verified global generalisation cannot substitute for a local baseline or water right, and a lawful site does not guarantee ecological success. Even if all four scales are passed, the existing G0–G7 gates, PRU/RAP maturity, legal instrument, insurance and capital authority remain separately required.
+
+### 1.5.2 Bioregional plurality, feedback and lawful authority
+
+A single site may belong to multiple useful territorial frames (watershed, agroclimatic zone, ecoregion, administrative area or culturally defined food system). Preserve overlapping maps, source IDs, boundary uncertainty and conflicts instead of claiming one universal bioregional geometry.
+
+“Universal ethics” is an explicitly declared PROMETHEUS design commitment, **not** a claim that all communities share identical ethics. Respect valid Indigenous/customary and statutory rights, privacy, cultural knowledge, safeguarding, public resources and local participation. No “bioregional” label automatically creates jurisdiction, ownership, representation, legal authority or investment rights.
+
+A material E/P/B/L inconsistency is a SCALE_CONFLICT. Its record carries site_id, source_ids, affected claims, reviewer, materiality, conflicting observations, dissent, remediation and expiry. An unresolved material conflict forces HOLD on the affected claims and capital-facing decisions.
+
+### 1.5.3 Application composition, without parallel architecture
+
+Extend existing PROMETHEUS objects by reference:
+
+- TerritoryProfile links one or more BioregionalStrategyProfile records with boundaries, evidence and confidence.
+- TerritorialDeterminationDossier includes E/P/B/L gate vector, baseline, do-nothing alternative and material conflicts.
+- InterventionPlan / LocalSolutionPlan includes steward, rights, local ecological context, budget, management, expected failures and stop conditions.
+- Evidence Spine and Claims Register remain the controls on observation, method, causal inference, dissemination and cross-scale generalisation.
+- Aeterna methods and Ravel operations record physical and financial risks, transfer terms and ultimate bearers including communities and ecosystems.
+- Deterministic Verification Boundary applies to all P/H/Q risk and recommendation outputs; human/domain authority remains external.
+
+### 1.5.4 Illustrative Sicilian temperate OHE, not observed proof
+
+At a prospective Sicilian syntropic food-forest pilot: E demands dignified voluntary stewardship, transparent community impacts and non-extractive water use; P demands time-stamped soil/water baselines, comparable control, preregistered outcomes and reproducible review; B adapts the strategy to Mediterranean drought, soils, water balance and landscape disturbance; L specifies lawfully permitted species, local spacing, water-use design, maintenance, labour and financing obligations. Planting alone cannot establish observed regeneration, higher land value, insurance-pricing reductions or investability.
+
+| Test case | Mandatory expected response |
+|---|---|
+| Global research robust; local land/water authority unknown | L_state = HOLD; no finance-ready inference |
+| Project has good yield; community displacement or coercion found | E_state = HOLD or REJECT, regardless of return |
+| Tropical methodology applied in Mediterranean context without comparator | B_state = EXPLORATORY; no confirmatory ecological claim |
+| Local observation contradicts imported reference class | Preserve observation, register SCALE_CONFLICT and require domain review |
+| E/P/B/L all pass; legal wrapper or capital committee absent | Capital remains HOLD; no software capital approval |
+| Multiple bioregional descriptions materially conflict | Preserve both, disclose uncertainty, apply human contextual review |
+
+**RTC-OS design commitment:** universally bounded ethical aims, globally consistent procedural principles, bioregionally adaptive strategy, and locally accountable solutions — with evidence, applicable law, safeguarding and legitimate human rights never bypassed.
+
+---
+
 # 2. DEFINITION OF TERRITORY, SYSTEM AND USER
 
 ## 2.1 Unit of analysis
