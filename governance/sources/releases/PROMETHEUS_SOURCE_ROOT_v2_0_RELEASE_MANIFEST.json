@@ -1,0 +1,83 @@
+{
+  "release_id": "PROMETHEUS-SOURCE-ROOT-2026-10-07-v2.0",
+  "created_at": "2026-10-07",
+  "global_architecture_source_id": "PRM-ARCH-DET-002",
+  "root_manifest_id": "PRM-ROOT-SOURCES-001",
+  "files": [
+    {
+      "name": "PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md",
+      "sha256": "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+    },
+    {
+      "name": "PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md",
+      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+    },
+    {
+      "name": "PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md",
+      "sha256": "3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece"
+    },
+    {
+      "name": "PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml",
+      "sha256": "fe730dcfba48ebd35bf216fe053b18dc9cbab4a3e430ce034f70cf2d5cbcd122"
+    },
+    {
+      "name": "PROMETHEUS_SOURCE_REGISTRY_v1_0.yaml",
+      "sha256": "29c06c68e82e1288587ee88a0ab8be75402cf1e1b16d54ba43dc24acd36377ab"
+    },
+    {
+      "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.yaml",
+      "sha256": "0fa53ee32df946c6094741ffcb50a6f74ac78df9c65a79cbc775bfa106913f1f"
+    },
+    {
+      "name": "PROMETHEUS_ROOT_SOURCE_MANIFEST_v1_0.md",
+      "sha256": "1d90d1e9da08c7636c85df7dc9c3da80549a0f9dee47afb2c6b91f777bb16727"
+    },
+    {
+      "name": "PROMETHEUS_SOURCE_MIGRATION_AND_DEDUPLICATION_PLAN_v1_0.md",
+      "sha256": "96c2a7a244b5f062d9d53d9cc283b219c51b1767b30162499ecec5d9a66047ff"
+    },
+    {
+      "name": "PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md",
+      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+    },
+    {
+      "name": "PROMETHEUS_SOURCE_RECORD.schema.json",
+      "sha256": "b2a94a6362a3f0369fa12b22dab75b02119808de7bd8f361a91002e968705a07"
+    },
+    {
+      "name": "PROMETHEUS_CONTROLLED_SOURCE_RELEASE.schema.json",
+      "sha256": "c6eca186129e55e9da927266e20c4ff1b393069dbbdfb3bff9623faec123fed3"
+    },
+    {
+      "name": "PROMETHEUS_COMPUTE_PROVENANCE.schema.json",
+      "sha256": "a447a8010d84a248caa21b3a5e5cd946de66633cf89c8d1f30d09612b13c8c4c"
+    },
+    {
+      "name": "PROMETHEUS_SOURCE_ROOT_v2_0_SHA256SUMS.txt",
+      "sha256": "06375bb7ebc09a5b514386b6d434be45f8abd5d62040c8f360f790cec8f53fb7"
+    }
+  ],
+  "schema_ids": [
+    "urn:prometheus:schema:source-record:1.0",
+    "urn:prometheus:schema:controlled-source-release:1.0",
+    "urn:prometheus:schema:compute-provenance:1.0"
+  ],
+  "deployment_authority": false,
+  "notes": [
+    "P/H/Q outputs require deterministic verification before material gate effects.",
+    "ControlledSourceRelease is a provenance/integrity schema, not scientific/legal/capital authority.",
+    "Creating this package does not prove repository/runtime deployment."
+  ],
+  "method_stack": [
+    {
+      "source_id": "PRM-RISK-AETERNA-001",
+      "version": "1.1",
+      "sha256": "1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3"
+    },
+    {
+      "source_id": "PRM-RISK-RAVEL-OP-002",
+      "version": "1.1",
+      "sha256": "ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+schema_version: "1.0.1"
+effective_date: "2026-10-08"
+authority_adopted: false
+governing_canon: "PRM-CANON-SIGNED@v1.1.2-genesis"
+governing_hierarchy:
+  - "living_system_reality"
+  - "governing_prose_canon"
+  - "derived_canonicals"
+  - "methodologies_api_contracts"
+  - "ordinary_governance"
+  - "technical_implementation"
+  - "ai_context"
+  - "market_pressure"
+proposal_reference: "governance/sources/PROMETHEUS_AUTHORITY_LATTICE_v1_0.yaml"
+proposal_scope: "Typed dimensions and META/compiler precedence are design proposals only, not ratified hierarchy."
+meta_layer_adoption: "PROPOSED_NOT_ADOPTED"
+invariants:
+  - "UNKNOWN != ZERO"
+  - "LOSS_REDUCTION != LOSS_ALLOCATION"
+  - "TRANSFERRED_RISK != ELIMINATED_RISK"
+  - "AI_IS_NON_AUTHORITATIVE"
+  - "TRANSPORT_DOES_NOT_CREATE_AUTHORITY"
+  - "LEGAL_RIGHTS_REQUIRE_VALID_LEGAL_INSTRUMENT"

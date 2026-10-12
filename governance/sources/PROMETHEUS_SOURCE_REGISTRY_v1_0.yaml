@@ -1,0 +1,102 @@
+schema_version: '1.0'
+effective_date: '2026-10-07'
+root_global_architecture: PRM-ARCH-DET-002
+sources:
+- source_id: PRM-CANON-FULL-CORPUS
+  name: PROMETHEUS_Canonical_White_Paper_Full_Corpus.docx
+  status: ACTIVE
+  authority_class: CANON_AGGREGATE_PACKAGE
+  authority_dimensions:
+  - N_NORMATIVE
+  sha256: 6f0140a9821e2546cf70665409845c7e77ccc9bd6a89a824bfb77f8319e362f8
+  note: Contains authoritative canon above and subordinate preserved full-canon corpus;
+    internal hierarchy remains controlling.
+- source_id: PRM-MASTER-CANON-MAINT-003
+  name: PROMETHEUS_MASTER_PROMPT_v3_0_DEFINITIVE.md
+  status: ACTIVE_SUPPORTING
+  authority_class: CANON_MAINTENANCE_PROMPT
+  sha256: 94d5d9b5514fc463462d33579adef3376006bbaec111794651bf51ee0c35f760
+- source_id: PRM-ARCH-META-001
+  name: PROMETHEUS_ARCHITECTURE_META_PROMPT_v1_0.md
+  status: ACTIVE
+  authority_class: CONTROLLED_ARCHITECTURE_META_LAYER
+  sha256: 0205cd9edd47a2ec93ffcd074166c31dae55f07d02662731f8e1aba051e4a6da
+- source_id: PRM-ARCH-DET-002
+  name: PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v2_0_DEFINITIVE_SOURCE.md
+  status: ACTIVE
+  authority_class: CONTROLLED_GLOBAL_ARCHITECTURE_SOURCE
+  sha256: 83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7
+  supersedes:
+  - PRM-ARCH-DET-001
+- source_id: PRM-RISK-AETERNA-001@1.0
+  name: PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_0.md
+  status: SUPERSEDED
+  authority_class: HISTORICAL_METHODOLOGICAL_SOURCE
+  sha256: 4ab9288f3a64daf60d75407f02eea10b85c68abcc413033d1aa381840d3a6b83
+  superseded_by: PRM-RISK-AETERNA-001@1.1
+- source_id: PRM-RISK-AETERNA-001
+  name: PROMETHEUS_AETERNA_RISK_SYNERGY_CONTROLLED_SOURCE_v1_1.md
+  status: ACTIVE
+  authority_class: CONTROLLED_METHODOLOGICAL_SOURCE
+  sha256: 1fc0656f60a73ef6c067e7a1a15e83e28dfdddd68575202ce47ad5e0ebd767d3
+  version: '1.1'
+  upstream:
+  - PRM-ARCH-DET-002
+- source_id: PRM-RISK-RAVEL-OP-002
+  name: PROMETHEUS_RAVEL_OPERATIONAL_SOURCE_v1_1.md
+  status: ACTIVE
+  authority_class: CONTROLLED_OPERATIONAL_METHODOLOGY_SOURCE
+  sha256: ea5c228ff48ca1e30738aaa2eea8cf88e8c70c38726096ba43c0a6f03f3a9ff5
+  upstream:
+  - PRM-RISK-AETERNA-001@1.1
+  - PRM-ARCH-DET-002
+- source_id: PRM-CIV-APP-006
+  name: PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_2.md
+  version: '6.2'
+  status: ACTIVE
+  authority_class: CONTROLLED_APPLICATION_SPECIFICATION
+  sha256: 3710dbc02b63f43d74b7aa03fd2fa584e27ef26a9e0866add2139a296ea99ece
+  upstream:
+  - PRM-ARCH-DET-002
+  - PRM-RISK-AETERNA-001
+  - PRM-RISK-RAVEL-OP-002
+- source_id: PRM-ARCH-DET-001
+  name: PROMETHEUS_DETERMINISTIC_ARCHITECTURE_v1_0_DEFINITIVE.md
+  status: SUPERSEDED
+  authority_class: HISTORICAL_GLOBAL_ARCHITECTURE
+  sha256: 1ef8d42d814dbea18929f2b9cb51bbc2655683912ffcea3b685661de266312c1
+  superseded_by: PRM-ARCH-DET-002
+- source_id: PRM-ARCH-VNEXT-DEC-001
+  name: PROMETHEUS_ARCHITECTURE_vNEXT_META_EXECUTION_DOSSIER_v1_0.md
+  status: HISTORICAL
+  authority_class: DECISION_DOSSIER
+  sha256: 100d8263d4b5b0a120cdb9c62e8f3ce3057412f7c7a2684014cf2438ba2bb36b
+- source_id: PROMETHEUS-SRC-RAVEL-UNDERWRITING-001
+  name: PROMETHEUS_SOURCE_REGENERATIVE_UNDERWRITING_RAVEL_v1_0.md
+  status: SUPERSEDED
+  authority_class: HISTORICAL_OPERATIONAL_SOURCE
+  sha256: 47d2352c01fd947b08fe8b9b8c643cc5ae55deb6f09a8d3f8d9914642e381aa6
+  superseded_by: PRM-RISK-RAVEL-OP-002
+- source_id: PRM-CIV-APP-006@6.1
+  name: PROMETHEUS_CIVILIZATIONAL_VENTURE_STUDIO_CONTROLLED_SOURCE_v6_1.md
+  status: SUPERSEDED
+  authority_class: HISTORICAL_APPLICATION_SOURCE
+  sha256: 658363dee484731a56244dcae87b254f40be9425ddac24a6fb7a41e032a19290
+  superseded_by: PRM-CIV-APP-006@6.2
+- source_id: PRM-ASSURANCE-SPRINT0-SNAPSHOT
+  name: PROMETHEUS ASSURANCE & PROGRAMMING VALIDATION MASTER PROMPT(1).zip
+  status: HISTORICAL_EVIDENCE_SNAPSHOT
+  authority_class: IMPLEMENTATION_EVIDENCE_PACKAGE
+  note: Repository/PR/CI snapshot; does not establish present repository/runtime state.
+default_retrieval_policy:
+  prefer_status:
+  - ACTIVE
+  - ACTIVE_SUPPORTING
+  exclude_by_default:
+  - SUPERSEDED
+  - HISTORICAL
+  allow_historical_for:
+  - provenance
+  - decision_history
+  - diff
+  - audit
