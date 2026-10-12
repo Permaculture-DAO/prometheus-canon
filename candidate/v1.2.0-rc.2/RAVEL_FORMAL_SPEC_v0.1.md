@@ -222,3 +222,26 @@ Derive machine-readable rules from this proposal, reference its source/commit an
 test every permitted and forbidden edge, expiry, hash mutation, unknown/cyclic
 dependencies, revoked review references and deterministic reordering.
 Independent assurance and the steward's release/signing gates remain open.
+
+## 14. Names: Aeterna and Ravel (2026-10-12)
+
+Status: ordinary methodological naming, not an Eternity amendment, ratification or
+source admission. Steward decision 2026-10-12 (roadmap W0 group E): adopt the
+names and their boundary only, not the proposed source-root documents.
+
+- **Aeterna** is the human-facing name of the candidate risk methodology that
+  RAVEL applies, drawn from actuarial and reinsurance practice. It is a method
+  reference: not a rating, insurance, actuarial sign-off or capital approval.
+- **Ravel** is the human-facing name of the shadow risk plane specified here:
+  Risk Objects, the Loss Generation and Risk Allocation ledgers, stress tests,
+  ultimate-risk-bearer concentration and decision-support outputs.
+- Ravel operationalises methods that Aeterna defines. Neither approves
+  underwriting, capital, certification, insurance or rights. Mode stays
+  shadow_underwriting; VRRC = 0, not admitted.
+- Technical identifiers (RAVEL, `ravel_*`, API paths, hApp entry types) are
+  unchanged. Renaming them needs a separately versioned compatibility migration.
+- Documents proposing Aeterna or Ravel as controlled sources (for example
+  PRM-RISK-AETERNA-001 and later versions) remain context until a governance
+  decision admits them.
+- Public text may use both names with this boundary. No AAA-R or other rating
+  scale, no "investable" wording.

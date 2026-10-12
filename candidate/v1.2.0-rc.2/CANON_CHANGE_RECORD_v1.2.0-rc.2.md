@@ -124,3 +124,11 @@ amended, no addition to the immutable signed canonicals archive.
 - **Claim-status vocabulary.** C-019–C-026 statuses normalised to the existing register vocabulary (Candidate methodological amendment; Research-only; Hypothesis; pilot-required; Boundary; not admitted; Methodological). No claim was strengthened.
 - **Complexity-budget justification.** Net addition: two candidate documents (architecture amendment, formal spec) plus eight claim rows. Justification: RAVEL makes explicit a risk-allocation discipline (loss generation vs loss allocation, ultimate risk bearer) that the canon previously implied only through a single "adaptive risk control" sentence; the brake sentence it replaces is removed, not kept alongside. The formal spec is a candidate for folding into `prometheus-canonicals` once schemas are lifted after textual freeze, at which point the duplicate prose should be retired.
 - **Context source.** The "PROMETHEUS Master Prompt — Finanza Biomimetica / RAVEL / LLM v1.0" is recorded as context input only (layer 7), filed under `_CONTEXT_INBOX/2026-10-05_ravel_b/`. Where it conflicts with signed decisions (notably any description of TRBK as an access/utility instrument, against ARD-001/TOD-001), the signed decisions govern; nothing from it is canonical by virtue of this amendment.
+
+### 6.3 Aeterna/Ravel names — 2026-10-12
+
+RAVEL_FORMAL_SPEC §14 adopts the human-facing names Aeterna (methodology) and
+Ravel (shadow risk plane) with their boundary, as already used on the public
+site. Steward decision 2026-10-12: the proposed source-root v2 stack (canon PR
+#18) is not adopted wholesale; only these names are extracted (from PR #22).
+No technical identifier, claim_uid, Eternity invariant or signed archive changes.
