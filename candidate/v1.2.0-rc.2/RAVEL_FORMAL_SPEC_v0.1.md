@@ -195,13 +195,17 @@ steps or terminal reactivation. Corrected evidence has a new identity with a
 supersession reference; originals, adverse findings and dissent remain retained.
 Proof references are not proof authentication. PRU/RAVEL/RAP/legal eligibility
 are independent defined-use gate evaluations, never inherited evidence states.
-UNKNOWN remains distinct from observed zero and from rejection.
+UNKNOWN remains distinct from observed zero and from rejection. The minimum
+evidence state that can back a gate is part of the defined-use policy; an
+evaluator without an explicit policy floor uses REVIEWABLE.
 
 ### Minimal Risk Record envelope
 
 A synthetic shadow Risk Record identifies risk_uid, subject_uid, hazard,
 exposure, vulnerability, financial_state, model_version, evidence_refs,
-ultimate_bearers, assumptions and missing_data_statement. It distinguishes
+ultimate_bearers, assumptions, missing_data_statement, residual_risk and
+unmodelled_risk (explicit declarations; "not assessed" is allowed, absence is
+not). It distinguishes
 loss generation/reduction from loss allocation and identifies ultimate bearers
 without asserting contract enforceability. Quantitative metrics reference the
 existing RAVEL model, not a newly invented formula or rating.
