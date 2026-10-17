@@ -1,0 +1,77 @@
+# Draft source-registry delta only; NOT an active source registry record.
+schema_version: "rei-source-proposal/0.1"
+source_id: PRM-REI-APP-001
+version: "0.1"
+record_key: PRM-REI-APP-001@0.1
+source_id_status: PROVISIONAL_UNALLOCATED
+source_name: PROMETHEUS_REI_CONTROLLED_APPLICATION_SOURCE_v0_1_CANDIDATE.md
+candidate_path: governance/proposals/regenerative-economic-intelligence/PROMETHEUS_REI_CONTROLLED_APPLICATION_SOURCE_v0_1_CANDIDATE.md
+candidate_sha256: d1f2fa0a4773c6c48bfdfa9329216ac2b42ace50210f7b196185d14bcad50d8d
+status: PROPOSED
+adoption_state: PROPOSED_NOT_ADOPTED
+authority_class: PROPOSED_CONTROLLED_APPLICATION_SPECIFICATION
+requested_authority_class: CONTROLLED_APPLICATION_SPECIFICATION
+selection_role: regenerative_economic_intelligence_application_proposed
+source_tier: non_authoritative_application_candidate
+canonical: false
+authoritative: false
+source_custodian_signoff: null
+domain_reviewer_signoff: null
+adoption_decision_ref: null
+registry_activation: false
+production_admission: false
+authorises_capital: false
+authorises_insurance: false
+authorises_valuation: false
+authorises_token_rights: false
+predecessor: null
+supersedes: []
+governing_authority: PRM-CANON-SIGNED@v1.1.2-genesis
+source_root_dependency: PROMETHEUS-SOURCE-ROOT-v2.0.1-candidate
+source_root_adoption: PROPOSED_NOT_ADOPTED
+source_root_pr: https://github.com/Permaculture-DAO/prometheus-canon/pull/18
+source_root_candidate_head: eba63beeb08c4c00ece6311846d3cd32476f5b1e
+upstream_candidate_records:
+  - PRM-CANON-SIGNED@v1.1.2-genesis
+  - PRM-ARCH-DET-002@2.0
+  - PRM-RISK-AETERNA-001@1.1.1
+  - PRM-RISK-RAVEL-OP-002@1.1.1
+  - PRM-CIV-APP-006@6.2.1
+  - PRM-LAND-APP-001@0.1
+upstream_candidate_sha256:
+  PRM-CANON-SIGNED@v1.1.2-genesis: f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540
+  PRM-ARCH-DET-002@2.0: 83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7
+  PRM-RISK-AETERNA-001@1.1.1: da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487
+  PRM-RISK-RAVEL-OP-002@1.1.1: de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e
+  PRM-CIV-APP-006@6.2.1: 412f5357047fafd71039c9788c579142a7f8a233945a2729da8b9ca012c77594
+  PRM-LAND-APP-001@0.1: 6229990d5f6db1d9cca1529f303235fae4d45c427ef88ac8e40dc0da023fca2a
+subordinate_to_candidate: PRM-CIV-APP-006@6.2.1
+methodology_authority:
+  actuarial_risk: PRM-RISK-AETERNA-001@1.1.1
+  operational_risk: PRM-RISK-RAVEL-OP-002@1.1.1
+implementation:
+  repository: Permaculture-DAO/prometheus-runtime
+  function: app.regenerative_economic_intelligence.evaluate_regenerative_economic_intelligence
+  draft_pr: https://github.com/Permaculture-DAO/prometheus-runtime/pull/32
+  candidate_head: 567afe062654302b814bc61d297a16b985073dce
+  depends_on_draft_prs:
+    - https://github.com/Permaculture-DAO/prometheus-runtime/pull/31
+    - https://github.com/Permaculture-DAO/prometheus-runtime/pull/26
+  test_evidence:
+    synthetic_unittests: 13
+    github_ci_run_id: 39044886560
+    github_ci_url: https://github.com/Permaculture-DAO/prometheus-runtime/actions/runs/39044886560
+    github_ci_result: SUCCESS
+  runtime_real_gate: CLOSED_UNCHANGED
+  proof_limit: ENGINEERING_CONSISTENCY_ONLY
+required_next_actions:
+  - independently_verify_canon_and_upstream_hashes
+  - reserve_source_id_check_collision
+  - qualified_source_and_method_custodian_review
+  - decide_and_sign_explicit_adoption_or_rejection
+  - if_adopted_publish_new_registry_version_with_signed_source_release
+  - keep_runtime_and_capital_gate_closed_until_separate_authorisation
+notes:
+  - No change to active registry/source lattice/canon/main.
+  - Hash integrity is not source or professional authenticity.
+  - Proposal is not an automatically ratified constitution or operational method.
