@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "source_id_provisional": "PRM-CEREBRO-SOURCE-001",
+  "source_key_provisional": "PRM-CEREBRO-SOURCE-001@0.3-rc1",
+  "status": "PROPOSED_SHADOW_NON_CONTROLLING",
+  "canonical": false,
+  "admitted": false,
+  "active_registry_modified": false,
+  "verified_canon": "PROMETHEUS-CANON-ROOT-v1.1 / signed v1.1.2-genesis",
+  "source_root_pr18": "PROPOSED_NOT_ADOPTED",
+  "geospatial_existing_pr": "https://github.com/Permaculture-DAO/prometheus-bridge/pull/11",
+  "private_source_sha256": "dafb753a55280f7efc4a67fe3b7d1f1631a3cd90f57f666ae4a9cfff4160c368",
+  "private_registry_sha256": "b419c76a606bdd29b226bdbe33c3a22d2f6b0a6ba0eca28499de5067659e9239",
+  "registry_record_counts": {
+    "provider_candidates": 56,
+    "user_references": 59,
+    "total": 115,
+    "user_url_occurrences": 65
+  },
+  "private_workstation_files_hash_pinned": 22,
+  "test_results": {
+    "private_unit_tests": "26/26 PASS",
+    "public_packet_review": "4/4 PASS",
+    "empirical_validation": false,
+    "independent_review": false
+  },
+  "source_effect": "NONE_UNTIL_EXPLICIT_AUTHORIZED_GOVERNANCE_DECISION",
+  "review_gates": [
+    "source_custodian_validate_canon_and_hash",
+    "source_id_collision_and_allocation",
+    "scientific_provider_and_mrv_methods",
+    "data_license_and_privacy",
+    "security_review",
+    "geospatial_nonduplication",
+    "independent_signoff"
+  ],
+  "prohibited": [
+    "production_ingestion",
+    "modify_holochain_DNA",
+    "amend_signed_canon",
+    "activate_source_registry",
+    "issue_financial_or_ecological_claims",
+    "deployment_or_merge"
+  ]
+}
