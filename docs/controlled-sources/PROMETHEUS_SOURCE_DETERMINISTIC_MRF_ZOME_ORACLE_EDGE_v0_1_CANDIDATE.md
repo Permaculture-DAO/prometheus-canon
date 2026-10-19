@@ -264,3 +264,19 @@ Companion *draft*, nonproduction hApp proposal: [`prometheus-happ#39`](https://g
 These experiments **narrow** the arithmetic/compilation uncertainty only; they do not validate physical observations, scientific claims, production safety, DHT acceptance or the proposed MRF architecture end to end.
 
 **Next technical gate:** independent reproducibility and executed WASM golden-output parity (not merely compilation), then separate HDI-compatible synthetic-only integrity-zome integration with conductor tests on a specific DNA hash.
+
+## 15. Stage Gate 0–30 supplemental technical evidence — 2026-10-19
+
+The design source is accompanied by experimental implementation work in draft [prometheus-happ#39](https://github.com/Permaculture-DAO/prometheus-happ/pull/39), without merging anything into signed Canon or production hApp.
+
+**Verified in actual execution:** Node.js v18.19.1 instantiated a Rust-produced WebAssembly binary; 4,108 input vectors from a native Rust reference executable compared against two WASM output functions, **8,216/8,216 identical i64 results**. This is synthetic *execution parity*, not ecological validation.
+
+**Verified in host unit tests:** Holochain HDK 0.6.1 / HDI 0.7.1 synthetic-only integrity zome: **9/9 host tests passed**, rejecting forged outputs, wrong model hash, REAL evidence, non-TEST namespace, malformed inputs and attempts to elevate authority. These tests do not alone prove conductor acceptance or rejection.
+
+**Verified build and packaging:** standalone experimental integrity-zome and coordinator compiled as WebAssembly with the actual hApp WASM compiler setting getrandom_backend="unsupported" and linker --allow-undefined. Packed an isolated TEST DNA using hc dna pack:
+- PMRF synthetic model (115 bytes): SHA-256 e074715a26129c8f00e828774eadc71ef33f94a620c0dcd0e00216b6156bda5f;
+- integrity zome WASM SHA-256 46b47071ded9b70ffb3198e50d41242dbd7cffda869e7123ce4ac8074a5363c2;
+- coordinator zome WASM SHA-256 dc86b0ab8f48d3c88bd1385a2cc248e46115630999a9614f534bca63dbee12bb;
+- experimental packed DNA (1,466,141 bytes): SHA-256 8f60c6b9e9fe9d3722720376a5aa30ca49720268a2a8fdbd036f35f61aba6efc.
+
+**Still a separate gate:** in-process conductor sweettests must be actually run against exactly that TEST DNA and recorded. No REAL persistence, oracle consensus, field data, certified outcomes, signed production artifacts, token rights or capital actions were authorized or tested by the steps above. Reproducible independent builds and fuzz/property benchmarks remain outstanding.
