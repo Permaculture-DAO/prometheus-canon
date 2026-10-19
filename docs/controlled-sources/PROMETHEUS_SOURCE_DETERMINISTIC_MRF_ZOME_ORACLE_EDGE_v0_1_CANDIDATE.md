@@ -248,3 +248,19 @@ Acceptance evidence before any functional rollout: frozen source and model hashe
 - "Verified returns, PRU value or token rights arise from model output."
 
 **Summary gate:** Design-only and synthetic-lab investigation permitted; any broader scientific, financial or runtime-admission claim is explicitly blocked until reviewed evidence exists.
+
+
+---
+
+## 14. Local Rust/WASM feasibility evidence added 2026-10-19
+
+Companion *draft*, nonproduction hApp proposal: [`prometheus-happ#39`](https://github.com/Permaculture-DAO/prometheus-happ/pull/39). Experimental code path: `experimental/mrf-kernel-lab`. No modification to currently registered hApp workspace, existing integrity zome, REAL gate or signed runtime.
+
+- **VERIFIED IN LOCAL WSL:** pure Rust synthetic kernel: **13/13 unit tests passed**; compiler `rustc 1.96.0 (ac68faa20 2026-05-25)`. Tests cover toy multi-output inference, strict thresholds, signed-integer aggregation, local serializer roundtrip and malformed input rejections.
+- **VERIFIED IN LOCAL WSL:** `cargo build --offline --release --target wasm32-unknown-unknown` completed. The local output file measured **28,681 bytes**; local SHA-256 `e206d5c0557ed22d93500a2cd6fc847df0e0c635cd2f0a03c61e98d9e49caf48`. This identifies a local unsigned artifact, not an independent reproducible build or signed Holochain DNA.
+- **NOT RUN / NO-GO:** executable WASM parity test in runtime, Holochain integrity callback, DHT dependencies, conductor sweettests, oracle-threshold independence, MRF training and ecological validation, model-signature authority, fuzz testing, real device energy benchmarks.
+- **Governance:** both PRs remain drafts; code/runtime release, source admission, Canon change, REAL data and any finance/token action remain unapproved.
+
+These experiments **narrow** the arithmetic/compilation uncertainty only; they do not validate physical observations, scientific claims, production safety, DHT acceptance or the proposed MRF architecture end to end.
+
+**Next technical gate:** independent reproducibility and executed WASM golden-output parity (not merely compilation), then separate HDI-compatible synthetic-only integrity-zome integration with conductor tests on a specific DNA hash.
