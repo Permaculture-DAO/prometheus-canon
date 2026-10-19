@@ -280,3 +280,12 @@ The design source is accompanied by experimental implementation work in draft [p
 - experimental packed DNA (1,466,141 bytes): SHA-256 8f60c6b9e9fe9d3722720376a5aa30ca49720268a2a8fdbd036f35f61aba6efc.
 
 **Still a separate gate:** in-process conductor sweettests must be actually run against exactly that TEST DNA and recorded. No REAL persistence, oracle consensus, field data, certified outcomes, signed production artifacts, token rights or capital actions were authorized or tested by the steps above. Reproducible independent builds and fuzz/property benchmarks remain outstanding.
+
+
+## 16. Independent CI cross-check — technical claim refinement
+
+The Linux GitHub Actions parity run (2026-10-19, [hApp run 39325521772](https://github.com/Permaculture-DAO/prometheus-happ/actions/runs/39325521772)) independently executed **8,216/8,216 matching integer results**, over **4,108 synthetic vectors** in native Rust and WebAssembly. This supports *numeric execution parity* on two separately compiled environments.
+
+The GitHub-runner WASM SHA-256 was ada00809503adfc57dfbed7aa4b930271c2788a90d2fdcd3df0c8e36fcdfb373 (29,244 bytes); the earlier WSL WASM SHA-256 was e206d5c0557ed22d93500a2cd6fc847df0e0c635cd2f0a03c61e98d9e49caf48 (28,681 bytes). **Therefore byte-identical release reproducibility across toolchains is not yet established.** The initially failed CI run exposed a workspace-isolation defect corrected on the test-only branch, providing independent audit evidence of the value of CI. An independent HDI host-unit-test job also passed.
+
+These observations do not alter scientific admissibility, REAL persistence, Canon, insurance/credit authority, token rights or capital gates.
