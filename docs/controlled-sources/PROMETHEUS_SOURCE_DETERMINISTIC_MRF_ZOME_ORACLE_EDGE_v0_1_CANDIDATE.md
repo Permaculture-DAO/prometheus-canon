@@ -324,3 +324,16 @@ Two **stacked draft implementation PRs**, subordinate to this source candidate a
 On the distinct Gate 1 isolated TEST DNA SHA-256 `8b2f9e2321a580158a1c7ddebb18144b1b3ef8f7f65aeebbb6e75383083cfe9c`, the in-process Holochain conductor **PASSED eight cases**, and a second diagnostic run **PASSED all eight with negative rejection reasons matched explicitly** to integrity-callback messages (101.92s test runtime, zero failures). The two no-op changes still disallowed in the lab are update/delete of synthetic receipts; unsupported links are also disallowed. See [Gate 1 audited experimental evidence](https://github.com/Permaculture-DAO/prometheus-happ/blob/experiment/mrf-gate1-model-binding-op-hardening-20261021/experimental/mrf-kernel-lab/GATE1_EVIDENCE_2026-10-21.md).
 
 A successful **single-conductor** synthetic test is NOT multi-peer DHT validation, environmental verification or a production security audit. The source remains a CANDIDATE, PR #43 remains DRAFT, and human/governance admission plus independent distributed/field testing remain open.
+
+
+## 19. Gate 1/2 independent-scope progress — 2026-10-21
+
+A separate proposed implementation delta is captured in [hApp PR #45](https://github.com/Permaculture-DAO/prometheus-happ/pull/45), derived from the existing draft PR #39. This addendum reports **bounded synthetic validation only**, and DOES NOT amend/promote this controlled source to Canon.
+
+- The experimental HDI validator now computes SHA-256 over actual serialized toy MRF bytes, enforcing the admitted constant at entry-validation time; 10/10 host HDI tests passed.
+- Rebuilt integrity-zome WASM SHA-256: `44830822ed1cc510d024c209c99403d41cca7e2238a9594d03e58f46a87fd23a`. New isolated TEST DNA SHA-256: `b1df1cfe3a6825d7e2af61ca5772b7cb762251d53f23e62f0f7bf9a6b05fd793`.
+- **Exact NEW DNA in-process conductor PASS:** five synthetic cases (TEST accepted; forged output, REAL, wrong claimed model digest and financial promotion rejected) passed in one 125.10-second sweettest, 0 failures.
+- Synthetic oracle control-group policy checks 8/8 passed, and separate Ed25519 test-key signing/verification vectors 4/4 passed on WSL. These are not observed, trusted or independent field oracles.
+- **OPEN**: actual multi-agent Holochain op validation and partition behavior, live public-key registry, operator independence, replay/freshness governance, ecological causality/Goodhart tests, reviewed calibration, real edge-energy metrics and externally authorized REAL pipeline.
+
+**Lowest unresolved gate controls claim**: model-conformity engineering evidence does not admit scientific/financial value, token rights or certification. No automatic merge, production release or upstream governance status changes.
