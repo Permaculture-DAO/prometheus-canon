@@ -317,3 +317,10 @@ Two **stacked draft implementation PRs**, subordinate to this source candidate a
 - A newly packaged isolated Gate 1 TEST DNA (2026-10-21) has SHA-256 `8b2f9e2321a580158a1c7ddebb18144b1b3ef8f7f65aeebbb6e75383083cfe9c`; this is **not** the earlier five-case accepted DNA. Gate 1 conductor negative-operation red-team tests are tracked separately. Conductor proof will be reported only after an executed exact-DNA result.
 
 **Persistent NO-GO:** LIVE/REAL observation capture, scientific certification, cross-host multi-peer convergence, source-layer admission/Canon amendment, PRU/RAP/TRBK, underwriting, capital and production changes. Research sources remain candidate; real-world ecological risk cannot be inferred from synthetic model or attestation tests.
+
+
+## 20. Gate 1 rejection-cause audit confirmation — 2026-10-21
+
+On the distinct Gate 1 isolated TEST DNA SHA-256 `8b2f9e2321a580158a1c7ddebb18144b1b3ef8f7f65aeebbb6e75383083cfe9c`, the in-process Holochain conductor **PASSED eight cases**, and a second diagnostic run **PASSED all eight with negative rejection reasons matched explicitly** to integrity-callback messages (101.92s test runtime, zero failures). The two no-op changes still disallowed in the lab are update/delete of synthetic receipts; unsupported links are also disallowed. See [Gate 1 audited experimental evidence](https://github.com/Permaculture-DAO/prometheus-happ/blob/experiment/mrf-gate1-model-binding-op-hardening-20261021/experimental/mrf-kernel-lab/GATE1_EVIDENCE_2026-10-21.md).
+
+A successful **single-conductor** synthetic test is NOT multi-peer DHT validation, environmental verification or a production security audit. The source remains a CANDIDATE, PR #43 remains DRAFT, and human/governance admission plus independent distributed/field testing remain open.
