@@ -337,3 +337,16 @@ A separate proposed implementation delta is captured in [hApp PR #45](https://gi
 - **OPEN**: actual multi-agent Holochain op validation and partition behavior, live public-key registry, operator independence, replay/freshness governance, ecological causality/Goodhart tests, reviewed calibration, real edge-energy metrics and externally authorized REAL pipeline.
 
 **Lowest unresolved gate controls claim**: model-conformity engineering evidence does not admit scientific/financial value, token rights or certification. No automatic merge, production release or upstream governance status changes.
+
+
+## 20. Gate 4 append-only Holochain TEST DNA — 2026-10-21
+
+Separate [hApp draft PR #48](https://github.com/Permaculture-DAO/prometheus-happ/pull/48) extends the existing MRF lab and Gate 1/2/3 candidate branches; it does not alter the signed production DNA, source registry, or canonical governance.
+
+**Source-verified HDI 0.7.1 operation matrix:** compared the actual installed `hdi::flat_op` Rust types and added explicit treatment of `StoreRecord`, `StoreEntry`, `RegisterUpdate`, `RegisterDelete` and the link-op variants. This single-receipt synthetic-only DNA admits creates subject to baked-model SHA-256/TEST validation and denies app-entry updates, deletes and link mutations by design. General system operations such as agent activity remain separate.
+
+**Verified local build:** 10/10 host HDI tests and both new integrity/coordinator WASM release builds passed. Packed experimental DNA SHA-256: `8f32a4bf0ca75f04649671cc6d5b73cecebdb0bd36a51fb58700f3837717abca`.
+
+**Verified in actual Holochain conductor for this exact DNA:** one in-process test, seven assertions, 0 failures, 124.85 seconds: conforming TEST entry accepted; forged numeric result, REAL data, wrong model hash, unauthorized financial promotion, update attempt and delete attempt all rejected/errored as expected. See [Gate 4 evidence report](https://github.com/Permaculture-DAO/prometheus-happ/blob/experiment/mrf-gate4-immutable-flatops-20261021/experimental/mrf-kernel-lab/GATE4_CONDUCTOR_EVIDENCE_2026-10-21.md).
+
+**Mandatory caveat:** negative tests currently assert the host returns an error, but do not assert the exact `MRF_SYNTHETIC_RECEIPTS_APPEND_ONLY` rejection string; error-origin specificity remains unproven. A separate multi-conductor harness was authored but is a distinct gate. Multi-peer DHT ingestion, provenance retrieval across peers, partitions/rejoin, physically independent oracles and scientific field validation remain OPEN. No REAL writes, ecological certifications, finance/tokens, or release/admission authority is created.
