@@ -289,3 +289,14 @@ The Linux GitHub Actions parity run (2026-10-19, [hApp run 39325521772](https://
 The GitHub-runner WASM SHA-256 was ada00809503adfc57dfbed7aa4b930271c2788a90d2fdcd3df0c8e36fcdfb373 (29,244 bytes); the earlier WSL WASM SHA-256 was e206d5c0557ed22d93500a2cd6fc847df0e0c635cd2f0a03c61e98d9e49caf48 (28,681 bytes). **Therefore byte-identical release reproducibility across toolchains is not yet established.** The initially failed CI run exposed a workspace-isolation defect corrected on the test-only branch, providing independent audit evidence of the value of CI. An independent HDI host-unit-test job also passed.
 
 These observations do not alter scientific admissibility, REAL persistence, Canon, insurance/credit authority, token rights or capital gates.
+
+
+## 17. Milestone audit update — 2026-10-21 (no authority promotion)
+
+On the tested pinned toolchain, independent GitHub Actions run [39326442563](https://github.com/Permaculture-DAO/prometheus-happ/actions/runs/39326442563) built a WASM kernel with SHA-256 e206d5c0557ed22d93500a2cd6fc847df0e0c635cd2f0a03c61e98d9e49caf48 and 28,681 bytes, exactly matching the previously recorded WSL artifact; executable Rust/WASM parity remained 8,216/8,216 scalar checks. This verifies a bounded repeatable binary outcome for this synthetic kernel only; it does **not** establish complete DNA build reproducibility or supply-chain attestation.
+
+On 2026-10-21, eight additional **bounded deterministic adversarial regression tests** passed locally, covering prefix truncation, bitwise mutation, random malformed bytes, canonical re-encoding, repeated signed-input inference, extreme values, structural cycles and arity limits. There are now 21 local kernel unit/integration tests (13 original + 8 additional); this does not replace independent continuous fuzzing or a formal proof.
+
+An isolated in-process Holochain conductor **accepted one valid TEST synthetic MRF receipt** in 93.92 seconds (1 passed, 0 failed; remaining four cases filtered). Acceptance is a real conductor result for that *one case*, and **not proof yet of all malicious-entry rejections**. The five-case combined conductor scenario is under test and must retain its own recorded result. The synthetic packed DNA SHA-256 remains 8f60c6b9e9fe9d3722720376a5aa30ca49720268a2a8fdbd036f35f61aba6efc.
+
+A required design gap remains: currently the zome compares the receipt's declared model hash against a fixed constant but does **not** independently hash the compiled toy model bytes in the callback; as such, source/code governance must bind model bytes to the claimed digest and the DNA artifact. Validation of StoreRecord/RegisterUpdate/RegisterDelete (and possible inter-zome dependencies) remains unproven. No REAL/data/certification/financial/PRU/RAP/TRBK gates are changed.
