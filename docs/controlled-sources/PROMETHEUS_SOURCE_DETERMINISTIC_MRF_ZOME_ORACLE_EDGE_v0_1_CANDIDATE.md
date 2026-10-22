@@ -350,3 +350,19 @@ Separate [hApp draft PR #48](https://github.com/Permaculture-DAO/prometheus-happ
 **Verified in actual Holochain conductor for this exact DNA:** one in-process test, seven assertions, 0 failures, 124.85 seconds: conforming TEST entry accepted; forged numeric result, REAL data, wrong model hash, unauthorized financial promotion, update attempt and delete attempt all rejected/errored as expected. See [Gate 4 evidence report](https://github.com/Permaculture-DAO/prometheus-happ/blob/experiment/mrf-gate4-immutable-flatops-20261021/experimental/mrf-kernel-lab/GATE4_CONDUCTOR_EVIDENCE_2026-10-21.md).
 
 **Mandatory caveat:** negative tests currently assert the host returns an error, but do not assert the exact `MRF_SYNTHETIC_RECEIPTS_APPEND_ONLY` rejection string; error-origin specificity remains unproven. A separate multi-conductor harness was authored but is a distinct gate. Multi-peer DHT ingestion, provenance retrieval across peers, partitions/rejoin, physically independent oracles and scientific field validation remain OPEN. No REAL writes, ecological certifications, finance/tokens, or release/admission authority is created.
+
+
+## 21. Gate 5 read-only cross-peer DHT research — 2026-10-22 (candidate only)
+
+Draft child [hApp PR #50](https://github.com/Permaculture-DAO/prometheus-happ/pull/50) of Gate-4 PR #48 includes a TEST-only `get_synthetic_receipt_for_audit(ActionHash)` coordinator endpoint using HDK 0.6.1 `GetOptions::network()`. It never opens a write or certification gate. The endpoint explicitly checks the returned immutable ActionHash and deserializes a typed synthetic MRF receipt; decode errors are mapped into `WasmError`. This source observation does not modify signed Canon.
+
+**Verified engineering evidence** (same pinned sample):
+- Experimental coordinator `cargo check --offline` and WASM release build PASS locally; GitHub Actions independent coordinator WASM build PASS.
+- Coordinator WASM SHA-256 `0e4b6e2531536e7b33f41f3806c284d1569cc805dcf870cf50fa4eff821a59b1`; existing Gate-4 integrity WASM SHA-256 `6cefdc096c665a7662fc48351800d94be31d5ad8d4450efce03cd4c9bdf61c93`.
+- Exact *new* isolated TEST DNA SHA-256 `1d20d26ec6d03af81e3cc7f85906615c4894c65bc843b6f949f969afb851d009`.
+- A single-author TEST receipt create→read by the new endpoint: **PASS**; one conductor test, 73.17s, zero failures; verified returned ActionHash, class, model hash, inputs/outputs and non-financial authority.
+- Prior Gate-4 two-conductor peer info exchange PASS; B-only local receipt create PASS; reversed B→A sequential writes PASS (202.70s); A→B sequential writes earlier timed out. The differing write-order results do not demonstrate stable distributed convergence.
+
+**Failed research gate (NO-GO):** two separate TEST conductors exchanged peer info and A authored one receipt on exact new DNA. B made no local receipt and attempted remote retrieval of A's ActionHash using `GetOptions::network()`. The first request timed out after 40s; one complete test ended **FAILED (0 passed / 1 failed, 209.83s)**. No matching remote evidence was returned. This is not proof of the failure's root cause, nor proof of DHT-wide consensus. See [Gate 5 exact evidence](https://github.com/Permaculture-DAO/prometheus-happ/blob/experiment/mrf-gate5-crosspeer-read-20261022/experimental/mrf-kernel-lab/GATE5_CROSSPEER_EVIDENCE_2026-10-22.md) and [Issue #51](https://github.com/Permaculture-DAO/prometheus-happ/issues/51).
+
+**Lowest unresolved gate still controls claim:** only synthetic model-conformity and author-local read behavior are supported. Independent peer DHT validation, partition/rejoin, source/oracle integrity, real ecological MRV and all insurance/financial/token/certification actions remain HOLD/NO-GO. `REAL_DATA_PERSISTENCE_GATE_CLOSED` and signed runtime/source precedence are unchanged.
