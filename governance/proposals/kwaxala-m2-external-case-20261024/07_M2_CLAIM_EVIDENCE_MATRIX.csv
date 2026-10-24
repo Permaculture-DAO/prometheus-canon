@@ -1,0 +1,16 @@
+claim_id,subject,source_class,source,url,status_as_of_2026_10_24,scope_and_qualification
+K01,site legally created,A_OFFICIAL,BC Government 2024-05-24,https://engage.gov.bc.ca/govtogetherbc/engagement/kwiakah-special-forest-management-area/,CONFIRMED_NARROW,"7,865 ha SFMA; no proof broader 55k ha"
+K02,55k/57k protected,B_SELF_REPORT,Kwaxala website,https://www.kwaxala.com/,EXPANSION_NOT_VERIFIED,Broader aspirational scope; not same SFMA boundary
+K03,Kwiakah atmospheric benefit title,E_UNVERIFIED,BC ABA public index 2026-01-07,https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/consulting-with-first-nations/first-nations-negotiations/atmospheric-benefit-sharing-agreements,UNKNOWN,Public list does not individually name Kwiakah; absence not negative legal proof
+K04,FCOP 2.0 available province,A_OFFICIAL,BC Offset protocols website,https://www2.gov.bc.ca/gov/content/environment/climate-change/industry/offset-projects/offset-protocols,CONFIRMED_GENERIC,No determination of actual Kwaxala registry/method
+K05,Kwiakah rights converted via actual legal designation,A_OFFICIAL,BC Government notice,https://news.gov.bc.ca/releases/2024FOR0029-000805,CONFIRMED_NARROW,Special Forest Management Area; no guaranteed annual carbon income
+K06,community share >90%,B_SELF_REPORT,Kwaxala About,https://www.kwaxala.com/about,CLAIM_UNAUDITED,Equity / revenue / distribution not equal; no signed waterfall
+K07,Living Forest Shares pooled model,B_SELF_REPORT,Kwaxala Homepage,https://www.kwaxala.com/,PRODUCT_DESCRIBED_ONLY,"No executed investor agreement, rights, issuer signoff"
+K08,2026 investment case report exists,C_CASE_REPORT,Ecosystem Marketplace/TNC,https://www.ecosystemmarketplace.com/publications/gaining-ground-state-of-private-investment-in-nature-2026/kwaxala/,PUBLIC_CASE_ONLY,Not an opinion of financial auditor
+K09,actual forest shares financial metrics,C_CASE_REPORT,2026 case publication,https://www.ecosystemmarketplace.com/publications/gaining-ground-state-of-private-investment-in-nature-2026/kwaxala/,REQUIRES_PRIMARY,Reported targets/values are not primary books or realized distributions
+K10,Indigenous forestry experiments planned,B_PRIMARY_STAKEHOLDER_PLAN,Kwiakah conservation plan,https://kwiakahconservation.com/plan,PLAN_NOT_RESULTS,No completed controlled experimental outcomes presumed
+K11,Centree reproducible math and out-of-sample validation,E_UNVERIFIED,Centree website,https://www.centree.org/,NOT_EVIDENCED,Separate PROMETHEUS research design not reverse-engineered product
+K12,actual credits issued and serials,E_UNVERIFIED,"Need official registry ID, reports",,UNKNOWN,"No fabricated credit, sale, reversal or retirement"
+K13,historical paid distributions,E_UNVERIFIED,Need reconciled bank statements and signed waterfall,,UNKNOWN,No return guarantee inferred
+K14,LinkedIn user URL content,E_UNVERIFIED,User shortened URL,https://lnkd.in/p/d53bHg5r,NOT_ACCESSIBLE,No direct post claim attribution
+K15,M2 documentation as accepted Canon,D_PROMETHEUS_DESIGN,This M2 package,,NOT_ADOPTED,Open draft reviews separate from Canon governance
