@@ -1,0 +1,51 @@
+{
+  "case_id": "PRM-EXT-CASE-KWAXALA-001@0.2-CANDIDATE",
+  "record_type": "EXTERNAL_CASE_RESEARCH_CANDIDATE",
+  "current_status": "PREPARED_FOR_REVIEW_NOT_ADOPTED",
+  "prior_candidate_id": "PRM-EXT-CASE-KWAXALA-001@0.1",
+  "research_admissibility_recommendation": "ACCEPT_AS_CANDIDATE_REFERENCE_AFTER_COMPETENT_REVIEW",
+  "evidence_grades": {
+    "official": "SFMA 7865 ha established 2024-05-24",
+    "stakeholder": "Kwaxala local control and Living Forest Shares representations",
+    "case_study": "2026 external published narrative not independent account audit",
+    "unknown": "ABA entitlement, offset serials, actual distributions, signed shares, mathematical Centree validation"
+  },
+  "claims": {
+    "revenue_guaranteed": false,
+    "credit_verified": false,
+    "centree_validated": false,
+    "kwaxala_contracts_examined": false,
+    "land_ownership_inferred": false
+  },
+  "blocked": [
+    "CANON_ADOPTION",
+    "ACTIVE_SOURCE_REGISTRY_EDIT",
+    "MRV_REAL_WRITE",
+    "LIVE_FUND",
+    "CARBON_CREDIT_ISSUANCE",
+    "LIVING_FOREST_SHARES_ISSUANCE",
+    "TRBK_CENTREE_LINK",
+    "SECURITY_OFFER",
+    "REVENUE_GUARANTEE",
+    "AUTOMATIC_MERGE",
+    "PRODUCTION_DEPLOY"
+  ],
+  "depend_on": [
+    "source_custodian_id_collision",
+    "independent_legal_title_and_ABA",
+    "verified_carbon_registry",
+    "audited_actual_financial_evidence",
+    "ecology_and_statistics_review",
+    "community_governance_approval"
+  ],
+  "related_open_prs": {
+    "source_root": 18,
+    "rei_source": 26,
+    "rei_hold": 27,
+    "cerebro_source": 28,
+    "syntropic_lifecycle": 30
+  },
+  "licensed_open_source_data_only": true,
+  "file_signatures_verified_by_human": false,
+  "as_of": "2026-10-24"
+}
