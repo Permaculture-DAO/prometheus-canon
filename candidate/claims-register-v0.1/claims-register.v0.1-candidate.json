@@ -1,0 +1,227 @@
+{
+  "registry_version": "0.1-candidate",
+  "status": "candidate_not_ratified",
+  "canon_authority": {
+    "repository": "Permaculture-DAO/prometheus-canon",
+    "current_release": "v1.1.2-genesis"
+  },
+  "source_release": {
+    "registry_repository": "Permaculture-DAO/prometheus-canonical-releases",
+    "path": "releases/v1.1.2-genesis/canonical/h-earth-prometheus-white-paper.md",
+    "sha256": "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540",
+    "signature_verification": "GOOD"
+  },
+  "claims": [
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-001",
+      "statement": "Verified regeneration can become a candidate real-world regenerative asset-class architecture.",
+      "evidence_status": "Architecture specified; validation pending",
+      "investor_facing": "Limited",
+      "disciplined_wording": "A candidate architecture subject to evidence, legal and market gates.",
+      "proposed_claim_uid": "prometheus.architecture.candidate_regenerative_infrastructure",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-001 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-002",
+      "statement": "The One Human Ecosystem is the minimum deployable unit.",
+      "evidence_status": "Architectural definition",
+      "investor_facing": "Yes (as definition)",
+      "disciplined_wording": "The biophysical unit from which evidence may be generated.",
+      "proposed_claim_uid": null,
+      "mapping_class": "semantic_successor_hold",
+      "mapping_status": "hold",
+      "candidate_evidence_refs": [
+        "candidate v1.2.0-rc.2 adds 'auditable' and changes disciplined wording"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-003",
+      "statement": "The PRU renders verified performance as capital-readable analysis.",
+      "evidence_status": "Specified",
+      "investor_facing": "Yes (with boundary)",
+      "disciplined_wording": "The PRU is an analytical interface only; it creates no rights.",
+      "proposed_claim_uid": "prometheus.pru.analytical_interface_no_rights",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-003 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-004",
+      "statement": "The RAP aggregates PRUs into portfolio structures.",
+      "evidence_status": "Specified",
+      "investor_facing": "Limited",
+      "disciplined_wording": "A RAP is portfolio-readable before it is market-readable.",
+      "proposed_claim_uid": "prometheus.rap.portfolio_readability_not_market_admission",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-004 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-005",
+      "statement": "Syntropic systems may generate a cooperative surplus (H5).",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "No",
+      "disciplined_wording": "A testable hypothesis, not a presumption.",
+      "proposed_claim_uid": null,
+      "mapping_class": "split_successor_hold",
+      "mapping_status": "hold",
+      "candidate_evidence_refs": [
+        "candidate v1.2.0-rc.2 splits H5 into C-005A/B/C and forbids rebinding deprecated aggregate UID"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-006",
+      "statement": "Regenerative systems may reduce risk over time.",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Risk compression is conditional, measured and hazard-adjusted.",
+      "proposed_claim_uid": "prometheus.hypothesis.r1_risk_compression",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-006 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-007",
+      "statement": "Time-positive value may emerge under verified regeneration.",
+      "evidence_status": "Hypothesis",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Conditional on verified maturation and admissibility.",
+      "proposed_claim_uid": "prometheus.hypothesis.t1_time_positive_value",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-007 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-008",
+      "statement": "The access token provides consumptive utility.",
+      "evidence_status": "Design specified",
+      "investor_facing": "Yes (utility only)",
+      "disciplined_wording": "A redeemable access credit; not an investment or a security.",
+      "proposed_claim_uid": null,
+      "mapping_class": "governance_overlay_hold",
+      "mapping_status": "hold",
+      "candidate_evidence_refs": [
+        "signed v1.1.2 source claim",
+        "ARD-001 ratified ordinary decision",
+        "TOD-001 interim fail-safe only",
+        "candidate v1.2.0-rc.2 replaces claim semantics"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-009",
+      "statement": "Investment exposure is available via a compliant security.",
+      "evidence_status": "Design; counsel-gated",
+      "investor_facing": "No (until exemption closes)",
+      "disciplined_wording": "A separate, disclosed, exempt security; not the utility token.",
+      "proposed_claim_uid": null,
+      "mapping_class": "semantic_successor_hold",
+      "mapping_status": "hold",
+      "candidate_evidence_refs": [
+        "candidate v1.2.0-rc.2 changes statement to separate legal instrument / no offer"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-010",
+      "statement": "AI assists verification workflows.",
+      "evidence_status": "Architecture specified",
+      "investor_facing": "Yes",
+      "disciplined_wording": "AI assists review; evidence and method govern admissibility.",
+      "proposed_claim_uid": "prometheus.ai.assistive_non_authoritative",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-010 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-011",
+      "statement": "Distributed records support provenance.",
+      "evidence_status": "Architecture specified",
+      "investor_facing": "Limited",
+      "disciplined_wording": "Records support traceability, not ecological truth.",
+      "proposed_claim_uid": "prometheus.digital_provenance.traceability_not_truth",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-011 exact statement"
+      ]
+    },
+    {
+      "source_lineage": "v1.1.2-genesis",
+      "source_claim_id": "C-012",
+      "statement": "Frontier research may inform future inquiry.",
+      "evidence_status": "Research-only",
+      "investor_facing": "No (except disclosure)",
+      "disciplined_wording": "Research-only and zero-weight for PRU and RAP.",
+      "proposed_claim_uid": "prometheus.frontier_research.zero_weight_until_admitted",
+      "mapping_class": "source_identity_alias",
+      "mapping_status": "proposed_mapping_only",
+      "candidate_evidence_refs": [
+        "candidate/v1.2.0-rc.2 W:C-012 exact statement"
+      ]
+    }
+  ],
+  "governance_overlays": [
+    {
+      "overlay_id": "ARD-001",
+      "authority_class": "ratified_ordinary_decision",
+      "source_repository": "Permaculture-DAO/prometheus-governance",
+      "source_commit": "ca31942a89ab90ed144ce1e4defca289a2c5de90",
+      "source_sha256": "f7fd233228bc806853f05c9c6f0e8985f197cf7110fbc7611bb48e945fae0dd2",
+      "signature_verification": "GOOD",
+      "effect": "A-001 in; A-002 declined as written; A-002R drafting-only. Decision ratified; it does not silently rewrite the signed v1.1.2 release.",
+      "applies_to_source_claim_ids": [
+        "C-008"
+      ],
+      "full_ratification_required": false,
+      "counsel_required": false
+    },
+    {
+      "overlay_id": "TOD-001",
+      "authority_class": "interim_fail_safe_eternity",
+      "source_repository": "Permaculture-DAO/prometheus-governance",
+      "source_commit": "ca31942a89ab90ed144ce1e4defca289a2c5de90",
+      "source_sha256": "d163cc881463c4b3a2428e6ae5f0af539482281ee0fecb953e162b9cc27e6d6c",
+      "signature_verification": "GOOD",
+      "effect": "Interim conservative TRBK external-interface/no-Prometheus-rights boundary. Full Eternity ratification and counsel remain open; live pathways fail closed.",
+      "applies_to_source_claim_ids": [
+        "C-008"
+      ],
+      "full_ratification_required": true,
+      "counsel_required": true
+    }
+  ],
+  "invariants": [
+    "Signed source text is immutable in this mapping layer.",
+    "Bare C-numbers are lineage-local aliases, never cross-lineage primary keys.",
+    "Only source_identity_alias rows are eligible for mapping-only admission.",
+    "Semantic successor, split successor and governance-overlay rows remain HOLD until separately admitted.",
+    "AI, runtime, dashboards and schemas do not create authority.",
+    "The lowest unresolved material gate controls the permitted claim.",
+    "PRU is analytical and creates no rights.",
+    "No live TRBK/payment/investment pathway is admitted by this candidate."
+  ]
+}
