@@ -1,0 +1,84 @@
+{
+  "record_version": "1.0",
+  "decision_date": "2026-11-09",
+  "status": "ADMITTED_MAPPING_ONLY",
+  "authority_scope": "PROMETHEUS project-level registry metadata",
+  "authority_source": "Explicit Uwohali instruction in PROMETHEUS ChatGPT project session",
+  "current_canonical_release": "v1.1.2-genesis",
+  "canonical_prose_amended": false,
+  "admitted": [
+    {
+      "source_claim_id": "C-001",
+      "claim_uid": "prometheus.architecture.candidate_regenerative_infrastructure",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-003",
+      "claim_uid": "prometheus.pru.analytical_interface_no_rights",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-004",
+      "claim_uid": "prometheus.rap.portfolio_readability_not_market_admission",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-006",
+      "claim_uid": "prometheus.hypothesis.r1_risk_compression",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-007",
+      "claim_uid": "prometheus.hypothesis.t1_time_positive_value",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-010",
+      "claim_uid": "prometheus.ai.assistive_non_authoritative",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-011",
+      "claim_uid": "prometheus.digital_provenance.traceability_not_truth",
+      "admission_class": "source_identity_mapping_only"
+    },
+    {
+      "source_claim_id": "C-012",
+      "claim_uid": "prometheus.frontier_research.zero_weight_until_admitted",
+      "admission_class": "source_identity_mapping_only"
+    }
+  ],
+  "holds": [
+    {
+      "source_claim_id": "C-002",
+      "reason": "semantic expansion"
+    },
+    {
+      "source_claim_id": "C-005",
+      "reason": "H5 split / no rebinding"
+    },
+    {
+      "source_claim_id": "C-008",
+      "reason": "source claim plus governance overlays; no direct alias"
+    },
+    {
+      "source_claim_id": "C-009",
+      "reason": "semantic/legal wording change"
+    }
+  ],
+  "authorizes_p2_3": true,
+  "p2_3_scope": [
+    "freeze",
+    "hash",
+    "signed_registry_snapshot",
+    "runtime_projection",
+    "website_projection"
+  ],
+  "excludes": [
+    "canonical_prose_rewrite",
+    "CURRENT_RELEASE_change",
+    "TOD-001_full_ratification",
+    "legal_classification",
+    "live_TRBK_pathways"
+  ]
+}

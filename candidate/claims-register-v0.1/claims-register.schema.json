@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://heart-intelligence.earth/schemas/prometheus-claims-register-v0.1-candidate.schema.json",
+  "title": "PROMETHEUS authority-aware Claims Register candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_version",
+    "status",
+    "canon_authority",
+    "source_release",
+    "claims",
+    "governance_overlays",
+    "invariants"
+  ],
+  "properties": {
+    "registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "candidate_not_ratified",
+        "admitted_mapping_only",
+        "frozen_signed_snapshot",
+        "superseded"
+      ]
+    },
+    "canon_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "current_release"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "const": "Permaculture-DAO/prometheus-canon"
+        },
+        "current_release": {
+          "type": "string",
+          "const": "v1.1.2-genesis"
+        }
+      }
+    },
+    "source_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registry_repository",
+        "path",
+        "sha256",
+        "signature_verification"
+      ],
+      "properties": {
+        "registry_repository": {
+          "type": "string",
+          "const": "Permaculture-DAO/prometheus-canonical-releases"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "signature_verification": {
+          "enum": [
+            "GOOD",
+            "NOT_VERIFIED"
+          ]
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_lineage",
+          "source_claim_id",
+          "statement",
+          "evidence_status",
+          "investor_facing",
+          "disciplined_wording",
+          "mapping_class",
+          "mapping_status"
+        ],
+        "properties": {
+          "source_lineage": {
+            "type": "string",
+            "const": "v1.1.2-genesis"
+          },
+          "source_claim_id": {
+            "type": "string",
+            "pattern": "^C-[0-9]{3}$"
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "investor_facing": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disciplined_wording": {
+            "type": "string",
+            "minLength": 1
+          },
+          "proposed_claim_uid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^prometheus\\.[a-z0-9_.-]+$"
+          },
+          "mapping_class": {
+            "enum": [
+              "source_identity_alias",
+              "semantic_successor_hold",
+              "split_successor_hold",
+              "governance_overlay_hold"
+            ]
+          },
+          "mapping_status": {
+            "enum": [
+              "proposed_mapping_only",
+              "hold"
+            ]
+          },
+          "candidate_evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "governance_overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "overlay_id",
+          "authority_class",
+          "source_repository",
+          "source_commit",
+          "source_sha256",
+          "signature_verification",
+          "effect",
+          "applies_to_source_claim_ids"
+        ],
+        "properties": {
+          "overlay_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authority_class": {
+            "enum": [
+              "ratified_ordinary_decision",
+              "interim_fail_safe_eternity"
+            ]
+          },
+          "source_repository": {
+            "type": "string",
+            "const": "Permaculture-DAO/prometheus-governance"
+          },
+          "source_commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "signature_verification": {
+            "enum": [
+              "GOOD",
+              "NOT_VERIFIED"
+            ]
+          },
+          "effect": {
+            "type": "string",
+            "minLength": 1
+          },
+          "applies_to_source_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^C-[0-9]{3}$"
+            }
+          },
+          "full_ratification_required": {
+            "type": "boolean"
+          },
+          "counsel_required": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
