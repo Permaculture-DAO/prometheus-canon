@@ -1,0 +1,64 @@
+root_manifest_id: "PRM-ROOT-SOURCES-001"
+version: "1.0.1"
+release_id: "PROMETHEUS-SOURCE-ROOT-v2.0.1-candidate"
+effective_date: "2026-10-08"
+active_selection_scope: "CANDIDATE_DESIGN_ONLY"
+authority_adopted: false
+deployment_authority: false
+production_admission: "HOLD"
+governing_canon:
+  source_id: "PRM-CANON-SIGNED"
+  version: "v1.1.2-genesis"
+  record_key: "PRM-CANON-SIGNED@v1.1.2-genesis"
+  name: "h-earth-prometheus-white-paper.md"
+  path: "canonical/h-earth-prometheus-white-paper.md"
+  status: "ACTIVE"
+  authority_class: "CANON_SOURCE"
+  selection_role: "signed_canon"
+  adoption_state: "RATIFIED_SIGNED_CANON"
+  canonical: true
+  governing_authority: "PRM-CANON-SIGNED@v1.1.2-genesis"
+  authorises_capital: false
+  sha256: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+  scope:
+    - "governing_prose_canon"
+  upstream: []
+  upstream_hashes: {}
+  tag: "v1.1.2-genesis"
+  tag_object: "e72c753ba7d916cc406b53d0840ca4c45ca345e4"
+  commit: "dcafb0c850029629634ee974b4a8126481a4f9fd"
+  signer_fingerprint: "D20DFF6CBE331B3A4109DF848C8CB0D48C7F60DA"
+  public_key: "governance/sources/keys/steward-public.asc"
+machine_readable:
+  registry: "governance/sources/PROMETHEUS_SOURCE_REGISTRY_v1_0_1.yaml"
+  authority_lattice: "governance/sources/PROMETHEUS_AUTHORITY_LATTICE_v1_0_1.yaml"
+active_records:
+  -
+    record_key: "PRM-CANON-SIGNED@v1.1.2-genesis"
+    sha256: "f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540"
+  -
+    record_key: "PRM-ARCH-DET-002@2.0"
+    sha256: "83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7"
+  -
+    record_key: "PRM-RISK-AETERNA-001@1.1.1"
+    sha256: "da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487"
+  -
+    record_key: "PRM-RISK-RAVEL-OP-002@1.1.1"
+    sha256: "de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e"
+  -
+    record_key: "PRM-CIV-APP-006@6.2.1"
+    sha256: "412f5357047fafd71039c9788c579142a7f8a233945a2729da8b9ca012c77594"
+schema_paths:
+  source_record: "governance/sources/schemas/PROMETHEUS_SOURCE_RECORD_v1_0_1.schema.json"
+  controlled_source_release: "governance/sources/schemas/PROMETHEUS_CONTROLLED_SOURCE_RELEASE_v1_0_1.schema.json"
+  compute_provenance: "governance/sources/schemas/PROMETHEUS_COMPUTE_PROVENANCE_v1_0_1.schema.json"
+meta_layer_adoption: "PROPOSED_NOT_ADOPTED"
+compute_policy:
+  modes:
+    - "D"
+    - "P"
+    - "H"
+    - "Q"
+  material_gate_effects_implemented: false
+  d_verified_is_not_admission: true
+restore_rule: "Verify candidate bytes/graph and signed Canon separately. Never restore writes or production from this candidate manifest."

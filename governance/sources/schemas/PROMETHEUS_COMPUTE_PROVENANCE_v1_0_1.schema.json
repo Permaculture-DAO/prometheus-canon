@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:prometheus:schema:compute-provenance:1.0.1",
+  "title": "PROMETHEUS Compute Provenance",
+  "type": "object",
+  "required": [
+    "compute_id",
+    "mode",
+    "model_or_algorithm_id",
+    "version",
+    "input_hashes",
+    "output_hash",
+    "verification_state",
+    "gate_effect_allowed"
+  ],
+  "properties": {
+    "compute_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "D",
+        "P",
+        "H",
+        "Q"
+      ]
+    },
+    "model_or_algorithm_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "parameter_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "code_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtime_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed_if_applicable": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "backend": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backend_calibration_snapshot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "shots": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "output_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "verification_state": {
+      "enum": [
+        "UNVERIFIED",
+        "D_VERIFIED",
+        "REJECTED",
+        "HUMAN_REVIEW_REQUIRED"
+      ]
+    },
+    "gate_effect_allowed": {
+      "const": false,
+      "description": "No authority/effect path exists in Source-Root intake; true is rejected for ALL modes."
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verification_receipt_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification_state": {
+            "const": "D_VERIFIED"
+          }
+        },
+        "required": [
+          "verification_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "verification_receipt_sha256",
+          "reviewer"
+        ],
+        "properties": {
+          "verification_receipt_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "reviewer": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "description": "Candidate structural provenance only. No material-gate effects are implemented in this release. D_VERIFIED is not admission, authentic signature verification, or human/domain approval."
+}
