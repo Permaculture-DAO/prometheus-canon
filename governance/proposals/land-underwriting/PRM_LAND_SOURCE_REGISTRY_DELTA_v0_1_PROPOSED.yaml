@@ -1,0 +1,64 @@
+# SOURCE ID IS PROVISIONAL. Design-only registry proposal, not an active registry record.
+source_id: PRM-LAND-APP-001
+version: "0.1"
+record_key: PRM-LAND-APP-001@0.1
+selection_role: land_readiness_shadow_application_proposed
+name: PROMETHEUS_LAND_UNDERWRITING_APPLICATION_CONTROLLED_SOURCE_v0_1_CANDIDATE.md
+candidate_path: governance/proposals/land-underwriting/PROMETHEUS_LAND_UNDERWRITING_APPLICATION_CONTROLLED_SOURCE_v0_1_CANDIDATE.md
+eventual_adopted_path: governance/sources/applications/PROMETHEUS_LAND_UNDERWRITING_APPLICATION_CONTROLLED_SOURCE_v0_1_CANDIDATE.md
+sha256: 6229990d5f6db1d9cca1529f303235fae4d45c427ef88ac8e40dc0da023fca2a
+status: PROPOSED
+adoption_state: PROPOSED_NOT_ADOPTED
+authority_class: PROPOSED_CONTROLLED_APPLICATION_SPECIFICATION
+authority_class_note: "The source prose names CONTROLLED_APPLICATION_SPECIFICATION as an unratified proposal; not the already allocated civilization_application role."
+source_tier: non_authoritative_application_candidate
+canonical: false
+authoritative: false
+authorises_capital: false
+authorises_land_valuation: false
+authorises_trbk_utility: false
+runtime_production_admission: false
+adoption_decision_ref: null
+source_custodian_signoff: null
+registry_activation: false
+predecessor: null
+supersedes: []
+governing_authority: PRM-CANON-SIGNED@v1.1.2-genesis
+source_root_dependency: PROMETHEUS-SOURCE-ROOT-v2.0.1-candidate
+source_root_adoption: PROPOSED_NOT_ADOPTED
+source_root_candidate_head: eba63beeb08c4c00ece6311846d3cd32476f5b1e
+upstream_candidate_records:
+  - PRM-CANON-SIGNED@v1.1.2-genesis
+  - PRM-ARCH-DET-002@2.0
+  - PRM-RISK-AETERNA-001@1.1.1
+  - PRM-RISK-RAVEL-OP-002@1.1.1
+  - PRM-CIV-APP-006@6.2.1
+upstream_hashes:
+  PRM-CANON-SIGNED@v1.1.2-genesis: f3862005bc4d6e8e4cba0f2a7646e67dff758fcd28c8411046eb5d04875f9540
+  PRM-ARCH-DET-002@2.0: 83f42dcac3f9053b011eeb2b2963862d23c9ab0be35ee467499c99dcafd1e1c7
+  PRM-RISK-AETERNA-001@1.1.1: da600d77af28a4e4a1fed4fdb9711e3cf54bc26d5a7d860125ebbce50b6ae487
+  PRM-RISK-RAVEL-OP-002@1.1.1: de4649ae0689af6690e04b63415d133b3b30712f63d2b9c265c20373354ec66e
+  PRM-CIV-APP-006@6.2.1: 412f5357047fafd71039c9788c579142a7f8a233945a2729da8b9ca012c77594
+subordinate_to_candidate: PRM-CIV-APP-006@6.2.1
+implementation:
+  repository: Permaculture-DAO/prometheus-runtime
+  base_commit: 6c74fb75e99da31f9bb6c76574a9ce131cfc608f
+  signed_candidate_commit: ca64d0aca10305403dafdd859f0116bc13090ac8
+  draft_pr: https://github.com/Permaculture-DAO/prometheus-runtime/pull/26
+  ci_exact_head: SUCCESS_3_JOBS
+  ci_run_id: 39014368252
+  ci_url: https://github.com/Permaculture-DAO/prometheus-runtime/actions/runs/39014368252
+  holochain_real_gate: CLOSED_NOT_MODIFIED
+historical_evidence:
+  filename: PROMETHEUS_LAND_UW_EXECUTION_HANDOFF_RC2_20261017.md
+  sha256: aebbc7e2df2ac81f12e510ff40c884ed4ca41062a6e485f51ff7c728702711b4
+  custody: "Steward-held historical attachment, not published in the public Canon repository."
+implementation_mapping:
+  conceptual_source_function: land_readiness_shadow
+  python_function: app.land_underwriting.evaluate_land_underwriting
+  purpose: "Conceptual naming is not an alias, public API contract, or production endpoint."
+notes:
+  - This delta is intentionally NOT conforming to an active release schema, because Source Root PR18 is not ratified.
+  - No automatic source ID allocation, authority promotion or registry selection.
+  - The signed Canon controls independently of the Source Root candidate.
+  - A signed engineering commit and passing CI cannot substitute source steward and independent domain approval.
