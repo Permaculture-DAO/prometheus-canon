@@ -1,0 +1,71 @@
+{
+  "version": "2.0",
+  "status": "PROPOSED_REVIEW_REQUIRED",
+  "review_scope": "Internal engineering classification only; not independent approval or global migration completion",
+  "exceptions": [
+    {
+      "path": "candidate/v1.2.0-rc.2/CANON_CHANGE_RECORD_v1.2.0-rc.2.md",
+      "word": "\u0052AVEL",
+      "classification": "IMMUTABLE_SOURCE",
+      "reason": "Controlled candidate source snapshot from prior lane; no unilateral reserialization or silent hash/Canon change. New derived display-version needs source-owner procedure.",
+      "sha256": "d7d55ca5d7499def32e0936a7e051738c4987089d8d8ab64072423f820eb59e7",
+      "expected_count": 7
+    },
+    {
+      "path": "candidate/v1.2.0-rc.2/PROMETHEUS_Canonical_White_Paper_v1.2.0-rc.2.md",
+      "word": "\u0052AVEL",
+      "classification": "IMMUTABLE_SOURCE",
+      "reason": "Controlled candidate source snapshot from prior lane; no unilateral reserialization or silent hash/Canon change. New derived display-version needs source-owner procedure.",
+      "sha256": "526165d2922f384bc24f1a0ed23a1aab2a76fe22c12395a46076be03e7f07523",
+      "expected_count": 15
+    },
+    {
+      "path": "candidate/v1.2.0-rc.2/\u0052AVEL_ARCHITECTURE_AMENDMENT_v0.1.md",
+      "word": "\u0052AVEL",
+      "classification": "IMMUTABLE_SOURCE",
+      "reason": "Controlled candidate source snapshot from prior lane; no unilateral reserialization or silent hash/Canon change. New derived display-version needs source-owner procedure.",
+      "sha256": "d52af98cd589f0d6e6eff42ad6cf003ec39d694978a501dc6590387645b515e9",
+      "expected_count": 9
+    },
+    {
+      "path": "candidate/v1.2.0-rc.2/\u0052AVEL_FORMAL_SPEC_v0.1.md",
+      "word": "\u0052AVEL",
+      "classification": "IMMUTABLE_SOURCE",
+      "reason": "Controlled candidate source snapshot from prior lane; no unilateral reserialization or silent hash/Canon change. New derived display-version needs source-owner procedure.",
+      "sha256": "9ede527053f763176d2a6698e27eff27dbe87ba7dd2f4fd2caa14cc89d7cfc99",
+      "expected_count": 1
+    },
+    {
+      "path": "governance/applications/CIV-TOPOS-001_TOPOS_Intelligence_Partner_Method_Interoperability_Dossier_v1_0.md",
+      "word": "\u0041ETERNA",
+      "classification": "TECHNICAL_IDENTIFIER",
+      "reason": "Legacy source IDs and exact pre-migration input spellings quoted in the proposed migration protocol; official display prose already title case.",
+      "sha256": "49c421364955985a3ce0d98dfbec837ebe84e1ac1fbd9a33c4e4d294e8bffc67",
+      "expected_count": 3
+    },
+    {
+      "path": "governance/applications/CIV-TOPOS-001_TOPOS_Intelligence_Partner_Method_Interoperability_Dossier_v1_0.md",
+      "word": "\u0052AVEL",
+      "classification": "TECHNICAL_IDENTIFIER",
+      "reason": "Legacy source IDs and exact pre-migration input spellings quoted in the proposed migration protocol; official display prose already title case.",
+      "sha256": "49c421364955985a3ce0d98dfbec837ebe84e1ac1fbd9a33c4e4d294e8bffc67",
+      "expected_count": 3
+    },
+    {
+      "path": "governance/roadmaps/CODEX_RTC_OS_GLOBAL_EXECUTION_HANDOFF_v1_0.md",
+      "word": "\u0041ETERNA",
+      "classification": "TECHNICAL_IDENTIFIER",
+      "reason": "Legacy source IDs and exact pre-migration input spellings quoted in the proposed migration protocol; official display prose already title case.",
+      "sha256": "e5eee28664c709a79e16d297bb278ab8d7af6e90595a56542709990a54745a1d",
+      "expected_count": 5
+    },
+    {
+      "path": "governance/roadmaps/CODEX_RTC_OS_GLOBAL_EXECUTION_HANDOFF_v1_0.md",
+      "word": "\u0052AVEL",
+      "classification": "TECHNICAL_IDENTIFIER",
+      "reason": "Legacy source IDs and exact pre-migration input spellings quoted in the proposed migration protocol; official display prose already title case.",
+      "sha256": "e5eee28664c709a79e16d297bb278ab8d7af6e90595a56542709990a54745a1d",
+      "expected_count": 5
+    }
+  ]
+}
